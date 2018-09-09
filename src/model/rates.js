@@ -7,6 +7,7 @@ const processLogger = require('../logger/process.log');
 
 const feePercentage = 0.6;
 const profitPercentage = 0.008;
+const IDRForeignTransactionFee = 25000;
 // Wait time before updating exchange rates
 const refreshTime = 6 * 60 * 60 * 1000;
 // Waiting time before reset the CheckForUpdate in ms
@@ -175,7 +176,8 @@ ratesSchema.statics.calculateFee = function calculateFee(
       case CurrencyType.EUR:
         return 2 + (feePercentage / 100 * amount);
       case CurrencyType.IDR:
-        return (3 * exchangeRate.rates.IDR) + (feePercentage / 100 * amount);
+        return (3 * exchangeRate.rates.IDR)
+        + (feePercentage / 100 * amount) + IDRForeignTransactionFee;
       case CurrencyType.USD:
         return (2.5 * exchangeRate.rates.USD) + (feePercentage / 100 * amount);
       default:

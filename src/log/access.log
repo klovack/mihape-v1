@@ -189,3 +189,10 @@
 ::1 - GET /api/v1/rates?base=idr&amount=5000000&destination=eur&include_fee=false HTTP/1.1 200 239 - 3.858 ms
 ::1 - GET /api/v1/rates?base=idr&amount=2000000&destination=eur&include_fee=false HTTP/1.1 200 240 - 4.396 ms
 ::1 - POST /api/v1/transactions HTTP/1.1 200 547 - 102.571 ms
+::1 - GET /api/v1/rates?base=idr&amount=10000000&destination=eur&include_fee=false HTTP/1.1 200 244 - 20.591 ms
+::1 - GET /api/v1/rates?base=idr&amount=10000000&destination=eur&include_fee=false HTTP/1.1 200 244 - 4.693 ms
+::1 - GET /api/v1/rates?base=idr&amount=10000000&destination=eur&include_fee=true HTTP/1.1 200 243 - 6.095 ms
+::1 - GET /api/v1/rates?base=idr&amount=10000000&destination=eur&include_fee=false HTTP/1.1 200 244 - 3.358 ms
+::1 - POST /api/v1/recipients HTTP/1.1 200 365 - 56.378 ms
+::1 - POST /api/v1/transactions HTTP/1.1 200 546 - 42.419 ms
+::1 - POST /api/v1/transactions HTTP/1.1 200 554 - 27.907 ms
