@@ -1,0 +1,15 @@
+{
+  "development": {
+    "ACCESS_KEY_API_FIXER": "200f64d8d0e0bfbe25dc1aab69c00d76",
+    "ACCESS_KEY_API_EXCHANGE_RATE": "051670faa0a898bbf9c105c6",
+    "JWT_SECRET": "279twuesiogio4ot349057uiwetjip49u394669tu",
+    "EMAIL_SECRET": "21350970oieghweogeheoitu3250809uwej",
+    "GOOGLE_OAUTH_EMAIL": "fikriansyahmr@gmail.com",
+    "GOOGLE_OAUTH_CLIENT_ID": "278954932759-h48dkab25q02befab4jqahlo2cdeaihj.apps.googleusercontent.com",
+    "GOOGLE_OAUTH_CLIENT_SECRET": "CHD047nhAspHWPLGJybLfKN8",
+    "GOOGLE_OAUTH_REFRESH_TOKEN": "1/cvfojxIjmjS2Wc1n4hzJUY0egBsVlJGpTOBPU6xlCaU",
+    "GOOGLE_OAUTH_ACCESS_TOKEN": "ya29.GlsMBtMcydyI4vn7Fhi3-f96KFJ2BzEJBlD4FNzudtndFad9pRa1AS7-5I_HJuwMcN-YGVXhpB7Is-KsoE57NVseUfvo-98q_Y3sZKYQoJqa2uVtFZU0iazoWVQU",
+    "GOOGLE_OAUTH_PASSWORD": "zespcsuqktnvmsch",
+    "CONFIRM_URL": "http://localhost:3000/confirm"
+  }
+}
