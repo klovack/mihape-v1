@@ -28,27 +28,26 @@ const sendConfirmationMail = function sendConfirmationMail({ receiver, redirectU
   transporter.sendMail(mailOptions, callback);
 };
 
+const toCurrencyString = toBeConverted => toBeConverted.amount.toLocaleString(undefined, {
+  maximumFractionDigits: 2, minimumFractionDigits: 2, style: 'currency', currency: toBeConverted.base,
+});
+
 const sendNewTransactionMail = function sendTransactionMail({
   receiver, recipient, transaction,
 }, callback) {
   // Calculate total based of the combine it with fee or not
-  const total = transaction.combineWithFee
-    ? transaction.fromCurrency.amount : transaction.fromCurrency.amount + transaction.fee.amount;
+  const total = {
+    base: transaction.fromCurrency.base,
+    amount: transaction.combineWithFee
+      ? transaction.fromCurrency.amount : transaction.fromCurrency.amount + transaction.fee.amount,
+  };
 
   // Adjust the money to fit to be displayed
   const display = {
-    total: total.toLocaleString(undefined, {
-      maximumFractionDigits: 2, minimumFractionDigits: 2, style: 'currency', currency: transaction.fromCurrency.base,
-    }),
-    fromCurrency: transaction.fromCurrency.amount.toLocaleString(undefined, {
-      maximumFractionDigits: 2, minimumFractionDigits: 2, style: 'currency', currency: transaction.fromCurrency.base,
-    }),
-    toCurrency: transaction.toCurrency.amount.toLocaleString(undefined, {
-      maximumFractionDigits: 2, minimumFractionDigits: 2, style: 'currency', currency: transaction.toCurrency.base,
-    }),
-    fee: transaction.fee.amount.toLocaleString(undefined, {
-      maximumFractionDigits: 2, minimumFractionDigits: 2, style: 'currency', currency: transaction.fee.base,
-    }),
+    total: toCurrencyString(total),
+    fromCurrency: toCurrencyString(transaction.fromCurrency),
+    toCurrency: toCurrencyString(transaction.toCurrency),
+    fee: toCurrencyString(transaction.fee),
   };
 
   const mailOptions = {

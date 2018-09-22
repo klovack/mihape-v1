@@ -1,4 +1,5 @@
 const { isEmail, isMobilePhone, isPostalCode } = require('validator');
+const { isValidIBAN } = require('ibantools');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
@@ -81,8 +82,22 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
       },
-      IBAN: String,
-      BLZ: String,
+      IBAN: {
+        type: String,
+        validate: [isValidIBAN, 'Invalid IBAN'],
+      },
+      otherInformation: [
+        {
+          name: {
+            type: String,
+            required: true,
+          },
+          value: {
+            type: String,
+            required: true,
+          },
+        },
+      ],
     },
   ],
   recipients: [mongoose.Schema.Types.ObjectId],
@@ -98,6 +113,7 @@ const userSchema = new mongoose.Schema({
     default: Date.now(),
   },
   suspendedAt: Date,
+  language: String,
 });
 
 /*
@@ -185,6 +201,7 @@ userSchema.methods = {
       status: this.status,
       createdAt: this.createdAt,
       suspendedAt: this.suspendedAt,
+      language: this.language,
     };
   },
 

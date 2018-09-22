@@ -56,6 +56,20 @@ const transactionSchema = new mongoose.Schema({
       required: true,
     },
   },
+  finalCurrency: {
+    base: String,
+    amount: Number,
+  },
+  toBeTransfered: {
+    base: {
+      type: String,
+      required: true,
+    },
+    amount: {
+      type: Number,
+      required: true,
+    },
+  },
   fee: {
     base: {
       type: String,
@@ -145,6 +159,15 @@ transactionSchema.methods = {
     sendNewTransactionMail({ receiver, recipient, transaction }, callback);
   },
 };
+
+// Setting up the toBeTransfered property to be the total of the fromCurrency and fee
+transactionSchema.pre('save', function beforeSave(next) {
+  this.toBeTransfered = {
+    base: this.fromCurrency.base,
+    amount: this.fromCurrency.amount + this.fee.amount,
+  };
+  return next();
+});
 
 const Transaction = mongoose.model('Transaction', transactionSchema);
 

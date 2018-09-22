@@ -29,9 +29,9 @@ router.get('/', checkForQueryRates, validateAll, (req, res) => {
     // Do convert rates if user want specify the destination
     if (destination) {
       return Rates.convertRates(amount, base, destination, combineWithFee)
-        .then(result => res.send({
+        .then(data => res.send({
           message: 'Successfully fetch the data',
-          result,
+          data,
         })).catch(err => res.status(500).send({
           message: 'Unable to fetch the data',
           err,
@@ -39,9 +39,9 @@ router.get('/', checkForQueryRates, validateAll, (req, res) => {
     }
 
     // Otherwise get total rates base of the base and amount that is provided
-    return Rates.getTotalRates(amount, base).then(result => res.send({
+    return Rates.getTotalRates(amount, base).then(data => res.send({
       message: 'Successfully fetch the data',
-      result,
+      data,
     })).catch(err => res.status(500).send({
       message: 'Unable to fetch the data',
       err,

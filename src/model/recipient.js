@@ -1,3 +1,5 @@
+const { isValidIBAN } = require('ibantools');
+
 const mongoose = require('../db/mongoose');
 
 const recipientSchema = new mongoose.Schema({
@@ -18,8 +20,22 @@ const recipientSchema = new mongoose.Schema({
       type: String,
       required: true,
     },
-    IBAN: String,
-    BLZ: String,
+    IBAN: {
+      type: String,
+      validate: [isValidIBAN, 'Invalid IBAN'],
+    },
+    otherInformation: [
+      {
+        name: {
+          type: String,
+          required: true,
+        },
+        value: {
+          type: String,
+          required: true,
+        },
+      },
+    ],
   },
   user: {
     type: mongoose.Schema.Types.ObjectId,

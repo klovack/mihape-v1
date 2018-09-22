@@ -203,43 +203,61 @@ ratesSchema.statics.getTotalRates = async function getTotalRates(
   const exchangeRate = await Rates.getUpdatedRates();
   const fee = await Rates.calculateFee(amount, base, exchangeRate);
 
-  const fromCurrencyRates = combineWithFee ? amount - fee : amount;
+  const originalAmount = amount;
+  const combineAmount = amount - fee;
 
   switch (base) {
     case CurrencyType.EUR:
       return Promise.resolve({
-        rates: {
-          EUR: fromCurrencyRates,
-          IDR: fromCurrencyRates * exchangeRate.rates.IDR,
-          USD: fromCurrencyRates * exchangeRate.rates.USD,
+        combineAmount: {
+          EUR: combineAmount,
+          IDR: combineAmount * exchangeRate.rates.IDR,
+          USD: combineAmount * exchangeRate.rates.USD,
+        },
+        originalAmount: {
+          EUR: originalAmount,
+          IDR: originalAmount * exchangeRate.rates.IDR,
+          USD: originalAmount * exchangeRate.rates.USD,
         },
         base: 'EUR',
-        amount: fromCurrencyRates,
+        original: originalAmount,
+        combine: combineAmount,
         createdAt: exchangeRate.createdAt,
         fee,
       });
     case CurrencyType.IDR:
       return Promise.resolve({
-        rates: {
-          EUR: fromCurrencyRates / exchangeRate.rates.IDR,
-          // Get the euro, and then convert it to usd
-          USD: (fromCurrencyRates / exchangeRate.rates.IDR) * exchangeRate.rates.USD,
-          IDR: fromCurrencyRates,
+        combineAmount: {
+          EUR: combineAmount / exchangeRate.rates.IDR,
+          USD: (combineAmount / exchangeRate.rates.IDR) * exchangeRate.rates.USD,
+          IDR: combineAmount,
+        },
+        originalAmount: {
+          EUR: originalAmount / exchangeRate.rates.IDR,
+          USD: (originalAmount / exchangeRate.rates.IDR) * exchangeRate.rates.USD,
+          IDR: originalAmount,
         },
         base: 'IDR',
-        amount: fromCurrencyRates,
+        original: originalAmount,
+        combine: combineAmount,
         createdAt: exchangeRate.createdAt,
         fee,
       });
     case CurrencyType.USD:
       return Promise.resolve({
-        rates: {
-          EUR: fromCurrencyRates / exchangeRate.rates.USD,
-          USD: fromCurrencyRates,
-          IDR: (fromCurrencyRates / exchangeRate.rates.USD) * exchangeRate.rates.IDR,
+        combineAmount: {
+          EUR: combineAmount / exchangeRate.rates.USD,
+          USD: combineAmount,
+          IDR: (combineAmount / exchangeRate.rates.USD) * exchangeRate.rates.IDR,
+        },
+        originalAmount: {
+          EUR: originalAmount / exchangeRate.rates.USD,
+          USD: originalAmount,
+          IDR: (originalAmount / exchangeRate.rates.USD) * exchangeRate.rates.IDR,
         },
         base: 'USD',
-        amount: fromCurrencyRates,
+        original: originalAmount,
+        combine: combineAmount,
         createdAt: exchangeRate.createdAt,
         fee,
       });
@@ -258,22 +276,31 @@ ratesSchema.statics.convertRates = async function convertRates(
       const result = {
         fromCurrency: {
           base: stringify.currencyType(base),
-          amount: data.amount,
+          originalAmount: data.original,
+          combineAmount: data.combine,
         },
         toCurrency: {
           base: stringify.currencyType(destination),
         },
         createdAt: data.createdAt,
         fee: data.fee,
-        total: data.amount + data.fee,
+        total: combineWithFee ? data.amount : data.amount + data.fee,
+        combineWithFee,
       };
 
-      Object.keys(data.rates).forEach((key) => {
+      Object.keys(data.combineAmount).forEach((key) => {
         if (key.toString() === stringify.currencyType(destination)) {
-          result.toCurrency.amount = data.rates[key] - (data.rates[key] * profitPercentage);
+          result.toCurrency.combineAmount = data.combineAmount[key]
+          - (data.combineAmount[key] * profitPercentage);
         }
       });
 
+      Object.keys(data.originalAmount).forEach((key) => {
+        if (key.toString() === stringify.currencyType(destination)) {
+          result.toCurrency.originalAmount = data.originalAmount[key]
+          - (data.originalAmount[key] * profitPercentage);
+        }
+      });
 
       return Promise.resolve(result);
     })

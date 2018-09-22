@@ -10,6 +10,7 @@
     "GOOGLE_OAUTH_REFRESH_TOKEN": "1/cvfojxIjmjS2Wc1n4hzJUY0egBsVlJGpTOBPU6xlCaU",
     "GOOGLE_OAUTH_ACCESS_TOKEN": "ya29.GlsMBtMcydyI4vn7Fhi3-f96KFJ2BzEJBlD4FNzudtndFad9pRa1AS7-5I_HJuwMcN-YGVXhpB7Is-KsoE57NVseUfvo-98q_Y3sZKYQoJqa2uVtFZU0iazoWVQU",
     "GOOGLE_OAUTH_PASSWORD": "zespcsuqktnvmsch",
-    "CONFIRM_URL": "http://localhost:3000/confirm"
+    "CONFIRM_URL": "http://localhost:3000/api/v1/confirm",
+    "FRONTEND_URL": "http://localhost:4200"
   }
 }
