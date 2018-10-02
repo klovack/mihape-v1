@@ -15,3 +15,81 @@
 {"message":"Connection to the database cannot be established","err":{"errors":{"user":{"message":"Path `user` is required.","name":"ValidatorError","properties":{"message":"Path `user` is required.","type":"required","path":"user"},"kind":"required","path":"user","$isValidatorError":true}},"_message":"Recipient validation failed","message":"Recipient validation failed: user: Path `user` is required.","name":"ValidationError"},"level":"error","timestamp":"2018-09-06T09:00:24.122Z"}
 {"message":"Connection to the database cannot be established","err":{"errors":{"user":{"message":"Path `user` is required.","name":"ValidatorError","properties":{"message":"Path `user` is required.","type":"required","path":"user"},"kind":"required","path":"user","$isValidatorError":true}},"_message":"Recipient validation failed","message":"Recipient validation failed: user: Path `user` is required.","name":"ValidationError"},"level":"error","timestamp":"2018-09-06T09:01:13.922Z"}
 {"message":"Connection to the database cannot be established","err":{"errors":{"user":{"message":"Path `user` is required.","name":"ValidatorError","properties":{"message":"Path `user` is required.","type":"required","path":"user"},"kind":"required","path":"user","$isValidatorError":true}},"_message":"Recipient validation failed","message":"Recipient validation failed: user: Path `user` is required.","name":"ValidationError"},"level":"error","timestamp":"2018-09-06T09:01:43.530Z"}
+{"message":"Can't find user with rizki.fikriansyah@yahoo.co.id","isAvailable":true,"level":"error","timestamp":"2018-09-27T09:33:34.282Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T09:34:01.417Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:06:23.413Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:29:32.997Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:31:34.795Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:32:01.644Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:34:37.708Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:36:17.245Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:36:47.628Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:37:40.290Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:41:11.721Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:41:52.416Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:58:33.309Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T15:56:44.357Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T15:57:21.191Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T15:59:36.281Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: username_1 dup key: { : null }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: username_1 dup key: { : null }"},"level":"error","timestamp":"2018-10-01T13:16:48.016Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: username_1 dup key: { : null }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: username_1 dup key: { : null }"},"level":"error","timestamp":"2018-10-01T13:18:47.978Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: username_1 dup key: { : null }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: username_1 dup key: { : null }"},"level":"error","timestamp":"2018-10-01T13:27:36.029Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T13:28:19.159Z"}
+{"message":"User with rizki.fikriansyah@yahoo.co.id is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-01T13:28:58.462Z"}
+{"message":"User with rizki.fikriansyah@yahoo.co.id is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-01T14:16:31.288Z"}
+{"message":"User with rizki.fikriansyah@yahoo.co.id is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-01T14:17:48.498Z"}
+{"message":"User with rizki.fikriansyah@yahoo.co.id is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-01T14:19:18.839Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-01T14:30:45.162Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-01T14:32:06.391Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:35:07.159Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:40:02.907Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:41:05.424Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:41:48.054Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:43:59.472Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:46:22.686Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:46:23.207Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:46:23.756Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:50:51.220Z"}
+{"message":"User with rizki.fikriansyah@yahoo.co.id is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-01T18:54:52.306Z"}
+{"message":"User with rizki.fikriansyah@yahoo.co.id is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-02T08:51:24.314Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-02T08:51:27.009Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is already confirmed","user":{"status":"IS_ACTIVE","email":"rizki.fikriansyah@yahoo.co.id"},"level":"error","timestamp":"2018-10-02T10:03:52.544Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:04:11.531Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:08:30.313Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:08:35.745Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is already confirmed","user":{"status":"IS_ACTIVE","email":"rizki.fikriansyah@yahoo.co.id"},"level":"error","timestamp":"2018-10-02T10:09:15.856Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is already confirmed","user":{"status":"IS_ACTIVE","email":"rizki.fikriansyah@yahoo.co.id"},"level":"error","timestamp":"2018-10-02T10:09:56.028Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is already confirmed","user":{"status":"IS_ACTIVE","email":"rizki.fikriansyah@yahoo.co.id"},"level":"error","timestamp":"2018-10-02T10:10:35.368Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is already confirmed","user":{"status":"IS_ACTIVE","email":"rizki.fikriansyah@yahoo.co.id"},"level":"error","timestamp":"2018-10-02T10:11:05.014Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is already confirmed","user":{"status":"IS_ACTIVE","email":"rizki.fikriansyah@yahoo.co.id"},"level":"error","timestamp":"2018-10-02T10:17:31.373Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:17:50.843Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.827Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.877Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.885Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.921Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.922Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.931Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.943Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.949Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.950Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:27.257Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:21:20.120Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is already confirmed","user":{"status":"IS_ACTIVE","email":"rizki.fikriansyah@yahoo.co.id"},"level":"error","timestamp":"2018-10-02T10:21:25.515Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"jwt malformed"},"level":"error","timestamp":"2018-10-02T11:49:53.637Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"jwt malformed"},"level":"error","timestamp":"2018-10-02T11:50:12.790Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"jwt malformed"},"level":"error","timestamp":"2018-10-02T11:51:07.484Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"jwt malformed"},"level":"error","timestamp":"2018-10-02T12:00:47.725Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is already confirmed","user":{"status":"IS_ACTIVE","email":"rizki.fikriansyah@yahoo.co.id"},"level":"error","timestamp":"2018-10-02T12:01:02.062Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"jwt malformed"},"level":"error","timestamp":"2018-10-02T12:02:13.292Z"}
+{"message":"User already confirmed","level":"error","timestamp":"2018-10-02T12:03:06.615Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"invalid signature"},"level":"error","timestamp":"2018-10-02T12:03:32.477Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"invalid token"},"level":"error","timestamp":"2018-10-02T12:03:43.686Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"invalid token"},"level":"error","timestamp":"2018-10-02T12:04:17.750Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"invalid token"},"level":"error","timestamp":"2018-10-02T12:04:36.758Z"}
+{"message":"User already confirmed","level":"error","timestamp":"2018-10-02T12:04:49.224Z"}
+{"message":"User already confirmed","level":"error","timestamp":"2018-10-02T12:05:01.668Z"}
+{"message":"User already confirmed","level":"error","timestamp":"2018-10-02T12:05:44.452Z"}
+{"message":"User already confirmed","level":"error","timestamp":"2018-10-02T12:06:12.575Z"}
+{"message":"User already confirmed","level":"error","timestamp":"2018-10-02T12:07:16.716Z"}
+{"message":"User already confirmed","level":"error","timestamp":"2018-10-02T12:07:53.463Z"}
+{"message":"User already confirmed","level":"error","timestamp":"2018-10-02T12:14:55.106Z"}

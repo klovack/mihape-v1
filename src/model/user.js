@@ -191,7 +191,6 @@ userSchema.methods = {
       firstName: this.firstName,
       lastName: this.lastName,
       dateOfBirth: this.dateOfBirth,
-      username: this.username,
       email: this.email,
       phoneNumber: this.phoneNumber,
       address: this.address,
@@ -209,7 +208,6 @@ userSchema.methods = {
     return {
       token: this.createToken(),
       userId: this._id,  // eslint-disable-line
-      username: this.username,
       email: this.email,
     };
   },

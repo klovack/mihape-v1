@@ -8,6 +8,7 @@ const ratesRoutes = require('./src/routes/ratesRoute');
 const transactionRoute = require('./src/routes/transactionRoute');
 const recipientRoute = require('./src/routes/recipientRoute');
 const userRoute = require('./src/routes/userRoute');
+const countryRoute = require('./src/routes/countryRoute');
 const { passport } = require('./src/middleware/passport');
 const requestLogger = require('./src/logger/request.log');
 
@@ -33,6 +34,7 @@ app.use('/api/v1/rates', ratesRoutes);
 app.use('/api/v1/transactions', transactionRoute);
 app.use('/api/v1/recipients', recipientRoute);
 app.use('/api/v1/user', userRoute);
+app.use('/api/v1/countries', countryRoute);
 
 app.listen(port, () => {
   console.log(`Server is on port ${port}`); // eslint-disable-line

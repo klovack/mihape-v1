@@ -142,8 +142,8 @@ const checkForNewUser = [
     .exists().not().isEmpty()
     .trim()
     .escape()
-    .isLength({ min: 4, max: 25 })
-    .matches(/^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{4,25}$/),
+    .isLength({ min: 8 })
+    .matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/),
   body('user.phoneNumber', 'user.phoneNumber should only contain phone number')
     .optional()
     .trim()
@@ -190,6 +190,13 @@ const checkForEmail = [
     .normalizeEmail(),
 ];
 
+const checkForQueryEmail = [
+  query('email', 'Email must be provided and must be valid')
+    .exists().not().isEmpty()
+    .isEmail()
+    .normalizeEmail(),
+];
+
 const checkForConfirmToken = [
   param('token', 'Token in params must be provided')
     .exists().not().isEmpty(),
@@ -214,6 +221,7 @@ module.exports = {
   checkForNewUser,
   checkForCredential,
   checkForEmail,
+  checkForQueryEmail,
   checkForConfirmToken,
   validateAll,
 };

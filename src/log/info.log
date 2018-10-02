@@ -294,3 +294,348 @@
 {"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17423.07179286,"USD":1.1746547399999998},"_id":"5ba51c7206db62768a883d53","base":"EUR","createdAt":"2018-09-21T16:29:38.355Z","__v":0}],"level":"info","timestamp":"2018-09-21T17:00:11.951Z"}
 {"message":"Calculating Rates","level":"info","timestamp":"2018-09-22T15:57:56.812Z"}
 {"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17425.34401949,"USD":1.17493121},"_id":"5ba66685d4d37237cfa46dc8","base":"EUR","createdAt":"2018-09-22T15:57:57.377Z","__v":0}],"level":"info","timestamp":"2018-09-22T15:57:59.361Z"}
+{"message":"Calculating Rates","level":"info","timestamp":"2018-09-23T08:32:37.372Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17425.223180884997,"USD":1.1757863350000002},"_id":"5ba74fa672935b019efdc1ad","base":"EUR","createdAt":"2018-09-23T08:32:38.193Z","__v":0}],"level":"info","timestamp":"2018-09-23T08:32:39.903Z"}
+{"message":"Calculating Rates","level":"info","timestamp":"2018-09-24T10:26:59.607Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17484.36600965,"USD":1.1767915850000001},"_id":"5ba8bbf4cb65dc0cdaa03c5b","base":"EUR","createdAt":"2018-09-24T10:27:00.067Z","__v":0}],"level":"info","timestamp":"2018-09-24T10:27:02.200Z"}
+{"message":"Calculating Rates","level":"info","timestamp":"2018-09-25T08:55:14.270Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17526.802279525,"USD":1.17618494},"_id":"5ba9f7f27a4e284c7a7c99a2","base":"EUR","createdAt":"2018-09-25T08:55:14.839Z","__v":0}],"level":"info","timestamp":"2018-09-25T08:55:16.855Z"}
+{"message":"Calculating Rates","level":"info","timestamp":"2018-09-26T10:44:27.520Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T10:44:30.061Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T10:48:02.204Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T10:55:06.647Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:06:36.127Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:06:41.543Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:07:02.085Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:11:59.849Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:14:06.997Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:24:54.953Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:28:08.159Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:28:58.976Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:34:53.842Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:35:48.941Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:40:19.814Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:40:41.586Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:41:28.435Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:42:19.288Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:42:26.299Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:43:35.791Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:44:00.744Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:44:21.435Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:44:24.127Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:45:32.206Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:46:08.379Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:46:52.990Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:47:29.111Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:47:45.062Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:48:22.443Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:48:40.089Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:49:34.387Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:50:14.058Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:50:59.503Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:51:01.738Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:51:31.737Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:52:48.829Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:53:06.811Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:53:16.951Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:53:22.898Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:55:33.622Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:55:36.840Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:56:18.975Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:57:57.470Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:58:29.451Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:58:49.218Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T12:59:30.780Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T13:10:59.356Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17542.977379789998,"USD":1.176487565},"_id":"5bab630b26051b605db0a971","base":"EUR","createdAt":"2018-09-26T10:44:27.995Z","__v":0}],"level":"info","timestamp":"2018-09-26T13:24:41.988Z"}
+{"message":"Calculating Rates","level":"info","timestamp":"2018-09-27T09:28:26.723Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17490.96667058,"USD":1.1727779200000001},"_id":"5baca2bb99f6772b99f895e4","base":"EUR","createdAt":"2018-09-27T09:28:27.230Z","__v":0}],"level":"info","timestamp":"2018-09-27T09:28:29.263Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17490.96667058,"USD":1.1727779200000001},"_id":"5baca2bb99f6772b99f895e4","base":"EUR","createdAt":"2018-09-27T09:28:27.230Z","__v":0}],"level":"info","timestamp":"2018-09-27T09:30:33.552Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17490.96667058,"USD":1.1727779200000001},"_id":"5baca2bb99f6772b99f895e4","base":"EUR","createdAt":"2018-09-27T09:28:27.230Z","__v":0}],"level":"info","timestamp":"2018-09-27T09:31:11.523Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17490.96667058,"USD":1.1727779200000001},"_id":"5baca2bb99f6772b99f895e4","base":"EUR","createdAt":"2018-09-27T09:28:27.230Z","__v":0}],"level":"info","timestamp":"2018-09-27T09:33:31.605Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-27T09:33:34.274Z"}
+{"message":"Can't find user with rizki.fikriansyah@yahoo.co.id","isAvailable":true,"level":"error","timestamp":"2018-09-27T09:33:34.282Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17490.96667058,"USD":1.1727779200000001},"_id":"5baca2bb99f6772b99f895e4","base":"EUR","createdAt":"2018-09-27T09:28:27.230Z","__v":0}],"level":"info","timestamp":"2018-09-27T09:33:50.417Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-09-27T09:34:01.408Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T09:34:01.417Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17490.96667058,"USD":1.1727779200000001},"_id":"5baca2bb99f6772b99f895e4","base":"EUR","createdAt":"2018-09-27T09:28:27.230Z","__v":0}],"level":"info","timestamp":"2018-09-27T10:55:59.454Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17490.96667058,"USD":1.1727779200000001},"_id":"5baca2bb99f6772b99f895e4","base":"EUR","createdAt":"2018-09-27T09:28:27.230Z","__v":0}],"level":"info","timestamp":"2018-09-27T10:56:28.554Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17490.96667058,"USD":1.1727779200000001},"_id":"5baca2bb99f6772b99f895e4","base":"EUR","createdAt":"2018-09-27T09:28:27.230Z","__v":0}],"level":"info","timestamp":"2018-09-27T10:56:41.342Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17490.96667058,"USD":1.1727779200000001},"_id":"5baca2bb99f6772b99f895e4","base":"EUR","createdAt":"2018-09-27T09:28:27.230Z","__v":0}],"level":"info","timestamp":"2018-09-27T10:57:22.134Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-09-27T11:06:23.403Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:06:23.413Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17490.96667058,"USD":1.1727779200000001},"_id":"5baca2bb99f6772b99f895e4","base":"EUR","createdAt":"2018-09-27T09:28:27.230Z","__v":0}],"level":"info","timestamp":"2018-09-27T11:06:37.857Z"}
+{"message":"check rizki@gmail.com for availability","level":"info","timestamp":"2018-09-27T11:06:43.159Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T11:06:43.165Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-27T11:26:37.490Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T11:26:37.494Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17490.96667058,"USD":1.1727779200000001},"_id":"5baca2bb99f6772b99f895e4","base":"EUR","createdAt":"2018-09-27T09:28:27.230Z","__v":0}],"level":"info","timestamp":"2018-09-27T11:27:18.806Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-27T11:29:27.563Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T11:29:27.573Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-09-27T11:29:32.984Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:29:32.997Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-09-27T11:31:34.783Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:31:34.795Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17490.96667058,"USD":1.1727779200000001},"_id":"5baca2bb99f6772b99f895e4","base":"EUR","createdAt":"2018-09-27T09:28:27.230Z","__v":0}],"level":"info","timestamp":"2018-09-27T11:31:52.855Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-09-27T11:32:01.633Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:32:01.644Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-09-27T11:34:37.696Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:34:37.708Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-27T11:35:28.166Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T11:35:28.173Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-09-27T11:36:17.240Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:36:17.245Z"}
+{"message":"check vitri.indria@gmail.comr for availability","level":"info","timestamp":"2018-09-27T11:36:20.601Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T11:36:20.604Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-27T11:36:22.819Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T11:36:22.821Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.idv for availability","level":"info","timestamp":"2018-09-27T11:36:28.815Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T11:36:28.820Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-27T11:36:39.530Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T11:36:39.534Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-09-27T11:36:47.617Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:36:47.628Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-27T11:37:24.105Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T11:37:24.111Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-09-27T11:37:40.284Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:37:40.290Z"}
+{"message":"check vitri.indria@gmail.co for availability","level":"info","timestamp":"2018-09-27T11:40:21.355Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T11:40:21.359Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-09-27T11:41:11.713Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:41:11.721Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-27T11:41:43.796Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T11:41:43.800Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-09-27T11:41:52.406Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:41:52.416Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-27T11:44:04.897Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T11:44:04.900Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-09-27T11:58:33.303Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T11:58:33.309Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-27T11:58:51.878Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T11:58:51.880Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-27T15:55:49.989Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T15:55:49.996Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-27T15:56:22.718Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T15:56:22.721Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-09-27T15:56:44.353Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T15:56:44.357Z"}
+{"message":"check imakrismawatri10@gmail.com for availability","level":"info","timestamp":"2018-09-27T15:57:06.816Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T15:57:06.819Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-09-27T15:57:21.183Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T15:57:21.191Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-27T15:57:55.143Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T15:57:55.147Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-27T15:59:01.346Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T15:59:01.352Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-09-27T15:59:36.278Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-09-27T15:59:36.281Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-27T16:13:53.157Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T16:13:53.163Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-27T16:41:30.141Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-27T16:41:30.144Z"}
+{"message":"Calculating Rates","level":"info","timestamp":"2018-09-28T08:15:01.591Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17361.279395995,"USD":1.164840865},"_id":"5bade306b038d777a98e3354","base":"EUR","createdAt":"2018-09-28T08:15:02.084Z","__v":0}],"level":"info","timestamp":"2018-09-28T08:15:04.125Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17361.279395995,"USD":1.164840865},"_id":"5bade306b038d777a98e3354","base":"EUR","createdAt":"2018-09-28T08:15:02.084Z","__v":0}],"level":"info","timestamp":"2018-09-28T09:09:40.825Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17361.279395995,"USD":1.164840865},"_id":"5bade306b038d777a98e3354","base":"EUR","createdAt":"2018-09-28T08:15:02.084Z","__v":0}],"level":"info","timestamp":"2018-09-28T09:22:29.833Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17361.279395995,"USD":1.164840865},"_id":"5bade306b038d777a98e3354","base":"EUR","createdAt":"2018-09-28T08:15:02.084Z","__v":0}],"level":"info","timestamp":"2018-09-28T09:23:37.980Z"}
+{"message":"Calculating Rates","level":"info","timestamp":"2018-09-29T09:59:33.030Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17299.335735444998,"USD":1.16179226},"_id":"5baf4d0588dc003fd8d8ea3b","base":"EUR","createdAt":"2018-09-29T09:59:33.492Z","__v":0}],"level":"info","timestamp":"2018-09-29T09:59:35.567Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-29T12:17:17.811Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-29T12:17:17.826Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-29T12:35:39.414Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-29T12:35:39.418Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-29T12:37:55.773Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-29T12:37:55.775Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-29T13:34:51.523Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-29T13:34:51.527Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-29T13:35:31.898Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-29T13:35:31.902Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-29T13:52:58.776Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-29T13:52:58.779Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-29T13:55:18.425Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-29T13:55:18.429Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-09-29T13:56:29.645Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-09-29T13:56:29.651Z"}
+{"message":"Calculating Rates","level":"info","timestamp":"2018-10-01T11:23:50.267Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17295.78684189,"USD":1.1608332749999999},"_id":"5bb203c68fe92422f55a99fa","base":"EUR","createdAt":"2018-10-01T11:23:50.784Z","__v":0}],"level":"info","timestamp":"2018-10-01T11:23:52.807Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-01T11:25:59.602Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T11:25:59.617Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-01T12:57:33.063Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T12:57:33.067Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-01T13:00:13.072Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T13:00:13.077Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-01T13:05:54.486Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T13:05:54.489Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-01T13:07:30.254Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T13:07:30.257Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-01T13:11:04.856Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T13:11:04.858Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-01T13:13:09.433Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T13:13:09.437Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-01T13:15:12.499Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T13:15:12.504Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-01T13:16:29.157Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T13:16:29.162Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: username_1 dup key: { : null }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: username_1 dup key: { : null }"},"level":"error","timestamp":"2018-10-01T13:16:48.016Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17295.78684189,"USD":1.1608332749999999},"_id":"5bb203c68fe92422f55a99fa","base":"EUR","createdAt":"2018-10-01T11:23:50.784Z","__v":0}],"level":"info","timestamp":"2018-10-01T13:18:19.693Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: username_1 dup key: { : null }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: username_1 dup key: { : null }"},"level":"error","timestamp":"2018-10-01T13:18:47.978Z"}
+{"message":"Successfully create new user","savedUser":{"userId":"5bb220b8864e6c36bd50da93","firstName":"Muhammad Rizki","lastName":"Fikriansyah","dateOfBirth":"1992-02-22T00:00:00.000Z","email":"rizki.fikriansyah@yahoo.co.id","address":{"street":"Nagelstr.","houseNumber":"20","city":"Trier","postcode":"54290","province":"Rheinland-Pfalz","country":"DE"},"bankAccount":[],"recipients":[],"transactions":[],"status":"IS_INACTIVE","createdAt":"2018-10-01T13:18:19.538Z"},"level":"info","timestamp":"2018-10-01T13:27:21.086Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: username_1 dup key: { : null }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: username_1 dup key: { : null }"},"level":"error","timestamp":"2018-10-01T13:27:36.029Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17295.78684189,"USD":1.1608332749999999},"_id":"5bb203c68fe92422f55a99fa","base":"EUR","createdAt":"2018-10-01T11:23:50.784Z","__v":0}],"level":"info","timestamp":"2018-10-01T13:28:09.359Z"}
+{"message":"Successfully create new user","savedUser":{"userId":"5bb220ef6f3f8f38d9f9d140","firstName":"Muhammad Rizki","lastName":"Fikriansyah","dateOfBirth":"1992-02-22T00:00:00.000Z","email":"rizki.fikriansyah@yahoo.co.id","address":{"street":"Nagelstr.","houseNumber":"20","city":"Trier","postcode":"54290","province":"Rheinland-Pfalz","country":"DE"},"bankAccount":[],"recipients":[],"transactions":[],"status":"IS_INACTIVE","createdAt":"2018-10-01T13:28:09.175Z"},"level":"info","timestamp":"2018-10-01T13:28:15.502Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T13:28:19.159Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-10-01T13:28:54.949Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T13:28:54.961Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-01T13:28:58.452Z"}
+{"message":"User with rizki.fikriansyah@yahoo.co.id is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-01T13:28:58.462Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-10-01T13:29:02.438Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T13:29:02.442Z"}
+{"message":"Successfully create new user","savedUser":{"userId":"5bb2212b6f3f8f38d9f9d142","firstName":"Vitri","lastName":"Indriyani","dateOfBirth":"1989-07-10T00:00:00.000Z","email":"vitriindria@gmail.com","address":{"street":"Nagelstr.","houseNumber":"20","city":"Trier","postcode":"54290","province":"Rheinland-Pfalz","country":"DE"},"bankAccount":[],"recipients":[],"transactions":[],"status":"IS_INACTIVE","createdAt":"2018-10-01T13:28:09.175Z"},"level":"info","timestamp":"2018-10-01T13:29:15.314Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-01T14:16:31.282Z"}
+{"message":"User with rizki.fikriansyah@yahoo.co.id is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-01T14:16:31.288Z"}
+{"message":"check anissa.marifatillah@yahoo.com for availability","level":"info","timestamp":"2018-10-01T14:16:59.066Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T14:16:59.083Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-01T14:17:48.490Z"}
+{"message":"User with rizki.fikriansyah@yahoo.co.id is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-01T14:17:48.498Z"}
+{"message":"check anissa.marifatillah@yahoo.com for availability","level":"info","timestamp":"2018-10-01T14:17:55.096Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T14:17:55.100Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-01T14:19:18.834Z"}
+{"message":"User with rizki.fikriansyah@yahoo.co.id is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-01T14:19:18.839Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.ida for availability","level":"info","timestamp":"2018-10-01T14:19:25.339Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T14:19:25.341Z"}
+{"message":"check anissa.marifatillah@yahoo.com for availability","level":"info","timestamp":"2018-10-01T14:19:27.624Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T14:19:27.629Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-10-01T14:30:45.158Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-01T14:30:45.162Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-01T14:30:57.638Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T14:30:57.640Z"}
+{"message":"Successfully create new user","savedUser":{"userId":"5bb22fbe6f3f8f38d9f9d143","firstName":"Muhammad Rizki","lastName":"Fikriansyah","dateOfBirth":"1992-02-20T00:00:00.000Z","email":"rizki.fikriansyah@yahoo.co.id","address":{"street":"Nagelstr.","houseNumber":"20","city":"Trier","postcode":"54290","province":"Jawa Barat","country":"ID"},"bankAccount":[],"recipients":[],"transactions":[],"status":"IS_INACTIVE","createdAt":"2018-10-01T13:28:09.175Z"},"level":"info","timestamp":"2018-10-01T14:31:26.818Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-10-01T14:32:06.386Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-01T14:32:06.391Z"}
+{"message":"check anissa.marifatillah@yahoo.com for availability","level":"info","timestamp":"2018-10-01T14:32:42.461Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T14:32:42.464Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:35:07.159Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:40:02.907Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:41:05.424Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:41:48.054Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:43:59.472Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:46:22.686Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:46:23.207Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:46:23.756Z"}
+{"message":"Cannot save user","err":{"name":"MongoError","message":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }","driver":true,"index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: transferRatesTest.users index: email_1 dup key: { : \"rizki.fikriansyah@yahoo.co.id\" }"},"level":"error","timestamp":"2018-10-01T14:50:51.220Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-01T14:51:24.858Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T14:51:24.861Z"}
+{"message":"Successfully create new user","savedUser":{"userId":"5bb2347f6f3f8f38d9f9d14d","firstName":"Muhammad Rizki","lastName":"Fikriansyah","dateOfBirth":"1992-02-20T00:00:00.000Z","email":"rizki.fikriansyah@yahoo.co.id","address":{"street":"Nagelstr.","houseNumber":"20","city":"Trier","postcode":"54290","province":"Rheinland-Pfalz","country":"DE"},"bankAccount":[],"recipients":[],"transactions":[],"status":"IS_INACTIVE","createdAt":"2018-10-01T13:28:09.175Z"},"level":"info","timestamp":"2018-10-01T14:51:43.902Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17295.78684189,"USD":1.1608332749999999},"_id":"5bb203c68fe92422f55a99fa","base":"EUR","createdAt":"2018-10-01T11:23:50.784Z","__v":0}],"level":"info","timestamp":"2018-10-01T17:02:05.564Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is logging in","level":"info","timestamp":"2018-10-01T17:24:59.911Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is logging in","level":"info","timestamp":"2018-10-01T17:51:58.655Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is logging in","level":"info","timestamp":"2018-10-01T18:29:33.898Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is logging in","level":"info","timestamp":"2018-10-01T18:31:22.952Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is logging in","level":"info","timestamp":"2018-10-01T18:32:30.730Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is logging in","level":"info","timestamp":"2018-10-01T18:53:13.656Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-01T18:54:52.302Z"}
+{"message":"User with rizki.fikriansyah@yahoo.co.id is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-01T18:54:52.306Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is logging in","level":"info","timestamp":"2018-10-01T19:15:42.817Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is logging in","level":"info","timestamp":"2018-10-01T19:21:34.151Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is logging in","level":"info","timestamp":"2018-10-01T19:22:15.292Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is logging in","level":"info","timestamp":"2018-10-01T19:23:39.535Z"}
+{"message":"Calculating Rates","level":"info","timestamp":"2018-10-01T19:24:06.536Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17286.984835479998,"USD":1.1585309000000001},"_id":"5bb274570436687df70e3d49","base":"EUR","createdAt":"2018-10-01T19:24:07.044Z","__v":0}],"level":"info","timestamp":"2018-10-01T19:24:09.065Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-10-01T19:25:04.450Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T19:25:04.460Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-10-01T19:26:22.392Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-01T19:26:22.396Z"}
+{"message":"Successfully create new user","savedUser":{"userId":"5bb275170436687df70e3d4a","firstName":"Vitri","lastName":"Indriyani","dateOfBirth":"1989-07-10T00:00:00.000Z","email":"vitriindria@gmail.com","address":{"street":"Nagelstr.","houseNumber":"20","city":"Trier","postcode":"54290","province":"Rheinland-Pfalz","country":"DE"},"bankAccount":[],"recipients":[],"transactions":[],"status":"IS_INACTIVE","createdAt":"2018-10-01T19:24:06.391Z"},"level":"info","timestamp":"2018-10-01T19:27:19.530Z"}
+{"message":"vitriindria@gmail.com is logging in","level":"info","timestamp":"2018-10-01T19:29:54.633Z"}
+{"message":"Calculating Rates","level":"info","timestamp":"2018-10-02T07:09:55.895Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17346.475561615,"USD":1.155985265},"_id":"5bb319c58b9c6204b3590162","base":"EUR","createdAt":"2018-10-02T07:09:57.484Z","__v":0}],"level":"info","timestamp":"2018-10-02T07:09:58.445Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is logging in","level":"info","timestamp":"2018-10-02T07:53:02.945Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-02T08:51:24.310Z"}
+{"message":"User with rizki.fikriansyah@yahoo.co.id is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-02T08:51:24.314Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-10-02T08:51:27.006Z"}
+{"message":"User with vitriindria@gmail.com is already in the database","isAvailable":false,"level":"error","timestamp":"2018-10-02T08:51:27.009Z"}
+{"message":"check fikriansyahmr@gmail.com for availability","level":"info","timestamp":"2018-10-02T08:51:32.233Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-02T08:51:32.236Z"}
+{"message":"Successfully create new user","savedUser":{"userId":"5bb331a78b9c6204b3590163","firstName":"Muhammad Rizki","lastName":"Fikriansyah","dateOfBirth":"1992-02-22T00:00:00.000Z","email":"fikriansyahmr@gmail.com","address":{"street":"Nagelstr.","houseNumber":"20","city":"Trier","postcode":"54290","province":"Rheinland-Pfalz","country":"DE"},"bankAccount":[],"recipients":[],"transactions":[],"status":"IS_INACTIVE","createdAt":"2018-10-02T07:09:55.606Z"},"level":"info","timestamp":"2018-10-02T08:51:51.616Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17346.475561615,"USD":1.155985265},"_id":"5bb319c58b9c6204b3590162","base":"EUR","createdAt":"2018-10-02T07:09:57.484Z","__v":0}],"level":"info","timestamp":"2018-10-02T09:32:50.998Z"}
+{"message":"check rizki.fikriansyah@yahoo.co.id for availability","level":"info","timestamp":"2018-10-02T09:33:23.960Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-02T09:33:23.964Z"}
+{"message":"Successfully create new user","savedUser":{"userId":"5bb33b7bc4d15929efb62914","firstName":"Muhammad Rizki","lastName":"Fikriansyah","dateOfBirth":"1992-02-22T00:00:00.000Z","email":"rizki.fikriansyah@yahoo.co.id","address":{"street":"Nagelstr.","houseNumber":"20","city":"Trier","postcode":"54290","province":"Rheinland-Pfalz","country":"DE"},"bankAccount":[],"recipients":[],"transactions":[],"status":"IS_INACTIVE","createdAt":"2018-10-02T09:32:50.841Z"},"level":"info","timestamp":"2018-10-02T09:33:48.140Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17346.475561615,"USD":1.155985265},"_id":"5bb319c58b9c6204b3590162","base":"EUR","createdAt":"2018-10-02T07:09:57.484Z","__v":0}],"level":"info","timestamp":"2018-10-02T09:47:52.166Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id requests confirmation","level":"info","timestamp":"2018-10-02T09:58:08.246Z"}
+{"message":"Email sent","response":{"receiver":"rizki.fikriansyah@yahoo.co.id"},"level":"info","timestamp":"2018-10-02T09:58:08.268Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id requests confirmation","level":"info","timestamp":"2018-10-02T09:58:43.122Z"}
+{"message":"Email sent","response":{"receiver":"rizki.fikriansyah@yahoo.co.id"},"level":"info","timestamp":"2018-10-02T09:58:43.127Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id requests confirmation","level":"info","timestamp":"2018-10-02T10:03:52.539Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is already confirmed","user":{"status":"IS_ACTIVE","email":"rizki.fikriansyah@yahoo.co.id"},"level":"error","timestamp":"2018-10-02T10:03:52.544Z"}
+{"message":"anissa.marifatillah@yahoo.com requests confirmation","level":"info","timestamp":"2018-10-02T10:04:11.528Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:04:11.531Z"}
+{"message":"anissa.marifatillah@yahoo.com requests confirmation","level":"info","timestamp":"2018-10-02T10:08:30.310Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:08:30.313Z"}
+{"message":"anissa.marifatillah@yahoo.com requests confirmation","level":"info","timestamp":"2018-10-02T10:08:35.742Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:08:35.745Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id requests confirmation","level":"info","timestamp":"2018-10-02T10:09:15.853Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is already confirmed","user":{"status":"IS_ACTIVE","email":"rizki.fikriansyah@yahoo.co.id"},"level":"error","timestamp":"2018-10-02T10:09:15.856Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id requests confirmation","level":"info","timestamp":"2018-10-02T10:09:56.026Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is already confirmed","user":{"status":"IS_ACTIVE","email":"rizki.fikriansyah@yahoo.co.id"},"level":"error","timestamp":"2018-10-02T10:09:56.028Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id requests confirmation","level":"info","timestamp":"2018-10-02T10:10:35.362Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is already confirmed","user":{"status":"IS_ACTIVE","email":"rizki.fikriansyah@yahoo.co.id"},"level":"error","timestamp":"2018-10-02T10:10:35.368Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id requests confirmation","level":"info","timestamp":"2018-10-02T10:11:05.006Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is already confirmed","user":{"status":"IS_ACTIVE","email":"rizki.fikriansyah@yahoo.co.id"},"level":"error","timestamp":"2018-10-02T10:11:05.014Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id requests confirmation","level":"info","timestamp":"2018-10-02T10:17:31.369Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is already confirmed","user":{"status":"IS_ACTIVE","email":"rizki.fikriansyah@yahoo.co.id"},"level":"error","timestamp":"2018-10-02T10:17:31.373Z"}
+{"message":"anissa.marifatillah@yahoo.com requests confirmation","level":"info","timestamp":"2018-10-02T10:17:50.841Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:17:50.843Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17346.475561615,"USD":1.155985265},"_id":"5bb319c58b9c6204b3590162","base":"EUR","createdAt":"2018-10-02T07:09:57.484Z","__v":0}],"level":"info","timestamp":"2018-10-02T10:18:08.145Z"}
+{"message":"anissa.marifatillah@yahoo.com requests confirmation","level":"info","timestamp":"2018-10-02T10:18:14.617Z"}
+{"message":"anissa.marifatillah@yahoo.com requests confirmation","level":"info","timestamp":"2018-10-02T10:18:15.785Z"}
+{"message":"anissa.marifatillah@yahoo.com requests confirmation","level":"info","timestamp":"2018-10-02T10:18:16.527Z"}
+{"message":"anissa.marifatillah@yahoo.com requests confirmation","level":"info","timestamp":"2018-10-02T10:18:18.094Z"}
+{"message":"anissa.marifatillah@yahoo.com requests confirmation","level":"info","timestamp":"2018-10-02T10:18:18.300Z"}
+{"message":"anissa.marifatillah@yahoo.com requests confirmation","level":"info","timestamp":"2018-10-02T10:18:18.482Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.827Z"}
+{"message":"anissa.marifatillah@yahoo.com requests confirmation","level":"info","timestamp":"2018-10-02T10:18:23.858Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.877Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.885Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.921Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.922Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.931Z"}
+{"message":"anissa.marifatillah@yahoo.com requests confirmation","level":"info","timestamp":"2018-10-02T10:18:23.935Z"}
+{"message":"anissa.marifatillah@yahoo.com requests confirmation","level":"info","timestamp":"2018-10-02T10:18:23.941Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.943Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.949Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:23.950Z"}
+{"message":"anissa.marifatillah@yahoo.com requests confirmation","level":"info","timestamp":"2018-10-02T10:18:27.250Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:18:27.257Z"}
+{"message":"anissa.marifatillah@yahoo.com requests confirmation","level":"info","timestamp":"2018-10-02T10:21:20.112Z"}
+{"message":"Can't find user with anissa.marifatillah@yahoo.com","level":"error","timestamp":"2018-10-02T10:21:20.120Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id requests confirmation","level":"info","timestamp":"2018-10-02T10:21:25.504Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is already confirmed","user":{"status":"IS_ACTIVE","email":"rizki.fikriansyah@yahoo.co.id"},"level":"error","timestamp":"2018-10-02T10:21:25.515Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is logging in","level":"info","timestamp":"2018-10-02T10:22:12.381Z"}
+{"message":"check vitriindria@gmail.com for availability","level":"info","timestamp":"2018-10-02T10:31:03.422Z"}
+{"message":"Can't find user with undefined","isAvailable":true,"level":"info","timestamp":"2018-10-02T10:31:03.425Z"}
+{"message":"Successfully create new user","savedUser":{"userId":"5bb3490bbab574348cd121e1","firstName":"Vitri","lastName":"Indriyani","dateOfBirth":"1989-07-10T00:00:00.000Z","email":"vitriindria@gmail.com","address":{"street":"Nagelstr.","houseNumber":"20","city":"Trier","postcode":"54290","province":"Rheinland-Pfalz","country":"DE"},"bankAccount":[],"recipients":[],"transactions":[],"status":"IS_INACTIVE","createdAt":"2018-10-02T10:18:07.994Z"},"level":"info","timestamp":"2018-10-02T10:31:39.781Z"}
+{"message":"vitriindria@gmail.com requests confirmation","level":"info","timestamp":"2018-10-02T10:32:26.651Z"}
+{"message":"Email sent","response":{"receiver":"vitriindria@gmail.com"},"level":"info","timestamp":"2018-10-02T10:32:26.663Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"jwt malformed"},"level":"error","timestamp":"2018-10-02T11:49:53.637Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"jwt malformed"},"level":"error","timestamp":"2018-10-02T11:50:12.790Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"jwt malformed"},"level":"error","timestamp":"2018-10-02T11:51:07.484Z"}
+{"message":"Rates is up to date","result":[{"rates":{"EUR":1,"IDR":17346.475561615,"USD":1.155985265},"_id":"5bb319c58b9c6204b3590162","base":"EUR","createdAt":"2018-10-02T07:09:57.484Z","__v":0}],"level":"info","timestamp":"2018-10-02T11:58:02.028Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"jwt malformed"},"level":"error","timestamp":"2018-10-02T12:00:47.725Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id requests confirmation","level":"info","timestamp":"2018-10-02T12:01:02.052Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is already confirmed","user":{"status":"IS_ACTIVE","email":"rizki.fikriansyah@yahoo.co.id"},"level":"error","timestamp":"2018-10-02T12:01:02.062Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"jwt malformed"},"level":"error","timestamp":"2018-10-02T12:02:13.292Z"}
+{"message":"User already confirmed","level":"error","timestamp":"2018-10-02T12:03:06.615Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"invalid signature"},"level":"error","timestamp":"2018-10-02T12:03:32.477Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"invalid token"},"level":"error","timestamp":"2018-10-02T12:03:43.686Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"invalid token"},"level":"error","timestamp":"2018-10-02T12:04:17.750Z"}
+{"message":"Error connecting to the server","err":{"name":"JsonWebTokenError","message":"invalid token"},"level":"error","timestamp":"2018-10-02T12:04:36.758Z"}
+{"message":"User already confirmed","level":"error","timestamp":"2018-10-02T12:04:49.224Z"}
+{"message":"User already confirmed","level":"error","timestamp":"2018-10-02T12:05:01.668Z"}
+{"message":"User already confirmed","level":"error","timestamp":"2018-10-02T12:05:44.452Z"}
+{"message":"User already confirmed","level":"error","timestamp":"2018-10-02T12:06:12.575Z"}
+{"message":"User already confirmed","level":"error","timestamp":"2018-10-02T12:07:16.716Z"}
+{"message":"User already confirmed","level":"error","timestamp":"2018-10-02T12:07:53.463Z"}
+{"message":"User is confirmed","user":{"email":"vitriindria@gmail.com","status":"IS_ACTIVE"},"level":"info","timestamp":"2018-10-02T12:14:24.936Z"}
+{"message":"User already confirmed","level":"error","timestamp":"2018-10-02T12:14:55.106Z"}
+{"message":"rizki.fikriansyah@yahoo.co.id is logging in","level":"info","timestamp":"2018-10-02T12:17:28.537Z"}

@@ -3,7 +3,12 @@ const bodyParser = require('body-parser');
 
 const User = require('../model/user');
 const {
-  checkForNewUser, checkForCredential, checkForEmail, validateAll, checkForConfirmToken,
+  checkForNewUser,
+  checkForCredential,
+  checkForEmail,
+  validateAll,
+  checkForConfirmToken,
+  checkForQueryEmail,
 } = require('../middleware/sanitizer');
 const { authEmail, authJWT } = require('../middleware/passport');
 const { confirmEmail } = require('../middleware/confirmation');
@@ -82,12 +87,12 @@ router.get('/confirm/:token', checkForConfirmToken, validateAll, (req, res) => {
   });
 });
 
-/*
-  Send email to the user based of the userId if user's status still IS_INACTIVE
-  If the status is not IS_INACTIVE redirect user to the profile
-
-  Route is protected and authorized only
-*/
+/**
+  *Send email to the user based of the userId if user's status still IS_INACTIVE
+  *If the status is not IS_INACTIVE redirect user to the profile
+  *
+  *Route is protected and authorized only
+  */
 router.post('/confirm', checkForEmail, validateAll, (req, res) => {
   processLogger.info(`${req.body.email} requests confirmation`);
 
@@ -152,7 +157,7 @@ router.get('/login', (req, res) => {
   });
 });
 
-router.post('/login', checkForCredential, validateAll, confirmEmail, authEmail, (req, res) => {
+router.post('/login', checkForCredential, validateAll, authEmail, confirmEmail, (req, res) => {
   processLogger.info(`${req.user.email} is logging in`);
   res.json({
     message: 'Successfully logged in',
@@ -166,6 +171,38 @@ router.get('/logout', authJWT, (req, res) => {
   const sendInfo = { message: `${user.email} is logged out` };
   processLogger.info(sendInfo);
   res.json(sendInfo);
+});
+
+router.get('/is-available', checkForQueryEmail, validateAll, (req, res) => {
+  const { email } = req.query;
+  processLogger.info(`check ${email} for availability`);
+  User.findByEmail(email, (err, user) => {
+    if (err) {
+      const sendError = {
+        message: 'Error while connecting to the database',
+        err,
+      };
+
+      processLogger.error(sendError);
+      return res.status(500).json(sendError);
+    }
+    if (user) {
+      const sendError = {
+        message: `User with ${email} is already in the database`,
+        isAvailable: false,
+      };
+
+      processLogger.error(sendError);
+      return res.json(sendError);
+    }
+    const sendInfo = {
+      message: `Can't find user with ${req.body.email}`,
+      isAvailable: true,
+    };
+
+    processLogger.info(sendInfo);
+    return res.json(sendInfo);
+  });
 });
 
 module.exports = router;
