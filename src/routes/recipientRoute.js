@@ -29,7 +29,16 @@ router.get('/', authJWT, (req, res) => {
     user: req.user.userId,
   };
 
+  let limit;
+
+  try {
+    limit = parseInt(req.query.limit, 10);
+  } catch (err) {
+    limit = null;
+  }
+
   Recipient.find(searchQuery)
+    .limit(limit)
     .then((data) => {
       if (data && data.length > 0) {
         const sendInfo = {
@@ -63,6 +72,8 @@ router.post('/', checkForNewRecipient, validateAll, authJWT, (req, res) => {
     bankAccount: recipientData.bankAccount,
     isUserAccount: recipientData.isUserAccount,
     user: req.user.userId,
+    phoneNumber: recipientData.phoneNumber,
+    otherInformation: recipientData.otherInformation,
   });
 
   newRecipient.save()
@@ -116,7 +127,7 @@ router.delete('/:id', checkParamForValidMongoID, validateAll, authJWT, (req, res
         res.status(400).send(sendError);
       } else {
         Recipient.findOneAndRemove({
-          _id: req.param.id,
+          _id: req.params.id,
           user: req.user.userId,
         }).then((deleted) => {
           if (deleted) {

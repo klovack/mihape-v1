@@ -30,7 +30,15 @@ router.use(bodyParser.json());
 router.get('/', checkForQueryTransaction, validateAll, authJWT, (req, res) => {
   const query = getSearchQuery(req);
 
-  Transaction.findByQuery(query)
+  let limit;
+
+  try {
+    limit = parseInt(req.query.limit, 10);
+  } catch (err) {
+    limit = null;
+  }
+
+  Transaction.findByQuery(query, limit)
     .then((data) => {
       if (data) {
         const sendInfo = {
@@ -114,6 +122,12 @@ router.post('/', checkForNewTransaction, validateAll, authJWT, (req, res) => {
                 amount: result.fee,
               },
               user: req.user.userId,
+              toBeTransfered: {
+                base: result.fromCurrency.base, // Amount will be set each saves
+                amount: result.combineWithFee
+                  ? result.fromCurrency.combineAmount + result.fee
+                  : result.fromCurrency.originalAmount + result.fee,
+              },
             });
 
             processLogger.info({
@@ -216,6 +230,7 @@ router.delete('/:id', checkParamForValidMongoID, validateAll, authJWT, (req, res
   }, {
     $set: {
       status: 'IS_CANCELED',
+      canceledAt: Date.now(),
     },
   }).then((oldResult) => {
     if (oldResult) {

@@ -209,6 +209,7 @@ userSchema.methods = {
       token: this.createToken(),
       userId: this._id,  // eslint-disable-line
       email: this.email,
+      name: this.firstName,
     };
   },
 

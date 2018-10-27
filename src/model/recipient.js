@@ -11,6 +11,10 @@ const recipientSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  phoneNumber: {
+    type: String,
+    required: true,
+  },
   bankAccount: {
     name: {
       type: String,
@@ -18,11 +22,14 @@ const recipientSchema = new mongoose.Schema({
     },
     accountNumber: {
       type: String,
-      required: true,
+    },
+    bankCode: {
+      type: String,
     },
     IBAN: {
       type: String,
       validate: [isValidIBAN, 'Invalid IBAN'],
+      required: true,
     },
     otherInformation: [
       {

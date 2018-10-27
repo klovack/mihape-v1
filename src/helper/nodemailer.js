@@ -28,8 +28,8 @@ const sendConfirmationMail = function sendConfirmationMail({ receiver, redirectU
   transporter.sendMail(mailOptions, callback);
 };
 
-const toCurrencyString = toBeConverted => toBeConverted.amount.toLocaleString(undefined, {
-  maximumFractionDigits: 2, minimumFractionDigits: 2, style: 'currency', currency: toBeConverted.base,
+const toCurrencyString = (amount, base) => amount.toLocaleString(undefined, {
+  maximumFractionDigits: 2, minimumFractionDigits: 2, style: 'currency', currency: base,
 });
 
 const sendNewTransactionMail = function sendTransactionMail({
@@ -39,15 +39,23 @@ const sendNewTransactionMail = function sendTransactionMail({
   const total = {
     base: transaction.fromCurrency.base,
     amount: transaction.combineWithFee
-      ? transaction.fromCurrency.amount : transaction.fromCurrency.amount + transaction.fee.amount,
+      ? transaction.fromCurrency.combineAmount + transaction.fee.amount
+      : transaction.fromCurrency.originalAmount + transaction.fee.amount,
   };
+
+  console.log(transaction);
+  console.log(total);
 
   // Adjust the money to fit to be displayed
   const display = {
-    total: toCurrencyString(total),
-    fromCurrency: toCurrencyString(transaction.fromCurrency),
-    toCurrency: toCurrencyString(transaction.toCurrency),
-    fee: toCurrencyString(transaction.fee),
+    total: toCurrencyString(total.amount, total.base),
+    fromCurrency: toCurrencyString(transaction.combineWithFee
+      ? transaction.fromCurrency.combineAmount : transaction.fromCurrency.originalAmount,
+    transaction.fromCurrency.base),
+    toCurrency: toCurrencyString(transaction.combineWithFee
+      ? transaction.toCurrency.combineAmount : transaction.toCurrency.originalAmount,
+    transaction.toCurrency.base),
+    fee: toCurrencyString(transaction.fee.amount, transaction.fee.base),
   };
 
   const mailOptions = {
@@ -74,7 +82,7 @@ const sendNewTransactionMail = function sendTransactionMail({
     `,
   };
 
-  transporter.sendMail(mailOptions, callback);
+  // transporter.sendMail(mailOptions, callback);
 };
 
 module.exports = {

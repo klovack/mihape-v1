@@ -41,7 +41,11 @@ const transactionSchema = new mongoose.Schema({
       type: String,
       required: true,
     },
-    amount: {
+    originalAmount: {
+      type: Number,
+      required: true,
+    },
+    combineAmount: {
       type: Number,
       required: true,
     },
@@ -51,7 +55,11 @@ const transactionSchema = new mongoose.Schema({
       type: String,
       required: true,
     },
-    amount: {
+    originalAmount: {
+      type: Number,
+      required: true,
+    },
+    combineAmount: {
       type: Number,
       required: true,
     },
@@ -95,7 +103,7 @@ const transactionSchema = new mongoose.Schema({
   },
 });
 
-transactionSchema.statics.findByQuery = function findByQuery(query) {
+transactionSchema.statics.findByQuery = function findByQuery(query, limit) {
   const Transaction = this;
 
   // TODO add userId as query parameter to the search in Transaction
@@ -110,6 +118,7 @@ transactionSchema.statics.findByQuery = function findByQuery(query) {
       createdAt: query.newest ? -1 : 1,
     },
   })
+    .limit(limit)
     .then((data) => {
       if (data && !isEmpty(data)) {
         return Promise.resolve(data);
@@ -125,11 +134,6 @@ transactionSchema.statics.isRecipientDeletable = function isRecipientDeletable(r
 
   return Transaction.find({
     recipient: recipientId,
-    $or: [
-      { status: 'IS_RECEIVED' },
-      { status: 'IS_PROCESSED' },
-      { status: 'IS_COMPLETED' },
-    ],
   }).then((result) => {
     if (result && result.length > 0) {
       return Promise.resolve(false);
@@ -164,7 +168,9 @@ transactionSchema.methods = {
 transactionSchema.pre('save', function beforeSave(next) {
   this.toBeTransfered = {
     base: this.fromCurrency.base,
-    amount: this.fromCurrency.amount + this.fee.amount,
+    amount: this.combineWithFee
+      ? this.fromCurrency.combineAmount + this.fee.amount
+      : this.fromCurrency.originalAmount + this.fee.amount,
   };
   return next();
 });

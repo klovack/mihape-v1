@@ -3,475 +3,564 @@
 		"name": "Afghanistan",
 		"code": "AF",
 		"continent": "Asia",
-		"filename": "afghanistan"
+		"filename": "afghanistan",
+		"supported": false
 	},
 	{
 		"name": "Åland Islands",
     "continent": "Europe",
-		"code": "AX"
+		"code": "AX",
+		"supported": false
 	},
 	{
 		"name": "Albania",
 		"code": "AL",
 		"continent": "Europe",
-		"filename": "albania"
+		"filename": "albania",
+		"supported": false
 	},
 	{
 		"name": "Algeria",
 		"code": "DZ",
 		"continent": "Africa",
-		"filename": "algeria"
+		"filename": "algeria",
+		"supported": false
 	},
 	{
 		"name": "American Samoa",
 		"code": "AS",
-		"continent": "Oceania"
+		"continent": "Oceania",
+		"supported": false
 	},
 	{
 		"name": "Andorra",
 		"code": "AD",
 		"continent": "Europe",
-		"filename": "andorra"
+		"filename": "andorra",
+		"supported": true
 	},
 	{
 		"name": "Angola",
 		"code": "AO",
 		"continent": "Africa",
-		"filename": "angola"
+		"filename": "angola",
+		"supported": false
 	},
 	{
 		"name": "Anguilla",
 		"code": "AI",
-		"continent": "North America"
+		"continent": "North America",
+		"supported": false
 	},
 	{
 		"name": "Antarctica",
-        "continent": "Antarctica",
-		"code": "AQ"
+		"continent": "Antarctica",
+		"code": "AQ",
+		"supported": false
 	},
 	{
 		"name": "Antigua and Barbuda",
 		"code": "AG",
 		"continent": "North America",
-		"filename": "antigua-and-barbuda"
+		"filename": "antigua-and-barbuda",
+		"supported": false
 	},
 	{
 		"name": "Argentina",
 		"code": "AR",
 		"continent": "South America",
-		"filename": "argentina"
+		"filename": "argentina",
+		"supported": false
 	},
 	{
 		"name": "Armenia",
 		"code": "AM",
 		"continent": "Europe",
-		"filename": "armenia"
+		"filename": "armenia",
+		"supported": false
 	},
 	{
 		"name": "Aruba",
 		"code": "AW",
-		"continent": "Europe"
+		"continent": "Europe",
+		"supported": false
 	},
 	{
 		"name": "Australia",
 		"code": "AU",
 		"continent": "Oceania",
-		"filename": "australia"
+		"filename": "australia",
+		"supported": false
 	},
 	{
 		"name": "Austria",
 		"code": "AT",
 		"continent": "Europe",
-		"filename": "austria"
+		"filename": "austria",
+		"supported": true,
+		"callingCode": "+43"
 	},
 	{
 		"name": "Azerbaijan",
 		"code": "AZ",
 		"continent": "Europe",
-		"filename": "azerbaijan"
+		"filename": "azerbaijan",
+		"supported": false
 	},
 	{
 		"name": "Bahamas",
 		"code": "BS",
 		"continent": "North America",
-		"filename": "bahamas"
+		"filename": "bahamas",
+		"supported": false
 	},
 	{
 		"name": "Bahrain",
 		"code": "BH",
 		"continent": "Asia",
-		"filename": "bahrain"
+		"filename": "bahrain",
+		"supported": false
 	},
 	{
 		"name": "Bangladesh",
 		"code": "BD",
 		"continent": "Asia",
-		"filename": "bangladesh"
+		"filename": "bangladesh",
+		"supported": false
 	},
 	{
 		"name": "Barbados",
 		"code": "BB",
 		"continent": "North America",
-		"filename": "barbados"
+		"filename": "barbados",
+		"supported": false
 	},
 	{
 		"name": "Belarus",
 		"code": "BY",
 		"continent": "Europe",
-		"filename": "belarus"
+		"filename": "belarus",
+		"supported": false
 	},
 	{
 		"name": "Belgium",
 		"code": "BE",
 		"continent": "Europe",
-		"filename": "belgium"
+		"filename": "belgium",
+		"supported": true,
+		"callingCode": "+32"
 	},
 	{
 		"name": "Belize",
 		"code": "BZ",
 		"continent": "North America",
-		"filename": "belize"
+		"filename": "belize",
+		"supported": false
 	},
 	{
 		"name": "Benin",
 		"code": "BJ",
 		"continent": "Africa",
-		"filename": "benin"
+		"filename": "benin",
+		"supported": false
 	},
 	{
 		"name": "Bermuda",
 		"code": "BM",
-		"continent": "North America"
+		"continent": "North America",
+		"supported": false
 	},
 	{
 		"name": "Bhutan",
 		"code": "BT",
 		"continent": "Asia",
-		"filename": "bhutan"
+		"filename": "bhutan",
+		"supported": false
 	},
 	{
 		"name": "Bolivia",
 		"code": "BO",
 		"continent": "South America",
-		"filename": "bolivia"
+		"filename": "bolivia",
+		"supported": false
 	},
 	{
 		"name": "Bosnia and Herzegovina",
 		"code": "BA",
 		"continent": "Europe",
-		"filename": "bosnia-and-herzegovina"
+		"filename": "bosnia-and-herzegovina",
+		"supported": false
 	},
 	{
 		"name": "Botswana",
 		"code": "BW",
 		"continent": "Africa",
-		"filename": "botswana"
+		"filename": "botswana",
+		"supported": false
 	},
 	{
 		"name": "Bouvet Island",
 		"continent": "Antarctica",
-		"code": "BV"
+		"code": "BV",
+		"supported": false
 	},
 	{
 		"name": "Brazil",
 		"code": "BR",
 		"continent": "South America",
-		"filename": "brazil"
+		"filename": "brazil",
+		"supported": false
 	},
 	{
 		"name": "British Indian Ocean Territory",
 		"continent": "Africa",
-		"code": "IO"
+		"code": "IO",
+		"supported": false
 	},
 	{
 		"name": "Brunei Darussalam",
 		"code": "BN",
 		"continent": "Asia",
-		"filename": "brunei-darussalam"
+		"filename": "brunei-darussalam",
+		"supported": false
 	},
 	{
 		"name": "Bulgaria",
 		"code": "BG",
 		"continent": "Europe",
-		"filename": "bulgaria"
+		"filename": "bulgaria",
+		"supported": false
 	},
 	{
 		"name": "Burkina Faso",
 		"code": "BF",
 		"continent": "Africa",
-		"filename": "burkina-faso"
+		"filename": "burkina-faso",
+		"supported": false
 	},
 	{
 		"name": "Burundi",
 		"code": "BI",
 		"continent": "Africa",
-		"filename": "burundi"
+		"filename": "burundi",
+		"supported": false
 	},
 	{
 		"name": "Cambodia",
 		"code": "KH",
 		"continent": "Asia",
-		"filename": "cambodia"
+		"filename": "cambodia",
+		"supported": false
 	},
 	{
 		"name": "Cameroon",
 		"code": "CM",
 		"continent": "Africa",
-		"filename": "cameroon"
+		"filename": "cameroon",
+		"supported": false
 	},
 	{
 		"name": "Canada",
 		"code": "CA",
 		"continent": "North America",
-		"filename": "canada"
+		"filename": "canada",
+		"supported": false
 	},
 	{
 		"name": "Cape Verde",
 		"code": "CV",
 		"continent": "Africa",
-		"filename": "cape-verde"
+		"filename": "cape-verde",
+		"supported": false
 	},
 	{
 		"name": "Cayman Islands",
 		"code": "KY",
-		"continent": "North America"
+		"continent": "North America",
+		"supported": false
 	},
 	{
 		"name": "Central African Republic",
 		"code": "CF",
 		"continent": "Africa",
-		"filename": "central-african-republic"
+		"filename": "central-african-republic",
+		"supported": false
 	},
 	{
 		"name": "Chad",
 		"code": "TD",
 		"continent": "Africa",
-		"filename": "chad"
+		"filename": "chad",
+		"supported": false
 	},
 	{
 		"name": "Chile",
 		"code": "CL",
 		"continent": "South America",
-		"filename": "chile"
+		"filename": "chile",
+		"supported": false
 	},
 	{
 		"name": "China",
 		"code": "CN",
 		"continent": "Asia",
-		"filename": "china"
+		"filename": "china",
+		"supported": false
 	},
 	{
 		"name": "Christmas Island",
 		"code": "CX",
-		"continent": "Oceania"
+		"continent": "Oceania",
+		"supported": false
 	},
 	{
 		"name": "Cocos (Keeling) Islands",
 		"code": "CC",
-		"continent": "Oceania"
+		"continent": "Oceania",
+		"supported": false
 	},
 	{
 		"name": "Colombia",
 		"code": "CO",
 		"continent": "South America",
-		"filename": "colombia"
+		"filename": "colombia",
+		"supported": false
 	},
 	{
 		"name": "Comoros",
 		"code": "KM",
 		"continent": "Africa",
-		"filename": "comoros"
+		"filename": "comoros",
+		"supported": false
 	},
 	{
 		"name": "Congo",
 		"code": "CG",
 		"continent": "Africa",
-		"filename": "congo"
+		"filename": "congo",
+		"supported": false
 	},
 	{
 		"name": "Congo, The Democratic Republic of the",
 		"code": "CD",
 		"continent": "Africa",
-		"filename": "congo-the-democratic-republic-of-the"
+		"filename": "congo-the-democratic-republic-of-the",
+		"supported": false
 	},
 	{
 		"name": "Cook Islands",
 		"continent": "Oceania",        
-		"code": "CK"
+		"code": "CK",
+		"supported": false
 	},
 	{
 		"name": "Costa Rica",
 		"code": "CR",
 		"continent": "North America",
-		"filename": "costa-rica"
+		"filename": "costa-rica",
+		"supported": false
 	},
 	{
 		"name": "Côte d'Ivoire, Republic of",
 		"code": "CI",
 		"continent": "Africa",
-		"filename": "cote-d-ivoire-republic-of"
+		"filename": "cote-d-ivoire-republic-of",
+		"supported": false
 	},
 	{
 		"name": "Croatia",
 		"code": "HR",
 		"continent": "Europe",
-		"filename": "croatia"
+		"filename": "croatia",
+		"supported": false
 	},
 	{
 		"name": "Cuba",
 		"code": "CU",
 		"continent": "North America",
-		"filename": "cuba"
+		"filename": "cuba",
+		"supported": false
 	},
 	{
 		"name": "Curaçao",
 		"code": "CW",
-		"continent": "Europe"
+		"continent": "Europe",
+		"supported": false
 	},
 	{
 		"name": "Cyprus",
 		"code": "CY",
 		"continent": "Europe",
-		"filename": "cyprus"
+		"filename": "cyprus",
+		"supported": true,
+		"callingCode": "+357"
 	},
 	{
 		"name": "Czech Republic",
 		"code": "CZ",
 		"continent": "Europe",
-		"filename": "czech-republic"
+		"filename": "czech-republic",
+		"supported": false
 	},
 	{
 		"name": "Denmark",
 		"code": "DK",
 		"continent": "Europe",
-		"filename": "denmark"
+		"filename": "denmark",
+		"supported": false
 	},
 	{
 		"name": "Djibouti",
 		"code": "DJ",
 		"continent": "Africa",
-		"filename": "djibouti"
+		"filename": "djibouti",
+		"supported": false
 	},
 	{
 		"name": "Dominica",
 		"code": "DM",
 		"continent": "North America",
-		"filename": "dominica"
+		"filename": "dominica",
+		"supported": false
 	},
 	{
 		"name": "Dominican Republic",
 		"code": "DO",
 		"continent": "North America",
-		"filename": "dominican-republic"
+		"filename": "dominican-republic",
+		"supported": false
 	},
 	{
 		"name": "Ecuador",
 		"code": "EC",
 		"continent": "South America",
-		"filename": "ecuador"
+		"filename": "ecuador",
+		"supported": false
 	},
 	{
 		"name": "Egypt",
 		"code": "EG",
 		"continent": "Africa",
-		"filename": "egypt"
+		"filename": "egypt",
+		"supported": false
 	},
 	{
 		"name": "El Salvador",
 		"code": "SV",
 		"continent": "North America",
-		"filename": "el-salvador"
+		"filename": "el-salvador",
+		"supported": false
 	},
 	{
 		"name": "Equatorial Guinea",
 		"code": "GQ",
 		"continent": "Africa",
-		"filename": "equatorial-guinea"
+		"filename": "equatorial-guinea",
+		"supported": false
 	},
 	{
 		"name": "Eritrea",
 		"code": "ER",
 		"continent": "Africa",
-		"filename": "eritrea"
+		"filename": "eritrea",
+		"supported": false
 	},
 	{
 		"name": "Estonia",
 		"code": "EE",
 		"continent": "Europe",
-		"filename": "estonia"
+		"filename": "estonia",
+		"supported": true,
+		"callingCode": "+372"
 	},
 	{
 		"name": "Ethiopia",
 		"code": "ET",
 		"continent": "Africa",
-		"filename": "ethiopia"
+		"filename": "ethiopia",
+		"supported": false
 	},
 	{
 		"name": "Falkland Islands (Malvinas)",
 		"code": "FK",
-		"continent": "South America"
+		"continent": "South America",
+		"supported": false
 	},
 	{
 		"name": "Faroe Islands",
 		"continent": "Europe",        
-		"code": "FO"
+		"code": "FO",
+		"supported": false
 	},
 	{
 		"name": "Fiji",
 		"code": "FJ",
 		"continent": "Oceania",
-		"filename": "fiji"
+		"filename": "fiji",
+		"supported": false
 	},
 	{
 		"name": "Finland",
 		"code": "FI",
 		"continent": "Europe",
-		"filename": "finland"
+		"filename": "finland",
+		"supported": true,
+		"callingCode": "+358"
 	},
 	{
 		"name": "France",
 		"code": "FR",
 		"continent": "Europe",
-		"filename": "france"
+		"filename": "france",
+		"supported": true,
+		"callingCode": "+33"
 	},
 	{
 		"name": "French Guiana",
 		"code": "GF",
-		"continent": "South America"
+		"continent": "South America",
+		"supported": false
 	},
 	{
 		"name": "French Polynesia",
 		"code": "PF",
-		"continent": "Oceania"
+		"continent": "Oceania",
+		"supported": false
 	},
 	{
 		"name": "French Southern Territories",
-        "continent": "Antarctica",
-		"code": "TF"
+		"continent": "Antarctica",
+		"code": "TF",
+		"supported": false
 	},
 	{
 		"name": "Gabon",
 		"code": "GA",
 		"continent": "Africa",
-		"filename": "gabon"
+		"filename": "gabon",
+		"supported": false
 	},
 	{
 		"name": "Gambia",
 		"code": "GM",
 		"continent": "Africa",
-		"filename": "gambia"
+		"filename": "gambia",
+		"supported": false
 	},
 	{
 		"name": "Georgia",
 		"code": "GE",
 		"continent": "Europe",
-		"filename": "georgia"
+		"filename": "georgia",
+		"supported": false
 	},
 	{
 		"name": "Germany",
 		"code": "DE",
 		"continent": "Europe",
-		"filename": "germany"
+		"filename": "germany",
+		"supported": true,
+		"callingCode": "+49"
 	},
 	{
 		"name": "Ghana",
@@ -482,955 +571,1136 @@
 	{
 		"name": "Gibraltar",
 		"continent": "Europe",
-		"code": "GI"
+		"code": "GI",
+		"supported": false
 	},
 	{
 		"name": "Greece",
 		"code": "GR",
 		"continent": "Europe",
-		"filename": "greece"
+		"filename": "greece",
+		"supported": true,
+		"callingCode": "+30"
 	},
 	{
 		"name": "Greenland",
 		"code": "GL",
 		"continent": "North America",
-		"filename": "greenland"
+		"filename": "greenland",
+		"supported": false
 	},
 	{
 		"name": "Grenada",
 		"code": "GD",
 		"continent": "North America",
-		"filename": "grenada"
+		"filename": "grenada",
+		"supported": false
 	},
 	{
 		"name": "Guadeloupe",
 		"code": "GP",
-		"continent": "North America"
+		"continent": "North America",
+		"supported": false
 	},
 	{
 		"name": "Guam",
 		"code": "GU",
-		"continent": "Oceania"
+		"continent": "Oceania",
+		"supported": false
 	},
 	{
 		"name": "Guatemala",
 		"code": "GT",
 		"continent": "North America",
-		"filename": "guatemala"
+		"filename": "guatemala",
+		"supported": false
 	},
 	{
 		"name": "Guernsey",
 		"continent": "Europe",
-		"code": "GG"
+		"code": "GG",
+		"supported": false
 	},
 	{
 		"name": "Guinea",
 		"code": "GN",
 		"continent": "Africa",
-		"filename": "guinea"
+		"filename": "guinea",
+		"supported": false
 	},
 	{
 		"name": "Guinea-Bissau",
 		"code": "GW",
 		"continent": "Africa",
-		"filename": "guinea-bissau"
+		"filename": "guinea-bissau",
+		"supported": false
 	},
 	{
 		"name": "Guyana",
 		"code": "GY",
 		"continent": "South America",
-		"filename": "guyana"
+		"filename": "guyana",
+		"supported": false
 	},
 	{
 		"name": "Haiti",
 		"code": "HT",
 		"continent": "North America",
-		"filename": "haiti"
+		"filename": "haiti",
+		"supported": false
 	},
 	{
 		"name": "Heard Island and Mcdonald Islands",
 		"continent": "Oceania",        
-		"code": "HM"
+		"code": "HM",
+		"supported": false
 	},
 	{
 		"name": "Holy See (Vatican City State)",
 		"code": "VA",
-		"continent": "Europe"
+		"continent": "Europe",
+		"supported": true,
+		"callingCode": "+39"
 	},
 	{
 		"name": "Honduras",
 		"code": "HN",
 		"continent": "North America",
-		"filename": "honduras"
+		"filename": "honduras",
+		"supported": false
 	},
 	{
 		"name": "Hong Kong",
 		"code": "HK",
 		"continent": "Asia",
-		"filename": "hong-kong"
+		"filename": "hong-kong",
+		"supported": false
 	},
 	{
 		"name": "Hungary",
 		"code": "HU",
 		"continent": "Europe",
-		"filename": "hungary"
+		"filename": "hungary",
+		"supported": false
 	},
 	{
 		"name": "Iceland",
 		"code": "IS",
 		"continent": "Europe",
-		"filename": "iceland"
+		"filename": "iceland",
+		"supported": false
 	},
 	{
 		"name": "India",
 		"code": "IN",
 		"continent": "Asia",
-		"filename": "india"
+		"filename": "india",
+		"supported": false
 	},
 	{
 		"name": "Indonesia",
 		"code": "ID",
 		"continent": "Asia",
-		"filename": "indonesia"
+		"filename": "indonesia",
+		"supported": false
 	},
 	{
 		"name": "Iran, Islamic Republic Of",
 		"code": "IR",
 		"continent": "Asia",
-		"filename": "iran-islamic-republic-of"
+		"filename": "iran-islamic-republic-of",
+		"supported": false
 	},
 	{
 		"name": "Iraq",
 		"code": "IQ",
 		"continent": "Asia",
-		"filename": "iraq"
+		"filename": "iraq",
+		"supported": false
 	},
 	{
 		"name": "Ireland",
 		"code": "IE",
 		"continent": "Europe",
-		"filename": "ireland"
+		"filename": "ireland",
+		"supported": true,
+		"callingCode": "+353"
 	},
 	{
 		"name": "Isle of Man",
 		"continent": "Europe",
-		"code": "IM"
+		"code": "IM",
+		"supported": false
 	},
 	{
 		"name": "Israel",
 		"code": "IL",
 		"continent": "Asia",
-		"filename": "israel"
+		"filename": "israel",
+		"supported": false
 	},
 	{
 		"name": "Italy",
 		"code": "IT",
 		"continent": "Europe",
-		"filename": "italy"
+		"filename": "italy",
+		"supported": true,
+		"callingCode": "+39"
 	},
 	{
 		"name": "Jamaica",
 		"code": "JM",
 		"continent": "North America",
-		"filename": "jamaica"
+		"filename": "jamaica",
+		"supported": false
 	},
 	{
 		"name": "Japan",
 		"code": "JP",
 		"continent": "Asia",
-		"filename": "japan"
+		"filename": "japan",
+		"supported": false
 	},
 	{
 		"name": "Jersey",
 		"continent": "Europe",        
-		"code": "JE"
+		"code": "JE",
+		"supported": false
 	},
 	{
 		"name": "Jordan",
 		"code": "JO",
 		"continent": "Asia",
-		"filename": "jordan"
+		"filename": "jordan",
+		"supported": false
 	},
 	{
 		"name": "Kazakhstan",
 		"code": "KZ",
 		"continent": "Europe",
-		"filename": "kazakhstan"
+		"filename": "kazakhstan",
+		"supported": false
 	},
 	{
 		"name": "Kenya",
 		"code": "KE",
 		"continent": "Africa",
-		"filename": "kenya"
+		"filename": "kenya",
+		"supported": false
 	},
 	{
 		"name": "Kiribati",
 		"code": "KI",
 		"continent": "Oceania",
-		"filename": "kiribati"
+		"filename": "kiribati",
+		"supported": false
 	},
 	{
 		"name": "Korea, Democratic People's Republic of",
 		"code": "KP",
 		"continent": "Asia",
-		"filename": "korea-democratic-people-s-republic-of"
+		"filename": "korea-democratic-people-s-republic-of",
+		"supported": false
 	},
 	{
 		"name": "Korea, Republic of",
 		"code": "KR",
 		"continent": "Asia",
-		"filename": "korea-republic-of"
+		"filename": "korea-republic-of",
+		"supported": false
 	},
 	{
 		"name": "Kuwait",
 		"code": "KW",
 		"continent": "Asia",
-		"filename": "kuwait"
+		"filename": "kuwait",
+		"supported": false
 	},
 	{
 		"name": "Kyrgyzstan",
 		"code": "KG",
 		"continent": "Asia",
-		"filename": "kyrgyzstan"
+		"filename": "kyrgyzstan",
+		"supported": false
 	},
 	{
 		"name": "Lao People's Democratic Republic",
 		"code": "LA",
 		"continent": "Asia",
-		"filename": "lao-people-s-democratic-republic"
+		"filename": "lao-people-s-democratic-republic",
+		"supported": false
 	},
 	{
 		"name": "Latvia",
 		"code": "LV",
 		"continent": "Europe",
-		"filename": "latvia"
+		"filename": "latvia",
+		"supported": true,
+		"callingCode": "+371"
 	},
 	{
 		"name": "Lebanon",
 		"code": "LB",
 		"continent": "Asia",
-		"filename": "lebanon"
+		"filename": "lebanon",
+		"supported": false
 	},
 	{
 		"name": "Lesotho",
 		"code": "LS",
 		"continent": "Africa",
-		"filename": "lesotho"
+		"filename": "lesotho",
+		"supported": false
 	},
 	{
 		"name": "Liberia",
 		"code": "LR",
 		"continent": "Africa",
-		"filename": "liberia"
+		"filename": "liberia",
+		"supported": false
 	},
 	{
 		"name": "Libyan Arab Jamahiriya",
 		"code": "LY",
 		"continent": "Africa",
-		"filename": "libyan-arab-jamahiriya"
+		"filename": "libyan-arab-jamahiriya",
+		"supported": false
 	},
 	{
 		"name": "Liechtenstein",
 		"code": "LI",
 		"continent": "Europe",
-		"filename": "liechtenstein"
+		"filename": "liechtenstein",
+		"supported": false
 	},
 	{
 		"name": "Lithuania",
 		"code": "LT",
 		"continent": "Europe",
-		"filename": "lithuania"
+		"filename": "lithuania",
+		"supported": true,
+		"callingCode": "+370"
 	},
 	{
 		"name": "Luxembourg",
 		"code": "LU",
 		"continent": "Europe",
-		"filename": "luxembourg"
+		"filename": "luxembourg",
+		"supported": true,
+		"callingCode": "+352"
 	},
 	{
 		"name": "Macao",
 		"code": "MO",
-		"continent": "Asia"
+		"continent": "Asia",
+		"supported": false
 	},
 	{
 		"name": "Macedonia, The Former Yugoslav Republic of",
 		"code": "MK",
 		"continent": "Europe",
-		"filename": "macedonia-the-former-yugoslav-republic-of"
+		"filename": "macedonia-the-former-yugoslav-republic-of",
+		"supported": false
 	},
 	{
 		"name": "Madagascar",
 		"code": "MG",
 		"continent": "Africa",
-		"filename": "madagascar"
+		"filename": "madagascar",
+		"supported": false
 	},
 	{
 		"name": "Malawi",
 		"code": "MW",
 		"continent": "Africa",
-		"filename": "malawi"
+		"filename": "malawi",
+		"supported": false
 	},
 	{
 		"name": "Malaysia",
 		"code": "MY",
 		"continent": "Asia",
-		"filename": "malaysia"
+		"filename": "malaysia",
+		"supported": false
 	},
 	{
 		"name": "Maldives",
 		"code": "MV",
 		"continent": "Asia",
-		"filename": "maldives"
+		"filename": "maldives",
+		"supported": false
 	},
 	{
 		"name": "Mali",
 		"code": "ML",
 		"continent": "Africa",
-		"filename": "mali"
+		"filename": "mali",
+		"supported": false
 	},
 	{
 		"name": "Malta",
 		"code": "MT",
 		"continent": "Europe",
-		"filename": "malta"
+		"filename": "malta",
+		"supported": true,
+		"callingCode": "+356"
 	},
 	{
 		"name": "Marshall Islands",
 		"code": "MH",
 		"continent": "Oceania",
-		"filename": "marshall-islands"
+		"filename": "marshall-islands",
+		"supported": false
 	},
 	{
 		"name": "Martinique",
 		"code": "MQ",
-		"continent": "North America"
+		"continent": "North America",
+		"supported": false
 	},
 	{
 		"name": "Mauritania",
 		"code": "MR",
 		"continent": "Africa",
-		"filename": "mauritania"
+		"filename": "mauritania",
+		"supported": false
 	},
 	{
 		"name": "Mauritius",
 		"code": "MU",
 		"continent": "Africa",
-		"filename": "mauritius"
+		"filename": "mauritius",
+		"supported": false
 	},
 	{
 		"name": "Mayotte",
 		"code": "YT",
-		"continent": "Africa"
+		"continent": "Africa",
+		"supported": false
 	},
 	{
 		"name": "Mexico",
 		"code": "MX",
 		"continent": "North America",
-		"filename": "mexico"
+		"filename": "mexico",
+		"supported": false
 	},
 	{
 		"name": "Micronesia, Federated States of",
 		"code": "FM",
 		"continent": "Oceania",
-		"filename": "micronesia-federated-states-of"
+		"filename": "micronesia-federated-states-of",
+		"supported": false
 	},
 	{
 		"name": "Moldova, Republic of",
 		"code": "MD",
 		"continent": "Europe",
-		"filename": "moldova-republic-of"
+		"filename": "moldova-republic-of",
+		"supported": false
 	},
 	{
 		"name": "Monaco",
 		"code": "MC",
 		"continent": "Europe",
-		"filename": "monaco"
+		"filename": "monaco",
+		"supported": true,
+		"callingCode": "+377"
 	},
 	{
 		"name": "Mongolia",
 		"code": "MN",
 		"continent": "Asia",
-		"filename": "mongolia"
+		"filename": "mongolia",
+		"supported": false
 	},
 	{
 		"name": "Montenegro",
 		"code": "ME",
 		"continent": "Europe",
-		"filename": "montenegro"
+		"filename": "montenegro",
+		"supported": true,
+		"callingCode": "+382"
 	},
 	{
 		"name": "Montserrat",
 		"code": "MS",
-		"continent": "North America"
+		"continent": "North America",
+		"supported": false
 	},
 	{
 		"name": "Morocco",
 		"code": "MA",
 		"continent": "Africa",
-		"filename": "morocco"
+		"filename": "morocco",
+		"supported": false
 	},
 	{
 		"name": "Mozambique",
 		"code": "MZ",
 		"continent": "Africa",
-		"filename": "mozambique"
+		"filename": "mozambique",
+		"supported": false
 	},
 	{
 		"name": "Myanmar",
 		"code": "MM",
 		"continent": "Asia",
-		"filename": "myanmar"
+		"filename": "myanmar",
+		"supported": false
 	},
 	{
 		"name": "Namibia",
 		"code": "NA",
 		"continent": "Africa",
-		"filename": "namibia"
+		"filename": "namibia",
+		"supported": false
 	},
 	{
 		"name": "Nauru",
 		"code": "NR",
 		"continent": "Oceania",
-		"filename": "nauru"
+		"filename": "nauru",
+		"supported": false
 	},
 	{
 		"name": "Nepal",
 		"code": "NP",
 		"continent": "Asia",
-		"filename": "nepal"
+		"filename": "nepal",
+		"supported": false
 	},
 	{
 		"name": "Netherlands",
 		"code": "NL",
 		"continent": "Europe",
-		"filename": "netherlands"
+		"filename": "netherlands",
+		"supported": true,
+		"callingCode": "+31"
 	},
 	{
 		"name": "Netherlands Antilles",
 		"code": "AN",
-		"continent": "Europe"
+		"continent": "Europe",
+		"supported": true,
+		"callingCode": "+31"
 	},
 	{
 		"name": "New Caledonia",
 		"code": "NC",
-		"continent": "Oceania"
+		"continent": "Oceania",
+		"supported": false
 	},
 	{
 		"name": "New Zealand",
 		"code": "NZ",
 		"continent": "Oceania",
-		"filename": "new-zealand"
+		"filename": "new-zealand",
+		"supported": false
 	},
 	{
 		"name": "Nicaragua",
 		"code": "NI",
 		"continent": "North America",
-		"filename": "nicaragua"
+		"filename": "nicaragua",
+		"supported": false
 	},
 	{
 		"name": "Niger",
 		"code": "NE",
 		"continent": "Africa",
-		"filename": "niger"
+		"filename": "niger",
+		"supported": false
 	},
 	{
 		"name": "Nigeria",
 		"code": "NG",
 		"continent": "Africa",
-		"filename": "nigeria"
+		"filename": "nigeria",
+		"supported": false
 	},
 	{
 		"name": "Niue",
-        "continent": "Oceania",
-		"code": "NU"
+		"continent": "Oceania",
+		"code": "NU",
+		"supported": false
 	},
 	{
 		"name": "Norfolk Island",
 		"code": "NF",
-		"continent": "Oceania"
+		"continent": "Oceania",
+		"supported": false
 	},
 	{
 		"name": "Northern Mariana Islands",
 		"continent": "Oceania",        
-		"code": "MP"
+		"code": "MP",
+		"supported": false
 	},
 	{
 		"name": "Norway",
 		"code": "NO",
 		"continent": "Europe",
-		"filename": "norway"
+		"filename": "norway",
+		"supported": false
 	},
 	{
 		"name": "Oman",
 		"code": "OM",
 		"continent": "Asia",
-		"filename": "oman"
+		"filename": "oman",
+		"supported": false
 	},
 	{
 		"name": "Pakistan",
 		"code": "PK",
 		"continent": "Asia",
-		"filename": "pakistan"
+		"filename": "pakistan",
+		"supported": false
 	},
 	{
 		"name": "Palau",
 		"code": "PW",
 		"continent": "Oceania",
-		"filename": "palau"
+		"filename": "palau",
+		"supported": false
 	},
 	{
 		"name": "Palestinian Territory, Occupied",
 		"code": "PS",
 		"continent": "Asia",
-		"filename": "palestinian-territory-occupied"
+		"filename": "palestinian-territory-occupied",
+		"supported": false
 	},
 	{
 		"name": "Panama",
 		"code": "PA",
 		"continent": "North America",
-		"filename": "panama"
+		"filename": "panama",
+		"supported": false
 	},
 	{
 		"name": "Papua New Guinea",
 		"code": "PG",
 		"continent": "Oceania",
-		"filename": "papua-new-guinea"
+		"filename": "papua-new-guinea",
+		"supported": false
 	},
 	{
 		"name": "Paraguay",
 		"code": "PY",
 		"continent": "South America",
-		"filename": "paraguay"
+		"filename": "paraguay",
+		"supported": false
 	},
 	{
 		"name": "Peru",
 		"code": "PE",
 		"continent": "South America",
-		"filename": "peru"
+		"filename": "peru",
+		"supported": false
 	},
 	{
 		"name": "Philippines",
 		"code": "PH",
 		"continent": "Asia",
-		"filename": "philippines"
+		"filename": "philippines",
+		"supported": false
 	},
 	{
 		"name": "Pitcairn",
 		"continent": "Oceania",
-		"code": "PN"
+		"code": "PN",
+		"supported": false
 	},
 	{
 		"name": "Poland",
 		"code": "PL",
 		"continent": "Europe",
-		"filename": "poland"
+		"filename": "poland",
+		"supported": false
 	},
 	{
 		"name": "Portugal",
 		"code": "PT",
 		"continent": "Europe",
-		"filename": "portugal"
+		"filename": "portugal",
+		"supported": true,
+		"callingCode": "+351"
 	},
 	{
 		"name": "Puerto Rico",
 		"code": "PR",
-		"continent": "North America"
+		"continent": "North America",
+		"supported": false
 	},
 	{
 		"name": "Qatar",
 		"code": "QA",
 		"continent": "Asia",
-		"filename": "qatar"
+		"filename": "qatar",
+		"supported": false
 	},
 	{
 		"name": "Réunion",
 		"code": "RE",
-		"continent": "Africa"
+		"continent": "Africa",
+		"supported": false
 	},
 	{
 		"name": "Romania",
 		"code": "RO",
 		"continent": "Europe",
-		"filename": "romania"
+		"filename": "romania",
+		"supported": false
 	},
 	{
 		"name": "Russian Federation",
 		"code": "RU",
 		"continent": "Europe",
-		"filename": "russian-federation"
+		"filename": "russian-federation",
+		"supported": false
 	},
 	{
 		"name": "Rwanda",
 		"code": "RW",
 		"continent": "Africa",
-		"filename": "rwanda"
+		"filename": "rwanda",
+		"supported": false
 	},
 	{
 		"name": "Saint Helena, Ascension and Tristan da Cunha",
 		"code": "SH",
 		"continent": "Africa",
-		"filename": "saint-helena-ascension-and-tristan-da-cunha"
+		"filename": "saint-helena-ascension-and-tristan-da-cunha",
+		"supported": false
 	},
 	{
 		"name": "Saint Kitts and Nevis",
 		"code": "KN",
 		"continent": "North America",
-		"filename": "saint-kitts-and-nevis"
+		"filename": "saint-kitts-and-nevis",
+		"supported": false
 	},
 	{
 		"name": "Saint Lucia",
 		"code": "LC",
 		"continent": "North America",
-		"filename": "saint-lucia"
+		"filename": "saint-lucia",
+		"supported": false
 	},
 	{
 		"name": "Saint Pierre and Miquelon",
 		"code": "PM",
-		"continent": "North America"
+		"continent": "North America",
+		"supported": false
 	},
 	{
 		"name": "Saint Vincent and the Grenadines",
 		"code": "VC",
 		"continent": "North America",
-		"filename": "saint-vincent-and-the-grenadines"
+		"filename": "saint-vincent-and-the-grenadines",
+		"supported": false
 	},
 	{
 		"name": "Samoa",
 		"code": "WS",
 		"continent": "Oceania",
-		"filename": "samoa"
+		"filename": "samoa",
+		"supported": false
 	},
 	{
 		"name": "San Marino",
 		"code": "SM",
 		"continent": "Europe",
-		"filename": "san-marino"
+		"filename": "san-marino",
+		"supported": true,
+		"callingCode": "+378"
 	},
 	{
 		"name": "São Tomé and Príncipe",
 		"code": "ST",
 		"continent": "Africa",
-		"filename": "sao-tome-and-principe"
+		"filename": "sao-tome-and-principe",
+		"supported": false
 	},
 	{
 		"name": "Saudi Arabia",
 		"code": "SA",
 		"continent": "Asia",
-		"filename": "saudi-arabia"
+		"filename": "saudi-arabia",
+		"supported": false
 	},
 	{
 		"name": "Senegal",
 		"code": "SN",
 		"continent": "Africa",
-		"filename": "senegal"
+		"filename": "senegal",
+		"supported": false
 	},
 	{
 		"name": "Serbia",
 		"code": "RS",
 		"continent": "Europe",
-		"filename": "serbia"
+		"filename": "serbia",
+		"supported": false
 	},
 	{
 		"name": "Seychelles",
 		"code": "SC",
 		"continent": "Africa",
-		"filename": "seychelles"
+		"filename": "seychelles",
+		"supported": false
 	},
 	{
 		"name": "Sierra Leone",
 		"code": "SL",
 		"continent": "Africa",
-		"filename": "sierra-leone"
+		"filename": "sierra-leone",
+		"supported": false
 	},
 	{
 		"name": "Singapore",
 		"code": "SG",
 		"continent": "Asia",
-		"filename": "singapore"
+		"filename": "singapore",
+		"supported": false
 	},
 	{
 		"name": "Sint Maarten",
 		"code": "SX",
-		"continent": "Europe"
+		"continent": "Europe",
+		"supported": false
 	},
 	{
 		"name": "Slovakia",
 		"code": "SK",
 		"continent": "Europe",
-		"filename": "slovakia"
+		"filename": "slovakia",
+		"supported": true,
+		"callingCode": "+421"
 	},
 	{
 		"name": "Slovenia",
 		"code": "SI",
 		"continent": "Europe",
-		"filename": "slovenia"
+		"filename": "slovenia",
+		"supported": true,
+		"callingCode": "+386"
 	},
 	{
 		"name": "Solomon Islands",
 		"code": "SB",
 		"continent": "Oceania",
-		"filename": "solomon-islands"
+		"filename": "solomon-islands",
+		"supported": false
 	},
 	{
 		"name": "Somalia",
 		"code": "SO",
 		"continent": "Africa",
-		"filename": "somalia"
+		"filename": "somalia",
+		"supported": false
 	},
 	{
 		"name": "South Africa",
 		"code": "ZA",
 		"continent": "Africa",
-		"filename": "south-africa"
+		"filename": "south-africa",
+		"supported": false
 	},
 	{
 		"name": "South Georgia and the South Sandwich Islands",
 		"code": "GS",
-		"continent": "South America"
+		"continent": "South America",
+		"supported": false
 	},
 	{
 		"name": "South Sudan",
 		"code": "SS",
 		"continent": "Africa",
-		"filename": "south-sudan"
+		"filename": "south-sudan",
+		"supported": false
 	},
 	{
 		"name": "Spain",
 		"code": "ES",
 		"continent": "Europe",
-		"filename": "spain"
+		"filename": "spain",
+		"supported": true,
+		"callingCode": "+34"
 	},
 	{
 		"name": "Sri Lanka",
 		"code": "LK",
 		"continent": "Asia",
-		"filename": "sri-lanka"
+		"filename": "sri-lanka",
+		"supported": false
 	},
 	{
 		"name": "Sudan",
 		"code": "SD",
 		"continent": "Africa",
-		"filename": "sudan"
+		"filename": "sudan",
+		"supported": false
 	},
 	{
 		"name": "Suriname",
 		"code": "SR",
 		"continent": "South America",
-		"filename": "suriname"
+		"filename": "suriname",
+		"supported": false
 	},
 	{
 		"name": "Svalbard and Jan Mayen",
 		"continent": "Europe",
-		"code": "SJ"
+		"code": "SJ",
+		"supported": false
 	},
 	{
 		"name": "Swaziland",
 		"code": "SZ",
 		"continent": "Africa",
-		"filename": "swaziland"
+		"filename": "swaziland",
+		"supported": false
 	},
 	{
 		"name": "Sweden",
 		"code": "SE",
 		"continent": "Europe",
-		"filename": "sweden"
+		"filename": "sweden",
+		"supported": false
 	},
 	{
 		"name": "Switzerland",
 		"code": "CH",
 		"continent": "Europe",
-		"filename": "switzerland"
+		"filename": "switzerland",
+		"supported": false
 	},
 	{
 		"name": "Syrian Arab Republic",
 		"code": "SY",
 		"continent": "Asia",
-		"filename": "syrian-arab-republic"
+		"filename": "syrian-arab-republic",
+		"supported": false
 	},
 	{
 		"name": "Taiwan, Province of China",
 		"code": "TW",
 		"continent": "Asia",
-		"filename": "taiwan-province-of-china"
+		"filename": "taiwan-province-of-china",
+		"supported": false
 	},
 	{
 		"name": "Tajikistan",
 		"code": "TJ",
 		"continent": "Asia",
-		"filename": "tajikistan"
+		"filename": "tajikistan",
+		"supported": false
 	},
 	{
 		"name": "Tanzania, United Republic of",
 		"code": "TZ",
 		"continent": "Africa",
-		"filename": "tanzania-united-republic-of"
+		"filename": "tanzania-united-republic-of",
+		"supported": false
 	},
 	{
 		"name": "Thailand",
 		"code": "TH",
 		"continent": "Asia",
-		"filename": "thailand"
+		"filename": "thailand",
+		"supported": false
 	},
 	{
 		"name": "Timor-Leste",
 		"code": "TL",
 		"continent": "Oceania",
-		"filename": "timor-leste"
+		"filename": "timor-leste",
+		"supported": false
 	},
 	{
 		"name": "Togo",
 		"code": "TG",
 		"continent": "Africa",
-		"filename": "togo"
+		"filename": "togo",
+		"supported": false
 	},
 	{
 		"name": "Tokelau",
 		"continent": "Oceania",        
-		"code": "TK"
+		"code": "TK",
+		"supported": false
 	},
 	{
 		"name": "Tonga",
 		"code": "TO",
 		"continent": "Oceania",
-		"filename": "tonga"
+		"filename": "tonga",
+		"supported": false
 	},
 	{
 		"name": "Trinidad and Tobago",
 		"code": "TT",
 		"continent": "North America",
-		"filename": "trinidad-and-tobago"
+		"filename": "trinidad-and-tobago",
+		"supported": false
 	},
 	{
 		"name": "Tunisia",
 		"code": "TN",
 		"continent": "Africa",
-		"filename": "tunisia"
+		"filename": "tunisia",
+		"supported": false
 	},
 	{
 		"name": "Turkey",
 		"code": "TR",
 		"continent": "Europe",
-		"filename": "turkey"
+		"filename": "turkey",
+		"supported": false
 	},
 	{
 		"name": "Turkmenistan",
 		"code": "TM",
 		"continent": "Asia",
-		"filename": "turkmenistan"
+		"filename": "turkmenistan",
+		"supported": false
 	},
 	{
 		"name": "Turks and Caicos Islands",
 		"code": "TC",
-		"continent": "North America"
+		"continent": "North America",
+		"supported": false
 	},
 	{
 		"name": "Tuvalu",
 		"code": "TV",
 		"continent": "Oceania",
-		"filename": "tuvalu"
+		"filename": "tuvalu",
+		"supported": false
 	},
 	{
 		"name": "Uganda",
 		"code": "UG",
 		"continent": "Africa",
-		"filename": "uganda"
+		"filename": "uganda",
+		"supported": false
 	},
 	{
 		"name": "Ukraine",
 		"code": "UA",
 		"continent": "Europe",
-		"filename": "ukraine"
+		"filename": "ukraine",
+		"supported": false
 	},
 	{
 		"name": "United Arab Emirates",
 		"code": "AE",
 		"continent": "Asia",
-		"filename": "united-arab-emirates"
+		"filename": "united-arab-emirates",
+		"supported": false
 	},
 	{
 		"name": "United Kingdom",
 		"code": "GB",
 		"continent": "Europe",
-		"filename": "united-kingdom"
+		"filename": "united-kingdom",
+		"supported": false
 	},
 	{
 		"name": "United States",
 		"code": "US",
 		"continent": "North America",
-		"filename": "united-states"
+		"filename": "united-states",
+		"supported": false
 	},
 	{
 		"name": "United States Minor Outlying Islands",
 		"code": "UM",
 		"continent": "North America",
-		"filename": "united-states-minor-outlying-islands"
+		"filename": "united-states-minor-outlying-islands",
+		"supported": false
 	},
 	{
 		"name": "Uruguay",
 		"code": "UY",
 		"continent": "South America",
-		"filename": "uruguay"
+		"filename": "uruguay",
+		"supported": false
 	},
 	{
 		"name": "Uzbekistan",
 		"code": "UZ",
 		"continent": "Asia",
-		"filename": "uzbekistan"
+		"filename": "uzbekistan",
+		"supported": false
 	},
 	{
 		"name": "Vanuatu",
 		"code": "VU",
 		"continent": "Oceania",
-		"filename": "vanuatu"
+		"filename": "vanuatu",
+		"supported": false
 	},
 	{
 		"name": "Venezuela",
 		"code": "VE",
 		"continent": "South America",
-		"filename": "venezuela"
+		"filename": "venezuela",
+		"supported": false
 	},
 	{
 		"name": "Viet Nam",
 		"code": "VN",
 		"continent": "Asia",
-		"filename": "viet-nam"
+		"filename": "viet-nam",
+		"supported": false
 	},
 	{
 		"name": "Virgin Islands, British",
 		"code": "VG",
-		"continent": "North America"
+		"continent": "North America",
+		"supported": false
 	},
 	{
 		"name": "Virgin Islands, U.S.",
 		"code": "VI",
-		"continent": "North America"
+		"continent": "North America",
+		"supported": false
 	},
 	{
 		"name": "Wallis and Futuna",
         "continent": "Oceania",
-		"code": "WF"
+		"code": "WF",
+		"supported": false
 	},
 	{
 		"name": "Western Sahara",
 		"continent": "Africa",        
-		"code": "EH"
+		"code": "EH",
+		"supported": false
 	},
 	{
 		"name": "Yemen",
 		"code": "YE",
 		"continent": "Asia",
-		"filename": "yemen"
+		"filename": "yemen",
+		"supported": false
 	},
 	{
 		"name": "Zambia",
 		"code": "ZM",
 		"continent": "Africa",
-		"filename": "zambia"
+		"filename": "zambia",
+		"supported": false
 	},
 	{
 		"name": "Zimbabwe",
 		"code": "ZW",
 		"continent": "Africa",
-		"filename": "zimbabwe"
+		"filename": "zimbabwe",
+		"supported": false
 	}
 ]

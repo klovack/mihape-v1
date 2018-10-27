@@ -284,7 +284,7 @@ ratesSchema.statics.convertRates = async function convertRates(
         },
         createdAt: data.createdAt,
         fee: data.fee,
-        total: combineWithFee ? data.amount : data.amount + data.fee,
+        total: combineWithFee ? data.combine + data.fee : data.original + data.fee,
         combineWithFee,
       };
 

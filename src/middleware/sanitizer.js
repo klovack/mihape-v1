@@ -14,16 +14,24 @@ const checkForNewRecipient = [
     .exists().not().isEmpty()
     .trim()
     .escape(),
+  body('recipient.phoneNumber', 'phoneNumber field must be provided')
+    .exists().not().isEmpty()
+    .trim()
+    .escape(),
   body('recipient.bankAccount.name', 'bankAccount.name must be provided')
     .exists().not().isEmpty()
     .trim()
     .escape(),
-  body('recipient.bankAccount.accountNumber', 'bankAccount.accountNumber must be provided')
+  body('recipient.bankAccount.IBAN')
     .exists().not().isEmpty()
     .trim()
     .escape(),
-  body('recipient.bankAccount.IBAN').trim().escape(),
-  body('recipient.bankAccount.BLZ').trim().escape(),
+  body('recipient.bankAccount.accountNumber', 'bankAccount.accountNumber must be provided')
+    .optional()
+    .trim()
+    .escape(),
+  body('recipient.bankAccount.bic').optional().trim().escape(),
+  body('recipient.bankAccount.otherInformation').optional().isArray(),
 ];
 
 const checkForNewTransaction = [
