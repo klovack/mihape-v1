@@ -151,9 +151,10 @@ router.post('/confirm', checkForEmail, validateAll, (req, res) => {
   });
 });
 
-router.get('/login', (req, res) => {
+router.get('/login', authJWT, (req, res) => {
+  processLogger.info(`${req.user.email} is logging in`);
   res.json({
-    message: 'Login with email and password',
+    message: 'Successfully logged in',
   });
 });
 

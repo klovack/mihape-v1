@@ -6,6 +6,7 @@ const jwt = require('jsonwebtoken');
 const { isOldEnough } = require('../helper/validator');
 const { sendConfirmationMail } = require('../helper/nodemailer');
 
+// Setup mongoose
 const mongoose = require('../db/mongoose');
 
 const userSchema = new mongoose.Schema({
@@ -180,14 +181,15 @@ userSchema.methods = {
   },
 
   createToken() {
-    // eslint-disable-next-line
-    return jwt.sign({ userId: this._id }, process.env.JWT_SECRET);
+    // eslint-disable-next-line no-underscore-dangle
+    const token = jwt.sign({ userId: this._id }, process.env.JWT_SECRET, { expiresIn: '1 day' });
+    return token;
   },
 
   // Override mongoose toJSON method (remove password)
   toJSON() {
     return {
-      userId: this._id,  // eslint-disable-line
+      userId: this._id, // eslint-disable-line no-underscore-dangle
       firstName: this.firstName,
       lastName: this.lastName,
       dateOfBirth: this.dateOfBirth,

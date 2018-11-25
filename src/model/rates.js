@@ -11,7 +11,7 @@ const IDRForeignTransactionFee = 25000;
 // Wait time before updating exchange rates
 const refreshTime = 6 * 60 * 60 * 1000;
 // Waiting time before reset the CheckForUpdate in ms
-const timeout = 2500;
+const timeout = 5000; // 5s
 let tryout = 0;
 const maxTryout = 3;
 
@@ -103,6 +103,7 @@ ratesSchema.statics.checkForUpdate = async function checkForUpdate() {
   const Rates = this;
 
   const today = new Date();
+  console.log(today);
   return Rates.find({
     createdAt: {
       $gte: new Date(today.getTime() - refreshTime),
@@ -128,8 +129,13 @@ ratesSchema.statics.checkForUpdate = async function checkForUpdate() {
           this.checkForUpdate();
         }, timeout);
       } else {
-        throw new Error('Can\'t fetch the rates.');
+        Promise.reject(new Error('Can\'t fetch the rates. No Internet Connection'));
       }
+    }).catch((err) => {
+      processLogger.error({
+        message: 'Cannot fetch the rates',
+        err,
+      });
     });
   }).catch((err) => {
     processLogger.error({

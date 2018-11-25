@@ -1,5 +1,11 @@
+# Folders
 /node_modules/
 /playground/
 Vitriz.fig
-/src/log/
+/log/
 /frontend/
+
+# Files
+access.log
+error.log
+info.log

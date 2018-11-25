@@ -20,8 +20,18 @@ Rates.checkForUpdate();
 
 // Middlewares
 // Cors Options
+const corsWhitelist = [
+  process.env.FRONTEND_URL_LOCAL,
+  process.env.FRONTEND_URL_DOCKER,
+];
 const corsOptions = {
-  origin: process.env.FRONTEND_URL,
+  origin: (origin, callback) => {
+    if (corsWhitelist.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));

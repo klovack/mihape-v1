@@ -1,9 +1,13 @@
-FROM node:latest
+FROM node:dubnium
 
-COPY . /src
+LABEL author="Muhammad Rizki Fikriansyah"
 
-RUN npm install --production
+WORKDIR /var/www/kintun
+
+COPY . .
+
+RUN npm install && npm install nodemon -g
 
 EXPOSE 3000
 
-CMD npm start
+CMD ["nodemon", "index.js"]

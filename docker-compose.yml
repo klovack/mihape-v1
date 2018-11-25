@@ -1,0 +1,43 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: .
+    # restart: always
+    volumes:
+      - .:/var/www/kintun
+    depends_on:
+      - mongodb
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/transferRatesTest
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+  
+  frontend:
+    container_name: nginx
+    # restart: always
+    image: nginx
+    build:
+      context: ./frontend
+      dockerfile: .docker/nginx.dockerfile
+    volumes:
+      - ./frontend/dist:/usr/share/nginx/html
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - mongodb
+      - backend
+  
+  mongodb:
+    container_name: mongodb
+    image: "mongo:latest"
+    # restart: always
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
