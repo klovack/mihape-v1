@@ -31,6 +31,10 @@ const recipientSchema = new mongoose.Schema({
       validate: [isValidIBAN, 'Invalid IBAN'],
       required: true,
     },
+    bic: {
+      type: String,
+      required: true,
+    },
     otherInformation: [
       {
         name: {
