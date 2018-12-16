@@ -12,12 +12,12 @@ const transactionSchema = new mongoose.Schema({
   description: String,
   createdAt: {
     type: Date,
-    default: Date.now(),
+    default: new Date(),
     required: true,
   },
   deadlineAt: {
     type: Date,
-    default: new Date().setDate(new Date().getDate() + 1),
+    default: new Date().setTime(new Date().getTime() + (1000 * 60 * 60 * 12)),
   },
   receivedAt: {
     type: Date,
