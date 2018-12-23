@@ -55,9 +55,9 @@ router.post('/register', checkForNewUser, validateAll, (req, res) => {
   });
 });
 
-/*
-  Confirm the token from the user.
-*/
+/**
+ *Confirm the token from the user.
+ */
 router.get('/confirm/:token', checkForConfirmToken, validateAll, (req, res) => {
   User.verifyToken(req.params.token, (err, response) => {
     if (err) {

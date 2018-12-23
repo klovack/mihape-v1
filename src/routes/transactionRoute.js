@@ -215,7 +215,7 @@ router.get('/:id', checkParamForValidMongoID, validateAll, authJWT, (req, res) =
 
 /*
   It won't exactly delete the transaction from database.
-  It only change the status to IS_CANCELED, but only
+  It only changes the status to IS_CANCELED, but only
   if the status is IS_RECEIVED, IS_PROCESSED, or IS_FAILED
 */
 router.delete('/:id', checkParamForValidMongoID, validateAll, authJWT, (req, res) => {
@@ -250,6 +250,53 @@ router.delete('/:id', checkParamForValidMongoID, validateAll, authJWT, (req, res
     err,
   }));
 });
+
+router.put('/:id/transfered', checkParamForValidMongoID, validateAll, authJWT, (req, res) => Transaction.findOneAndUpdate({
+  _id: req.params.id,
+  user: req.user.userId,
+  $or: [
+    { status: 'IS_PROCESSED' },
+    { status: 'IS_FAILED' },
+  ],
+}, {
+  $set: {
+    'toBeTransfered.amount': 0,
+    status: 'IS_RECEIVED',
+    receivedAt: new Date(),
+  },
+}, {
+  new: true,
+})
+  .then((result) => {
+    if (result) {
+      // Get the user email (optional if req.user.email fails)
+      // Get the recipient name (and iban if necessary)
+      // Send email to the Mihape Team
+      result.sendMoneyTransferedEmail(
+        {
+          firstName: req.user.name,
+          email: req.user.email,
+        },
+        null,
+        null,
+      );
+
+      console.log(req.user);
+
+      return res.send({
+        message: 'successfully update the transaction',
+        result,
+      });
+    }
+
+    return res.status(404).send({
+      message: 'No transaction found',
+    });
+  })
+  .catch(err => res.status(500).send({
+    message: 'Error connecting to the database',
+    err,
+  })));
 
 /*
   Update the transaction only if the status IS_PROCESSED or IS_FAILED

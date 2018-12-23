@@ -34,7 +34,8 @@ const corsOptions = {
   },
   optionsSuccessStatus: 200,
 };
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));  // Frontend Dev
+app.use(cors()); // API Dev
 
 // Logger
 app.use(requestLogger);

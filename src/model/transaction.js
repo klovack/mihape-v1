@@ -2,7 +2,7 @@ const { isEmpty } = require('lodash');
 
 const mongoose = require('../db/mongoose');
 const { transformToMongoQuery } = require('../helper/searchQuery');
-const { sendNewTransactionMail } = require('../helper/nodemailer');
+const { sendNewTransactionMail, sendMoneyTransferedMail } = require('../helper/nodemailer');
 
 const transactionSchema = new mongoose.Schema({
   name: {
@@ -24,6 +24,10 @@ const transactionSchema = new mongoose.Schema({
     min: Date.now(),
   },
   canceledAt: {
+    type: Date,
+    min: Date.now(),
+  },
+  completedAt: {
     type: Date,
     min: Date.now(),
   },
@@ -159,8 +163,22 @@ transactionSchema.methods = {
       fromCurrency: this.fromCurrency,
       toCurrency: this.toCurrency,
       fee: this.fee,
+      id: _id, // eslint-disable-line
     };
     sendNewTransactionMail({ receiver, recipient, transaction }, callback);
+  },
+
+  sendMoneyTransferedEmail(user, transaction, callback) {
+    const receiver = {
+      firstName: user.firstName,
+      lastName: user.lastName,
+      email: user.email,
+    };
+
+    sendMoneyTransferedMail({
+      receiver,
+      transaction,
+    }, callback);
   },
 };
 
