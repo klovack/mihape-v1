@@ -39,6 +39,7 @@ router.get('/', authJWT, (req, res) => {
 
   Recipient.find(searchQuery)
     .limit(limit)
+    .sort({ createdAt: -1 })
     .then((data) => {
       if (data && data.length > 0) {
         const sendInfo = {

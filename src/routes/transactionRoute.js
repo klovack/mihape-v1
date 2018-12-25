@@ -281,8 +281,6 @@ router.put('/:id/transfered', checkParamForValidMongoID, validateAll, authJWT, (
         null,
       );
 
-      console.log(req.user);
-
       return res.send({
         message: 'successfully update the transaction',
         result,

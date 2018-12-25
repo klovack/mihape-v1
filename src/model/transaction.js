@@ -12,7 +12,7 @@ const transactionSchema = new mongoose.Schema({
   description: String,
   createdAt: {
     type: Date,
-    default: new Date(),
+    default: Date.now(),
     required: true,
   },
   deadlineAt: {
@@ -107,11 +107,11 @@ const transactionSchema = new mongoose.Schema({
   },
 });
 
-transactionSchema.statics.findByQuery = function findByQuery(query, limit) {
+transactionSchema.statics.findByQuery = function findByQuery(
+  query,
+  limit,
+) {
   const Transaction = this;
-
-  // TODO add userId as query parameter to the search in Transaction
-  // query.user = req.userId
 
   // Make search Query
   const searchQuery = transformToMongoQuery(query);
@@ -163,7 +163,7 @@ transactionSchema.methods = {
       fromCurrency: this.fromCurrency,
       toCurrency: this.toCurrency,
       fee: this.fee,
-      id: _id, // eslint-disable-line
+      id: this._id, // eslint-disable-line
     };
     sendNewTransactionMail({ receiver, recipient, transaction }, callback);
   },

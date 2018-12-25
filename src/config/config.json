@@ -12,8 +12,10 @@
     "GOOGLE_OAUTH_PASSWORD": "zespcsuqktnvmsch",
     "MIHAPE_NOREPLY_EMAIL": "no-reply@mihape.com",
     "MIHAPE_NOREPLY_PASS": "Rahasia10@mrizki",
-    "CONFIRM_URL": "http://localhost/email-received",
+    "CONFIRM_URL": "http://www.mihape.com/email-received",
     "FRONTEND_URL_DOCKER": "http://localhost",
-    "FRONTEND_URL_LOCAL": "http://localhost:4200"
+    "FRONTEND_URL_LOCAL": "http://localhost:4200",
+    "MONGODB_USERNAME_LOCAL": "mihape-database",
+    "MONGODB_PASSWORD_LOCAL": "Rahasia10mihape"
   }
 }

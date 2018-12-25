@@ -34,6 +34,10 @@ const sendConfirmationMail = function sendConfirmationMail({ receiver, redirectU
     <p>Click This link to confirm your email <a href="${redirectURL}">here</a>.</p>
     <p>If that doesn't work copy and paste this link to your browser.</p>
     <p><a href="${redirectURL}">${redirectURL}</a></p>
+    <p style="margin-top:20px; font-size: 14px; color: #6e6d6d">
+      Mihape Transfer still in Aplha Testing, If you find any bugs or inconveniences,
+      please report to our <a href="mailto:support@mihape.com">Support Team</a>.
+    </p>
     `,
   };
 
@@ -85,14 +89,15 @@ const sendNewTransactionMail = function sendTransactionMail({
       <li><b>To:</b> ${recipient.name}</li>
       <li><b>Country:</b> ${recipient.country}</li>
       <li><b>Bank Name:</b> ${recipient.bankAccount.name}</li>
-      <li><b>Account Number:</b> ${recipient.bankAccount.accountNumber}</li>
+      <li><b>IBAN:</b> ${recipient.bankAccount.IBAN}</li>
+      <li><b>BIC:</b> ${recipient.bankAccount.BIC}</li>
       <li><b>Sum:</b> ${display.fromCurrency}</li>
       <li><b>Fee:</b> ${display.fee}</li>
     </ul>
     <h4>Total: ${display.total}</h4>
     <h4>Estimation: ${display.toCurrency}</h4>
     <p>
-      Please transfer to our <a href="https://mihape.com/bank-accounts">Bank Accounts</a> in 12 hours.
+      Please transfer to our <a href="https://mihape.com/bank-accounts/${transaction.id}">Bank Accounts</a> in 12 hours.
       Make sure you also write the transaction id: <b>${transaction.id}</b> on the transfer details.
     </p>
     <p>
@@ -100,7 +105,10 @@ const sendNewTransactionMail = function sendTransactionMail({
       Otherwise we couldn't process your transaction.
     </p>
     <p>Best regards</p>
-    <p>
+    <p style="margin-top:20px; font-size: 14px; color: #6e6d6d">
+      Mihape Transfer still in Aplha Testing, If you find any bugs or inconveniences,
+      please report to our <a href="mailto:support@mihape.com">Support Team</a>.
+    </p>
     `,
   };
 
@@ -136,6 +144,10 @@ const sendMoneyTransferedMail = ({ receiver, transaction }, callback) => {
     <p>
       If you have any question, please don't hesitate to contact our
       <a href="mailto:support@mihape.com">Support</a> team.
+    </p>
+    <p style="margin-top:20px; font-size: 14px; color: #6e6d6d">
+      Mihape Transfer still in Aplha Testing, If you find any bugs or inconveniences,
+      please report to our <a href="mailto:support@mihape.com">Support Team</a>.
     </p>
     `,
   };
