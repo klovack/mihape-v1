@@ -17,7 +17,7 @@ const transactionSchema = new mongoose.Schema({
   },
   deadlineAt: {
     type: Date,
-    default: new Date().setTime(new Date().getTime() + (1000 * 60 * 60 * 12)),
+    default: new Date().setTime(Date.now() + (1000 * 60 * 60 * 12)),
   },
   receivedAt: {
     type: Date,

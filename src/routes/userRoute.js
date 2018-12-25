@@ -9,6 +9,7 @@ const {
   validateAll,
   checkForConfirmToken,
   checkForQueryEmail,
+  checkForResetPassword,
 } = require('../middleware/sanitizer');
 const { authEmail, authJWT } = require('../middleware/passport');
 const { confirmEmail } = require('../middleware/confirmation');
@@ -59,7 +60,7 @@ router.post('/register', checkForNewUser, validateAll, (req, res) => {
  *Confirm the token from the user.
  */
 router.get('/confirm/:token', checkForConfirmToken, validateAll, (req, res) => {
-  User.verifyToken(req.params.token, (err, response) => {
+  User.verifyEmailToken(req.params.token, (err, response) => {
     if (err) {
       const sendError = {
         message: 'Error connecting to the server',
@@ -203,6 +204,186 @@ router.get('/is-available', checkForQueryEmail, validateAll, (req, res) => {
 
     processLogger.info(sendInfo);
     return res.json(sendInfo);
+  });
+});
+
+/**
+ * Request forgot password token so user can access reset-password route
+ */
+router.post('/forgot-password', checkForEmail, validateAll, (req, res) => {
+  const { email } = req.body;
+  processLogger.info(`${email} request for password reset`);
+  // Logout the logged in user. In case they somehow get here.
+  req.logout();
+
+  User.findByEmail(email, (err, user) => {
+    if (err) {
+      const sendError = {
+        message: 'Error while connecting to the database',
+        err,
+      };
+
+      processLogger.error(sendError);
+      return res.status(500).json(sendError);
+    }
+    if (!user) {
+      const sendError = {
+        message: `User with ${email} is not in the database`,
+      };
+
+      processLogger.error(sendError);
+      return res.status(404).json(sendError);
+    }
+
+    // Create email token for the user.
+    const resetPasswordToken = user.createResetPasswordToken();
+
+    // Uncomment this to send email (dev purposes)
+    user.sendResetPasswordToken(resetPasswordToken, (error, success) => {
+      if (error) {
+        const sendError = {
+          message: 'Error while connecting to the database',
+          error,
+        };
+
+        processLogger.error(sendError);
+      }
+      if (!success) {
+        const sendError = {
+          message: 'Error while sending the email',
+        };
+        processLogger.error(sendError);
+      } else {
+        const info = {
+          message: `Reset password url sent to ${email}`,
+        };
+        processLogger.info(info);
+      }
+    });
+
+    const sendInfo = {
+      message: `Reset password is created and has been sent to ${email}`,
+      // resetPasswordToken, // for development purposes
+    };
+
+    processLogger.info(sendInfo);
+    return res.json(sendInfo);
+  });
+});
+
+/**
+ * Forgot password route, which verify the resetPasswordToken
+ * What it will do is just to give permission for the frontend to access reset-password route.
+ * @return 500 if internal error, 404 if resetPasswordToken is false, otherwise 200
+ */
+router.get('/reset-password/:token', checkForConfirmToken, validateAll, (req, res) => {
+  req.logout();
+  User.verifyToken(req.params.token, (err, response) => {
+    if (err) {
+      const sendError = {
+        message: 'Error connecting to the server',
+        err,
+      };
+      processLogger.error(sendError);
+      res.status(500).json(sendError);
+    } else if (!response) {
+      const sendError = {
+        message: 'Token is not valid or has expired',
+      };
+      processLogger.error(sendError);
+      res.status(404).json(sendError);
+    } else {
+      const sendInfo = {
+        message: 'Token is valid',
+        user: {
+          email: response.email,
+        },
+      };
+      processLogger.info(sendInfo);
+      res.json(sendInfo);
+    }
+  });
+});
+
+/**
+ * Verify the token first, if token is valid
+ * then find the email and update the password
+ */
+router.post('/reset-password', checkForResetPassword, validateAll, (req, res) => {
+  const { password, token } = req.body;
+  processLogger.info('resets the password');
+
+  // Log out the logged in user. So they will receive new token
+  req.logout();
+
+  User.verifyToken(token, (err, response) => {
+    if (err) {
+      const sendError = {
+        message: 'Error connecting to the server',
+        error: err,
+      };
+      processLogger.error(sendError);
+      res.status(500).json(sendError);
+    } else if (!response) {
+      const sendError = {
+        message: 'Token is not valid or has expired',
+      };
+      processLogger.error(sendError);
+      res.status(404).json(sendError);
+    } else {
+      const { email } = response;
+      User.findByEmail(email, (e, user) => {
+        if (e) {
+          const sendError = {
+            message: 'Error while connecting to the database',
+            error: e,
+          };
+
+          processLogger.error(sendError);
+          return res.status(500).json(sendError);
+        }
+
+        if (!user) {
+          const sendError = {
+            message: `Can't find user with ${email}`,
+          };
+
+          processLogger.error(sendError);
+          return res.status(404).json(sendError);
+        }
+
+        // eslint-disable-next-line
+        user.password = password;
+        return user.save((error, savedUser) => {
+          if (error) {
+            const sendError = {
+              message: 'Error while connecting to the database',
+              error,
+            };
+
+            processLogger.error(sendError);
+            return res.status(500).json(sendError);
+          }
+
+          if (!user) {
+            const sendError = {
+              message: `Can't find user with ${email}`,
+            };
+
+            processLogger.error(sendError);
+            return res.status(404).json(sendError);
+          }
+
+          const sendInfo = {
+            message: 'Successfully changed password',
+            user: savedUser.toAuthJSON(),
+          };
+
+          processLogger.info(sendInfo);
+          return res.json(sendInfo);
+        });
+      });
+    }
   });
 });
 

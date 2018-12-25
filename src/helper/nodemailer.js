@@ -24,10 +24,10 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const sendConfirmationMail = function sendConfirmationMail({ receiver, redirectURL }, callback) {
+const sendConfirmationMail = ({ receiverEmail, redirectURL }, callback) => {
   const mailOptions = {
     from: 'Mihape Notification <no-reply@mihape.com>',
-    to: receiver,
+    to: receiverEmail,
     subject: 'Mihape needs to know you\'re real',
     html: `
     <h3>Confirm your email</h3>
@@ -35,7 +35,7 @@ const sendConfirmationMail = function sendConfirmationMail({ receiver, redirectU
     <p>If that doesn't work copy and paste this link to your browser.</p>
     <p><a href="${redirectURL}">${redirectURL}</a></p>
     <p style="margin-top:20px; font-size: 14px; color: #6e6d6d">
-      Mihape Transfer still in Aplha Testing, If you find any bugs or inconveniences,
+      Mihape Transfer is currently still in Alpha. So, if you find any bugs or inconveniences,
       please report to our <a href="mailto:support@mihape.com">Support Team</a>.
     </p>
     `,
@@ -58,9 +58,6 @@ const sendNewTransactionMail = function sendTransactionMail({
       ? transaction.fromCurrency.combineAmount + transaction.fee.amount
       : transaction.fromCurrency.originalAmount + transaction.fee.amount,
   };
-
-  console.log(transaction);
-  console.log(total);
 
   // Adjust the money to fit to be displayed
   const display = {
@@ -106,7 +103,7 @@ const sendNewTransactionMail = function sendTransactionMail({
     </p>
     <p>Best regards</p>
     <p style="margin-top:20px; font-size: 14px; color: #6e6d6d">
-      Mihape Transfer still in Aplha Testing, If you find any bugs or inconveniences,
+      Mihape Transfer is currently still in Alpha. So, if you find any bugs or inconveniences,
       please report to our <a href="mailto:support@mihape.com">Support Team</a>.
     </p>
     `,
@@ -119,6 +116,7 @@ const sendNewTransactionMail = function sendTransactionMail({
  * Send Confirmation email to mihape team
  * and also to the customer
  */
+// eslint-disable-next-line no-unused-vars
 const sendMoneyTransferedMail = ({ receiver, transaction }, callback) => {
   const mailOptions = {
     from: 'Mihape Notification <no-reply@mihape.com>',
@@ -155,8 +153,55 @@ const sendMoneyTransferedMail = ({ receiver, transaction }, callback) => {
   transporter.sendMail(mailOptions, callback);
 };
 
+/**
+ * Send reset password url to the user
+ * @param {any} Options with receiverEmail and redirectUrl
+ * @param {function} callback callback function when this mail is executed
+ */
+const sendResetPasswordMail = ({ receiverEmail, redirectURL }, callback) => {
+  const mailOptions = {
+    from: 'Mihape Notification <no-reply@mihape.com>',
+    to: receiverEmail,
+    subject: 'Mihape sends you reset password url',
+    html: `
+    <div style="width: 90%; max-width: 1000px;">
+      <h3 style="font-size: 24px;">Request to reset password</h3>
+      <p>
+        Did you forget your password?
+      </p>
+      <p>
+        Someone requested a reset password request today. We just want to make sure that
+        it is you. Click this button below to reset it.
+      </p>
+      <div style="width: fit-content; margin: 0 auto;">
+        <a href="${redirectURL}">
+          <button style="padding: 10px;border: 1px solid #ddd;background: white;box-shadow: 2px 2px 6px #00000020, 0px 0px 6px #00000005;border-radius: 4px;cursor: pointer;">
+            Reset Password
+          </button>
+        </a>
+      </div>
+      <p>
+        If that doesn't work copy this long url here, and paste it into your browser. The link expires in 1 hour.
+      </p>
+      <p><a href="${redirectURL}">${redirectURL}</a></p>
+      <p style="margin-top: 10px; color: #ee0000;">
+        If you don't wish to reset your password or it's not you, just ignore this message and continue login using your old password.
+        Be sure to reset your password.
+      </p>
+      <p style="margin-top:20px; font-size: 12px; color: #6e6d6d">
+        Mihape Transfer is currently still in Alpha. So, if you find any bugs or inconveniences,
+        please report to our <a href="mailto:support@mihape.com">Support Team</a>.
+      </p>
+    </div>
+    `,
+  };
+
+  transporter.sendMail(mailOptions, callback);
+};
+
 module.exports = {
   sendConfirmationMail,
   sendNewTransactionMail,
   sendMoneyTransferedMail,
+  sendResetPasswordMail,
 };

@@ -210,6 +210,15 @@ const checkForConfirmToken = [
     .exists().not().isEmpty(),
 ];
 
+const checkForResetPassword = [
+  body('password', 'Password must be provided')
+    .exists().not().isEmpty()
+    .trim()
+    .escape(),
+  body('token', 'Token in body must be provided')
+    .exists().not().isEmpty(),
+];
+
 const validateAll = (req, res, next) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -231,5 +240,6 @@ module.exports = {
   checkForEmail,
   checkForQueryEmail,
   checkForConfirmToken,
+  checkForResetPassword,
   validateAll,
 };

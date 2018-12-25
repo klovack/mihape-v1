@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const { isOldEnough } = require('../helper/validator');
-const { sendConfirmationMail } = require('../helper/nodemailer');
+const { sendConfirmationMail, sendResetPasswordMail } = require('../helper/nodemailer');
 
 // Setup mongoose
 const mongoose = require('../db/mongoose');
@@ -136,7 +136,7 @@ userSchema.statics.findByEmail = function findByEmail(email, callback) {
   User.findOne({ email }, callback);
 };
 
-userSchema.statics.verifyToken = function verifyToken(token, callback) {
+userSchema.statics.verifyEmailToken = function verifyEmailToken(token, callback) {
   const User = this;
 
   jwt.verify(token, process.env.EMAIL_SECRET, (err, decoded) => {
@@ -149,6 +149,22 @@ userSchema.statics.verifyToken = function verifyToken(token, callback) {
         _id: decoded.userId,
         status: 'IS_INACTIVE',
       }, { $set: { status: 'IS_ACTIVE' } }, callback);
+      // Clear token from the redis database
+    }
+  });
+};
+
+userSchema.statics.verifyToken = function verifyToken(token, callback) {
+  // TODO: Check from the redis database if this token exist
+
+  // Verify the token
+  jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
+    if (err) {
+      callback(err);
+    } else if (!decoded) {
+      callback({ error: 'token is undefined' });
+    } else {
+      callback(null, decoded);
     }
   });
 };
@@ -180,9 +196,37 @@ userSchema.methods = {
     return bcrypt.compareSync(password, this.password);
   },
 
+  /**
+   * Generate token with jwt, which contain the user id.
+   * The token will expire in 1 day. Used for login
+   * @todo Save the generated token in redis database
+   *
+   * So that it prevents creating multiple tokens in short time
+   * @returns token that expires in 1 day
+   */
   createToken() {
+    // TODO: Check available token from redis database and delete them
+
+    // If there aren't any, create new one
     // eslint-disable-next-line no-underscore-dangle
     const token = jwt.sign({ userId: this._id }, process.env.JWT_SECRET, { expiresIn: '1 day' });
+    // TODO: Store token in redis database
+    return token;
+  },
+
+  /**
+   * Same as create token but with shorter expire date
+   * @todo Save the generated token in redis database
+   *
+   * So that it prevents creating multiple tokens in short time
+   * @returns {string} token that expires in 1 hour
+   */
+  createResetPasswordToken() {
+    // TODO: Check available token from redis database and then send it back
+
+    // eslint-disable-next-line no-underscore-dangle
+    const token = jwt.sign({ email: this.email }, process.env.JWT_SECRET, { expiresIn: '1h' });
+    // TODO: Store token in redis database
     return token;
   },
 
@@ -227,14 +271,21 @@ userSchema.methods = {
     jwt.sign(
       { userId: this._id }, // eslint-disable-line
       process.env.EMAIL_SECRET,
-      { expiresIn: '1d' },
+      { expiresIn: '12h' },
       (err, emailToken) => {
         sendConfirmationMail({
-          receiver: this.email,
+          receiverEmail: this.email,
           redirectURL: `${process.env.CONFIRM_URL}/${emailToken}`,
         }, callback(err, { receiver: this.email }));
       },
     );
+  },
+
+  sendResetPasswordToken(token, callback) {
+    sendResetPasswordMail({
+      receiverEmail: this.email,
+      redirectURL: `${process.env.RESET_PASSWORD_URL}/${token}`,
+    }, callback);
   },
 };
 
