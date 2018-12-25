@@ -87,7 +87,7 @@ const sendNewTransactionMail = function sendTransactionMail({
       <li><b>Country:</b> ${recipient.country}</li>
       <li><b>Bank Name:</b> ${recipient.bankAccount.name}</li>
       <li><b>IBAN:</b> ${recipient.bankAccount.IBAN}</li>
-      <li><b>BIC:</b> ${recipient.bankAccount.BIC}</li>
+      <li><b>BIC:</b> ${recipient.bankAccount.bic}</li>
       <li><b>Sum:</b> ${display.fromCurrency}</li>
       <li><b>Fee:</b> ${display.fee}</li>
     </ul>

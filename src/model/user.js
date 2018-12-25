@@ -204,12 +204,17 @@ userSchema.methods = {
    * So that it prevents creating multiple tokens in short time
    * @returns token that expires in 1 day
    */
-  createToken() {
-    // TODO: Check available token from redis database and delete them
+  createToken(useOldToken) {
+    // Use old token will search through the redis database and use that instead.
+    if (useOldToken) {
+      // TODO: Check available token from redis database
+      // return token from the redis database
+    }
 
     // If there aren't any, create new one
     // eslint-disable-next-line no-underscore-dangle
     const token = jwt.sign({ userId: this._id }, process.env.JWT_SECRET, { expiresIn: '1 day' });
+
     // TODO: Store token in redis database
     return token;
   },
@@ -250,9 +255,9 @@ userSchema.methods = {
     };
   },
 
-  toAuthJSON() {
+  toAuthJSON(useOldToken) {
     return {
-      token: this.createToken(),
+      token: this.createToken(useOldToken),
       userId: this._id,  // eslint-disable-line
       email: this.email,
       name: this.firstName,

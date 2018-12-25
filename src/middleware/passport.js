@@ -20,8 +20,7 @@ passport.use(new LocalStrategy(localOpts, (email, password, done) => {
     if (!user.validPassword(password)) {
       return done(null, false);
     }
-
-    return done(null, user);
+    return done(null, user.toAuthJSON());
   });
 }));
 
@@ -39,7 +38,9 @@ passport.use(new JWTStrategy(jwtOpts, (jwtPayload, done) => {
       return done(null, false);
     }
 
-    return done(null, user.toAuthJSON());
+    // Should not create new token if the token expires in more than 1 hour
+    const shouldUseOldToken = (jwtPayload.exp - jwtPayload.iat) >= (60 * 60);
+    return done(null, user.toAuthJSON(shouldUseOldToken));
   });
 }));
 

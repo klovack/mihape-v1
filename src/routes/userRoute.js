@@ -163,7 +163,7 @@ router.post('/login', checkForCredential, validateAll, authEmail, confirmEmail, 
   processLogger.info(`${req.user.email} is logging in`);
   res.json({
     message: 'Successfully logged in',
-    data: req.user.toAuthJSON(),
+    data: req.user,
   });
 });
 
@@ -263,7 +263,7 @@ router.post('/forgot-password', checkForEmail, validateAll, (req, res) => {
 
     const sendInfo = {
       message: `Reset password is created and has been sent to ${email}`,
-      // resetPasswordToken, // for development purposes
+      resetPasswordToken, // for development purposes
     };
 
     processLogger.info(sendInfo);
