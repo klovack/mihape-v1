@@ -38,8 +38,8 @@ passport.use(new JWTStrategy(jwtOpts, (jwtPayload, done) => {
       return done(null, false);
     }
 
-    // Should not create new token if the token expires in more than 1 hour
-    const shouldUseOldToken = (jwtPayload.exp - jwtPayload.iat) >= (60 * 60);
+    // Should not create new token if the token expires in more than 20 min
+    const shouldUseOldToken = (jwtPayload.exp - jwtPayload.iat) >= (60 * 20);
     return done(null, user.toAuthJSON(shouldUseOldToken));
   });
 }));

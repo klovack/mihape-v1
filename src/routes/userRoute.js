@@ -175,6 +175,14 @@ router.get('/logout', authJWT, (req, res) => {
   res.json(sendInfo);
 });
 
+router.get('/update-login-token', authJWT, (req, res) => {
+  processLogger.info(`Request update token for ${req.user.email}`);
+  res.json({
+    message: 'Token Updated',
+    data: req.user,
+  });
+});
+
 router.get('/is-available', checkForQueryEmail, validateAll, (req, res) => {
   const { email } = req.query;
   processLogger.info(`check ${email} for availability`);
@@ -239,27 +247,27 @@ router.post('/forgot-password', checkForEmail, validateAll, (req, res) => {
     const resetPasswordToken = user.createResetPasswordToken();
 
     // Uncomment this to send email (dev purposes)
-    user.sendResetPasswordToken(resetPasswordToken, (error, success) => {
-      if (error) {
-        const sendError = {
-          message: 'Error while connecting to the database',
-          error,
-        };
+    // user.sendResetPasswordToken(resetPasswordToken, (error, success) => {
+    //   if (error) {
+    //     const sendError = {
+    //       message: 'Error while connecting to the database',
+    //       error,
+    //     };
 
-        processLogger.error(sendError);
-      }
-      if (!success) {
-        const sendError = {
-          message: 'Error while sending the email',
-        };
-        processLogger.error(sendError);
-      } else {
-        const info = {
-          message: `Reset password url sent to ${email}`,
-        };
-        processLogger.info(info);
-      }
-    });
+    //     processLogger.error(sendError);
+    //   }
+    //   if (!success) {
+    //     const sendError = {
+    //       message: 'Error while sending the email',
+    //     };
+    //     processLogger.error(sendError);
+    //   } else {
+    //     const info = {
+    //       message: `Reset password url sent to ${email}`,
+    //     };
+    //     processLogger.info(info);
+    //   }
+    // });
 
     const sendInfo = {
       message: `Reset password is created and has been sent to ${email}`,
@@ -277,7 +285,6 @@ router.post('/forgot-password', checkForEmail, validateAll, (req, res) => {
  * @return 500 if internal error, 404 if resetPasswordToken is false, otherwise 200
  */
 router.get('/reset-password/:token', checkForConfirmToken, validateAll, (req, res) => {
-  req.logout();
   User.verifyToken(req.params.token, (err, response) => {
     if (err) {
       const sendError = {
@@ -312,9 +319,6 @@ router.get('/reset-password/:token', checkForConfirmToken, validateAll, (req, re
 router.post('/reset-password', checkForResetPassword, validateAll, (req, res) => {
   const { password, token } = req.body;
   processLogger.info('resets the password');
-
-  // Log out the logged in user. So they will receive new token
-  req.logout();
 
   User.verifyToken(token, (err, response) => {
     if (err) {
@@ -376,7 +380,7 @@ router.post('/reset-password', checkForResetPassword, validateAll, (req, res) =>
 
           const sendInfo = {
             message: 'Successfully changed password',
-            user: savedUser.toAuthJSON(),
+            data: savedUser.toAuthJSON(),
           };
 
           processLogger.info(sendInfo);

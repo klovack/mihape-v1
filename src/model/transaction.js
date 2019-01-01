@@ -12,7 +12,7 @@ const transactionSchema = new mongoose.Schema({
   description: String,
   createdAt: {
     type: Date,
-    default: Date.now(),
+    default: new Date(Date.now()),
     required: true,
   },
   deadlineAt: {
@@ -21,19 +21,19 @@ const transactionSchema = new mongoose.Schema({
   },
   receivedAt: {
     type: Date,
-    min: Date.now(),
+    min: new Date(Date.now()),
   },
   canceledAt: {
     type: Date,
-    min: Date.now(),
+    min: new Date(Date.now()),
   },
   completedAt: {
     type: Date,
-    min: Date.now(),
+    min: new Date(Date.now()),
   },
   failedAt: [{
     type: Date,
-    min: Date.now(),
+    min: new Date(Date.now()),
   }],
   status: {
     type: String,

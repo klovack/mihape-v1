@@ -198,11 +198,11 @@ userSchema.methods = {
 
   /**
    * Generate token with jwt, which contain the user id.
-   * The token will expire in 1 day. Used for login
+   * The token will expire in 30 min. Used for login
    * @todo Save the generated token in redis database
    *
    * So that it prevents creating multiple tokens in short time
-   * @returns token that expires in 1 day
+   * @returns token that expires in 30 min
    */
   createToken(useOldToken) {
     // Use old token will search through the redis database and use that instead.
@@ -213,7 +213,7 @@ userSchema.methods = {
 
     // If there aren't any, create new one
     // eslint-disable-next-line no-underscore-dangle
-    const token = jwt.sign({ userId: this._id }, process.env.JWT_SECRET, { expiresIn: '1 day' });
+    const token = jwt.sign({ userId: this._id }, process.env.JWT_SECRET, { expiresIn: '30m' });
 
     // TODO: Store token in redis database
     return token;
