@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ddd;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+#header, #body {
+  background: white;
+}
+
+#body {
+  height: 250px;
+}
+
+#footer {
+  background-color: #1D253E;
+  color: white;
+  height: fit-content;
+  font-size: 12px;
+}
+
+#footer a {
+  color: #7A9ED4;
+  text-decoration: none;
+}
+
+#logo-mihape {
+  width: 300px;
+  display: block;
+}
+
+.btn {
+  padding: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #1D253E;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #1D253E;
+  color: white;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 0;
+}
+
+.subtitle {
+  font-size: 12px;
+  line-height: 0;
+}

@@ -246,32 +246,31 @@ router.post('/forgot-password', checkForEmail, validateAll, (req, res) => {
     // Create email token for the user.
     const resetPasswordToken = user.createResetPasswordToken();
 
-    // Uncomment this to send email (dev purposes)
-    // user.sendResetPasswordToken(resetPasswordToken, (error, success) => {
-    //   if (error) {
-    //     const sendError = {
-    //       message: 'Error while connecting to the database',
-    //       error,
-    //     };
+    user.sendResetPasswordToken(resetPasswordToken, (error, success) => {
+      if (error) {
+        const sendError = {
+          message: 'Error while connecting to the database',
+          error,
+        };
 
-    //     processLogger.error(sendError);
-    //   }
-    //   if (!success) {
-    //     const sendError = {
-    //       message: 'Error while sending the email',
-    //     };
-    //     processLogger.error(sendError);
-    //   } else {
-    //     const info = {
-    //       message: `Reset password url sent to ${email}`,
-    //     };
-    //     processLogger.info(info);
-    //   }
-    // });
+        processLogger.error(sendError);
+      }
+      if (!success) {
+        const sendError = {
+          message: 'Error while sending the email',
+        };
+        processLogger.error(sendError);
+      } else {
+        const info = {
+          message: `Reset password url sent to ${email}`,
+        };
+        processLogger.info(info);
+      }
+    });
 
     const sendInfo = {
       message: `Reset password is created and has been sent to ${email}`,
-      resetPasswordToken, // for development purposes
+      // resetPasswordToken, // for development purposes
     };
 
     processLogger.info(sendInfo);

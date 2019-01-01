@@ -30,14 +30,42 @@ const sendConfirmationMail = ({ receiverEmail, redirectURL }, callback) => {
     to: receiverEmail,
     subject: 'Mihape needs to know you\'re real',
     html: `
-    <h3>Confirm your email</h3>
-    <p>Click This link to confirm your email <a href="${redirectURL}">here</a>.</p>
-    <p>If that doesn't work copy and paste this link to your browser.</p>
-    <p><a href="${redirectURL}">${redirectURL}</a></p>
-    <p style="margin-top:20px; font-size: 14px; color: #6e6d6d">
-      Mihape Transfer is currently still in Alpha. So, if you find any bugs or inconveniences,
-      please report to our <a href="mailto:support@mihape.com">Support Team</a>.
-    </p>
+    <div style="font-family:Arial, Helvetica, sans-serif;background-color:#ddd;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;font-size:16px;" >
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" id="bodyTable">
+        <tr>
+          <td align="center" valign="top">
+            <table border="0" cellpadding="20" cellspacing="0" width="600" id="emailContainer">
+              <tr id="header" style="background-color:white;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;" >
+                <td align="center" valign="bottom">
+                  <a href="https://www.mihape.com"><img id="logo-mihape" src="./img/logo.png" alt="Logo Mihape" style="width:300px;display:block;" ></a>
+                  <h4 class="title" style="font-size:18px;line-height:0;" >A Better Way To Send Money Abroad</h4>
+                  <p class="subtitle" style="font-size:12px;line-height:0;" >Anytime, Anywhere</p>
+                </td>
+              </tr>
+              <tr id="body" style="background-color:white;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;height:250px;" >
+                <td align="center" valign="top">
+                  <h2 style="font-size:28px;" >Konfirmasikan Email Kamu</h2>
+                  <p>Klik tombol di bawah ini untuk mengkonfirmasi email.</p>
+                  <a href="${redirectURL}">
+                    <button class="btn btn-primary" style="padding-top:12px;padding-bottom:12px;padding-right:12px;padding-left:12px;font-family:Arial, Helvetica, sans-serif;border-width:1px;border-style:solid;border-color:#1D253E;background-color:#1D253E;color:#ffffff;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;border-radius:4px;cursor:pointer;" >
+                      Konfirmasi Email
+                    </button>
+                  </a>
+                </td>
+              </tr>
+              <tr id="footer" style="background-color:#1D253E;color:white;height:fit-content;font-size:12px;" >
+                <td align="center" valign="bottom">
+                  <p>
+                    Mihape Transfer masih dalam fase Alpha. Maka dari itu, jika kamu menemukan ketidaknyamanan dalam memakai layanan kami,
+                    silahkan hubungi <a href="mailto:support@mihape.com" style="color:#7A9ED4;text-decoration:none;" >Tim Support</a> kami.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
     `,
   };
 
@@ -109,7 +137,7 @@ const sendNewTransactionMail = function sendTransactionMail({
     `,
   };
 
-  transporter.sendMail(mailOptions, callback);
+  // transporter.sendMail(mailOptions, callback);
 };
 
 /**
@@ -150,7 +178,7 @@ const sendMoneyTransferedMail = ({ receiver, transaction }, callback) => {
     `,
   };
 
-  transporter.sendMail(mailOptions, callback);
+  // transporter.sendMail(mailOptions, callback);
 };
 
 /**
@@ -196,7 +224,7 @@ const sendResetPasswordMail = ({ receiverEmail, redirectURL }, callback) => {
     `,
   };
 
-  transporter.sendMail(mailOptions, callback);
+  // transporter.sendMail(mailOptions, callback);
 };
 
 module.exports = {
