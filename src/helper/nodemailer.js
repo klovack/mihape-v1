@@ -154,8 +154,7 @@ const sendNewTransactionMail = function sendTransactionMail({
                   <p>
                     Jika terjadi kesalahan pada data di atas, silahkan hubungi kami
                     <a href="mailto:support@mihape.com?subject=Kesalahan Pada Penerima&body=Data Penerima yang baru adalah:" style="color:#7A9ED4;text-decoration:none;" >disini</a>.
-                    Kamu juga bisa lihat <a href="https://www.mihape.com/faq" style="color:#7A9ED4;text-decoration:none;" >FAQ</a> kami untuk melakukan pembatalan
-                    transaksi.
+                    Kamu juga bisa lihat <a href="https://www.mihape.com/faq" style="color:#7A9ED4;text-decoration:none;" >FAQ</a> kami untuk mengetahui informasi lebih lanjut seputar layanan kami.
                   </p>
                   <p>Penerima akan menerima uang sebesar <strong>${display.toCurrency}</strong>. <span class="warning">Jumlah
                       tersebut hanya perkiraan. Nilai tukar sebenarnya akan dihitung ulang saat transfer telah dilakukan.</span></p>
