@@ -17,6 +17,7 @@
     "FRONTEND_URL_DOCKER": "http://localhost",
     "FRONTEND_URL_LOCAL": "http://localhost:4200",
     "MONGODB_USERNAME_LOCAL": "mihape-database",
-    "MONGODB_PASSWORD_LOCAL": "Rahasia10mihape"
+    "MONGODB_PASSWORD_LOCAL": "Rahasia10mihape",
+    "RECAPTCHA_V2_SECRET_KEY": "6LehMocUAAAAAD_tzU3_r_8VU5d5SjskhV7iqmDY"
   }
 }

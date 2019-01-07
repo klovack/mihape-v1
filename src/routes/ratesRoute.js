@@ -54,4 +54,20 @@ router.get('/', checkForQueryRates, validateAll, (req, res) => {
   }
 });
 
+router.get('/update', (req, res) => {
+  Rates.checkForUpdate()
+    .then((result) => {
+      if (!result) {
+        res.status(404).send({
+          message: 'Nothing found',
+        });
+      } else {
+        res.send(result);
+      }
+    })
+    .catch((err) => {
+      res.status(500).send(err);
+    });
+});
+
 module.exports = router;

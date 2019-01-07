@@ -187,6 +187,14 @@ userSchema.statics.addTransaction = function addTransaction(userId, transactionI
   User.findByIdAndUpdate(userId, { $push: { transactions: transactionId } }, callback);
 };
 
+userSchema.static('findByTransaction', function findByTransaction(transactionId) {
+  const User = this;
+
+  return User.find({
+    transactions: transactionId,
+  });
+});
+
 userSchema.methods = {
   hashPassword(password) {
     return bcrypt.hashSync(password, 10);

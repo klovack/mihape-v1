@@ -16,38 +16,36 @@
         <table border="0" cellpadding="20" cellspacing="0" width="60%" id="emailContainer">
           <tr id="header">
             <td align="center" valign="bottom">
-              <img id="logo-mihape" src="./img/logo.png" alt="Logo Mihape">
+              <a href="https://www.mihape.com"><img id="logo-mihape" src="./img/logo.png" alt="Logo Mihape"></a>
               <h4 class="title">A Better Way To Send Money Abroad</h4>
               <p class="subtitle">Anytime, Anywhere</p>
             </td>
           </tr>
           <tr id="body">
             <td align="left" valign="top">
-              <h3>Transaksimu Sudah Setengah Jalan</h3>
+              <h3>Pembatalan Transaksi</h3>
               <p>
-                Hai ${receiver.firstName},
-              <p>
-                Uang yang kamu transfer sedang kami proses.
-                Apabila semua berjalan lancar kamu akan menerima uangmu paling lambat 2-3 hari kerja tergantung dengan peraturan Bank di negara tujuan.
+                Hai ${recipient.name}
               </p>
               <p>
-                Kita akan mengirim kamu email lagi sesudah kami melakukan transfer ke ${recipient.name}.
-                Kamu juga bisa melihat status transaksi kamu di akun Mihape Transfer kamu.
+                Kami sedih melihatmu membatalkan transaksimu. 
+                Kami harap kamu dapat segera memakai layanan kami kembali.
+                Apabila kamu sudah melakukan transfer silahkan hubungi
+                <a href="mailto:support@mihape.com?subject=Pengembalian Uang Karena Pembatalan (ID Transaksi: ${transaction.id})&body=Rekening Bank dan Kontak yang bisa dihubungi">Tim Support kami</a>.
               </p>
-              <p><a href="https://www.mihape.com/overview/transactions/${transaction.id}">Lihat status transaksi</a></p>
-              <p>
-                Salam
+
+              <p class="warn">
+                Pengembalian uang tidak termasuk biaya transaksi. Untuk informasi lebih lanjut, kunjungi <a href="https://www.mihape.com/faq">halaman bantuan kami</a>.
               </p>
+              <p>Salam</p>
               <p>Mihape Global Nusantara</p>
             </td>
           </tr>
           <tr id="footer">
             <td align="center" valign="bottom">
               <p>
-                Mihape Transfer masih dalam fase Alpha. Maka dari itu, jika kamu menemukan ketidaknyamanan dalam
-                memakai layanan kami,
-                silahkan hubungi <a href="mailto:support@mihape.com" style="color:#7A9ED4;text-decoration:none;" >Tim
-                  Support</a> kami.
+                Mihape Transfer masih dalam fase Alpha. Maka dari itu, jika kamu menemukan ketidaknyamanan dalam memakai layanan kami,
+                silahkan hubungi <a href="mailto:support@mihape.com" style="color:#7A9ED4;text-decoration:none;" >Tim Support</a> kami.
               </p>
               <p>
                 Copyright &#169; Mihape Global Nusantara. All rights reserved.

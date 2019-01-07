@@ -1,0 +1,78 @@
+<div style="font-family:Arial, Helvetica, sans-serif;background-color:#ddd;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;color:#242424;font-size:16px;" >
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" id="bodyTable">
+    <tr>
+      <td align="center" valign="top">
+        <table border="0" cellpadding="20" cellspacing="0" width="60%" id="emailContainer">
+          <tr id="header" style="background-color:white;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;" >
+            <td align="center" valign="bottom">
+              <a href="https://www.mihape.com" style="color:#7A9ED4;text-decoration:none;" ><img id="logo-mihape" src="./img/logo.png" alt="Logo Mihape" style="width:250px;display:block;" ></a>
+              <h4 class="title" style="font-size:18px;line-height:0;" >A Better Way To Send Money Abroad</h4>
+              <p class="subtitle" style="font-size:12px;line-height:0;" >Anytime, Anywhere</p>
+            </td>
+          </tr>
+          <tr id="body" style="background-color:white;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;height:250px;" >
+            <td align="left" valign="top">
+              <h3 style="font-size:24px;" >Kamu Membuat Transaksi Baru</h3>
+              <p>Hai ${receiver.firstName},</p>
+              <p class="highlight" style="font-size:18px;color:#1d1d1d;" >
+                Kamu baru saja membuat transaksi pengiriman uang ke ${recipient.name} di ${recipient.country}
+                sebesar <strong>${display.fromCurrency}</strong>.
+              </p>
+              <p>Pastikan bahwa data penerima di bawah ini sudah benar:</p>
+              <table class="table-data" style="width:80%; padding-left: 11vw" >
+                <tr class="row-table-data" style="background-color: #efefef;">
+                  <td style="line-height:2;" >Nama Bank</td>
+                  <td style="line-height:2;" >${recipient.bankAccount.name}</td>
+                </tr>
+                <tr class="row-table-data">
+                  <td style="line-height:2;" >IBAN</td>
+                  <td style="line-height:2;" >${recipient.bankAccount.IBAN}</td>
+                </tr>
+                <tr class="row-table-data" style="background-color: #efefef;">
+                  <td style="line-height:2;" >BIC</td>
+                  <td style="line-height:2;" >${recipient.bankAccount.bic}</td>
+                </tr>
+              </table>
+              <p>
+                Jika terjadi kesalahan pada data di atas, silahkan hubungi kami
+                <a href="mailto:support@mihape.com?subject=Kesalahan Pada Penerima&body=Data Penerima yang baru adalah:" style="color:#7A9ED4;text-decoration:none;" >disini</a>.
+                Kamu juga bisa lihat <a href="https://www.mihape.com/faq" style="color:#7A9ED4;text-decoration:none;" >FAQ</a> kami untuk melakukan pembatalan
+                transaksi.
+              </p>
+              <p>Penerima akan menerima uang sebesar <strong>${display.toCurrency}</strong>. <span class="warning">Jumlah
+                  tersebut hanya perkiraan. Nilai tukar sebenarnya akan dihitung ulang saat transfer telah dilakukan.</span></p>
+              <p class="center small" style="text-align:center;line-height:.1;font-size:14px;" >Biaya + Mengirim = Total</p>
+              <h4 class="center" style="font-size:20px;text-align:center;" >${display.fee} + ${display.fromCurrency} = ${display.total}</h4>
+              <h5 class="center" style="font-size:18px;text-align:center;" >Perkiraan: ${display.toCurrency}</h5>
+              <p>
+                Silahkan kunjungi <a href="https://www.mihape.com/bank-accounts/${transaction.id}" style="color:#7A9ED4;text-decoration:none;" >halaman Bank kami</a>
+                untuk melihat kemana kamu harus transfer lalu ikuti langkah-langkah yang diperlukan agar proses
+                transaksi berjalan lancar.
+              </p>
+              <h5 class="center" style="font-size:18px;text-align:center; color: #b31315" >
+                Jangan lupa cantumkan ID transaksi kamu (${transaction.id}) saat melakukan transfer.
+                Pastikan juga kamu klik tombol <q>Saya Sudah Transfer</q> di <a href="https://www.mihape.com/overview/transactions/${transaction.id}" style="color:#7A9ED4;text-decoration:none;" >halaman
+                  detail transaksi</a> agar transaksi dapat segera kami proses.
+              </h5>
+              <p>Salam</p>
+              <p>Mihape Global Nusantara</p>
+            </td>
+          </tr>
+          <tr id="footer" style="background-color:#1D253E;color:white;height:fit-content;font-size:12px;" >
+            <td align="center" valign="bottom">
+              <p>
+                Mihape Transfer masih dalam fase Alpha. Maka dari itu, jika kamu menemukan ketidaknyamanan dalam
+                memakai layanan kami,
+                silahkan hubungi <a href="mailto:support@mihape.com" style="color:#7A9ED4;text-decoration:none;" >Tim
+                  Support</a> kami.
+              </p>
+              <p>
+                Copyright &#169; Mihape Global Nusantara. All rights reserved.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>

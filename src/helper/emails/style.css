@@ -1,6 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #ddd;
+  color: #242424;
   font-size: 16px;
 }
 
@@ -24,6 +25,11 @@ h5 {
   font-size: 18px;
 }
 
+a {
+  color: #7A9ED4;
+  text-decoration: none;
+}
+
 #header, #body {
   background: white;
 }
@@ -45,8 +51,13 @@ h5 {
 }
 
 #logo-mihape {
-  width: 300px;
+  width: 250px;
   display: block;
+}
+
+.highlight {
+  font-size: 18px;
+  color: #1d1d1d;
 }
 
 .btn {
@@ -58,17 +69,50 @@ h5 {
   cursor: pointer;
 }
 
+.btn.btn-primary {
+  background: #1D253E;
+  color: white;
+}
+
 .btn:hover {
   background: #1D253E;
   color: white;
 }
 
+.btn.btn-primary:hover {
+  background: transparent;
+  color: #1D253E;
+}
+
+.center {
+  text-align: center;
+}
+
 .title {
   font-size: 18px;
-  line-height: 0;
 }
 
 .subtitle {
   font-size: 12px;
-  line-height: 0;
+}
+
+.small {
+  line-height: .5;
+  font-size: 14px
+}
+
+.warn {
+  color: #b31315;
+}
+
+.table-data {
+  width: 100%
+}
+
+.row-table-data:nth-child(odd) {
+  background-color: #efefef;
+}
+
+.row-table-data td, .row-table-data th {
+  line-height: 2;
 }

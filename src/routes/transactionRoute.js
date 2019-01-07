@@ -236,6 +236,29 @@ router.delete('/:id', checkParamForValidMongoID, validateAll, authJWT, (req, res
     if (oldResult) {
       const data = oldResult;
       data.status = 'IS_CANCELED';
+      Recipient.findById(oldResult.recipient)
+        .then((recipient) => {
+          oldResult.sendCancelationEmail(
+            {
+              firstName: req.user.name,
+              email: req.user.email,
+            },
+            recipient,
+            (error, response) => {
+              if (error) {
+                processLogger.error({
+                  message: 'Email can not be sent',
+                  error,
+                });
+              } else {
+                processLogger.info({
+                  message: 'Email sent',
+                  response,
+                });
+              }
+            },
+          );
+        });
       return res.send({
         message: 'Successfully canceled the transaction',
         data,
@@ -271,20 +294,36 @@ router.put('/:id/transfered', checkParamForValidMongoID, validateAll, authJWT, (
     if (result) {
       // Get the user email (optional if req.user.email fails)
       // Get the recipient name (and iban if necessary)
-      // Send email to the Mihape Team
-      result.sendMoneyTransferedEmail(
-        {
-          firstName: req.user.name,
-          email: req.user.email,
-        },
-        null,
-        null,
-      );
+      return Recipient.findById(result.recipient)
+        .then((recipient) => {
+          // Send email to the Mihape Team
+          result.sendMoneyTransferedEmail(
+            {
+              firstName: req.user.name,
+              email: req.user.email,
+            },
+            recipient,
+            result.id,
+            (error, response) => {
+              if (error) {
+                processLogger.error({
+                  message: 'Email can not be sent',
+                  error,
+                });
+              } else {
+                processLogger.info({
+                  message: 'Email sent',
+                  response,
+                });
+              }
+            },
+          );
 
-      return res.send({
-        message: 'successfully update the transaction',
-        result,
-      });
+          return res.send({
+            message: 'successfully update the transaction',
+            result,
+          });
+        });
     }
 
     return res.status(404).send({

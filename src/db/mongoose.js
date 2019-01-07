@@ -6,6 +6,7 @@ const url = process.env.MONGODB_URI || `mongodb://${process.env.MONGODB_USERNAME
 mongoose.Promise = global.Promise;
 mongoose.connect(url, {
   useNewUrlParser: true,
+  useFindAndModify: false,
   useCreateIndex: true,
 })
   .then(() => {

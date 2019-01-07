@@ -1,26 +1,85 @@
-<h3>New Transaction waiting to be completed</h3>
-<p>Hi ${receiver.firstName}, below are the informations about the transaction you just made.</p>
-<ul style="list-style-decoration: none;">
-  <li><b>To:</b> ${recipient.name}</li>
-  <li><b>Country:</b> ${recipient.country}</li>
-  <li><b>Bank Name:</b> ${recipient.bankAccount.name}</li>
-  <li><b>IBAN:</b> ${recipient.bankAccount.IBAN}</li>
-  <li><b>BIC:</b> ${recipient.bankAccount.bic}</li>
-  <li><b>Sum:</b> ${display.fromCurrency}</li>
-  <li><b>Fee:</b> ${display.fee}</li>
-</ul>
-<h4>Total: ${display.total}</h4>
-<h4>Estimation: ${display.toCurrency}</h4>
-<p>
-  Please transfer to our <a href="https://mihape.com/bank-accounts/${transaction.id}">Bank Accounts</a> in 12 hours.
-  Make sure you also write the transaction id: <b>${transaction.id}</b> on the transfer details.
-</p>
-<p>
-  Don't forget to finish up your transaction by clicking <b>'I've transfered'</b> on transaction details page.
-  Otherwise we couldn't process your transaction.
-</p>
-<p>Best regards</p>
-<p style="margin-top:20px; font-size: 14px; color: #6e6d6d">
-  Mihape Transfer is currently still in Alpha. So, if you find any bugs or inconveniences,
-  please report to our <a href="mailto:support@mihape.com">Support Team</a>.
-</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" id="bodyTable">
+    <tr>
+      <td align="center" valign="top">
+        <table border="0" cellpadding="20" cellspacing="0" width="60%" id="emailContainer">
+          <tr id="header">
+            <td align="center" valign="bottom">
+              <a href="https://www.mihape.com"><img id="logo-mihape" src="./img/logo.png" alt="Logo Mihape"></a>
+              <h4 class="title">A Better Way To Send Money Abroad</h4>
+              <p class="subtitle">Anytime, Anywhere</p>
+            </td>
+          </tr>
+          <tr id="body">
+            <td align="left" valign="top">
+              <h3>Kamu Membuat Transaksi Baru</h3>
+              <p>Hai ${receiver.firstName},</p>
+              <p class="highlight">
+                Kamu baru saja membuat transaksi pengiriman uang ke ${recipient.name} di ${recipient.country}
+                sebesar <strong>${display.fromCurrency}</strong>. 
+              </p>
+              <p>Pastikan bahwa data penerima di bawah ini sudah benar:</p>
+              <table class="table-data">
+                <tr class="row-table-data">
+                  <td>Nama Bank</td>
+                  <td>${recipient.bankAccount.name}</td>
+                </tr>
+                <tr class="row-table-data">
+                  <td>IBAN</td>
+                  <td>${recipient.bankAccount.IBAN}</td>
+                </tr>
+                <tr class="row-table-data">
+                  <td>BIC</td>
+                  <td>${recipient.bankAccount.bic}</td>
+                </tr>
+              </table>
+              <p>
+                Jika terjadi kesalahan pada data di atas, silahkan hubungi kami 
+                <a href="mailto:support@mihape.com?subject=Kesalahan Pada Penerima&body=Data Penerima yang baru adalah:">disini</a>.
+                Kamu juga bisa lihat <a href="https://www.mihape.com/faq">FAQ</a> kami untuk melakukan pembatalan transaksi.
+              </p>
+              <p>Penerima akan menerima uang sebesar <strong>${display.toCurrency}</strong>. <span class="warning">Jumlah tersebut hanya perkiraan. Nilai tukar sebenarnya akan dihitung ulang saat transfer telah dilakukan.</span></p>
+              <p class="center small">Biaya + Mengirim = Total</p>
+              <h4 class="center">${display.fee} + ${display.fromCurrency} = ${display.total}</h4>
+              <h5 class="center">Perkiraan: ${display.toCurrency}</h5>
+              <p>
+                Silahkan kunjungi <a href="https://www.mihape.com/bank-accounts/${transaction.id}">halaman Bank kami</a>
+                untuk melihat kemana kamu harus transfer lalu ikuti langkah-langkah yang diperlukan agar proses transaksi berjalan lancar.
+              </p>
+              <h5 class="center">
+                Jangan lupa cantumkan ID transaksi kamu (${transaction.id}) saat melakukan transfer. 
+                Pastikan juga kamu klik tombol <q>Saya Sudah Transfer</q> di <a href="https://www.mihape.com/overview/transactions/${transaction.id}">halaman detail transaksi</a>.
+              </h5>
+              <p>Salam</p>
+              <p>Mihape Global Nusantara</p>
+            </td>
+          </tr>
+          <tr id="footer">
+            <td align="center" valign="bottom">
+              <p>
+                Mihape Transfer masih dalam fase Alpha. Maka dari itu, jika kamu menemukan ketidaknyamanan dalam memakai layanan kami,
+                silahkan hubungi <a href="mailto:support@mihape.com" style="color:#7A9ED4;text-decoration:none;" >Tim Support</a> kami.
+              </p>
+              <p>
+                Copyright &#169; Mihape Global Nusantara. All rights reserved.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
