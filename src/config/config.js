@@ -10,4 +10,12 @@ if (env === 'development' || env === 'test') {
   Object.keys(envConf).forEach((key) => {
     process.env[key] = envConf[key];
   });
+} else if (env === 'production') {
+  // eslint-disable-next-line global-require
+  const conf = require('./config.json');
+  const envConf = conf[env];
+
+  Object.keys(envConf).forEach((key) => {
+    process.env[key] = envConf[key];
+  });
 }

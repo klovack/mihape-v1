@@ -1,19 +1,5 @@
 const nodemailer = require('nodemailer');
 
-// Gmail fallback
-// const transporter = nodemailer.createTransport({
-//   service: 'gmail',
-//   secure: true,
-//   auth: {
-//     type: 'OAuth2',
-//     user: process.env.GOOGLE_OAUTH_EMAIL,
-//     clientId: process.env.GOOGLE_OAUTH_CLIENT_ID,
-//     clientSecret: process.env.GOOGLE_OAUTH_CLIENT_SECRET,
-//     refreshToken: process.env.GOOGLE_OAUTH_REFRESH_TOKEN,
-//     accessToken: process.env.GOOGLE_OAUTH_ACCESS_TOKEN,
-//   },
-// });
-
 const transporter = nodemailer.createTransport({
   host: 'smtp.zoho.com',
   port: 465,
@@ -39,7 +25,7 @@ const sendConfirmationMail = ({ receiverEmail, redirectURL }, callback) => {
       <table border="0" cellpadding="0" cellspacing="0" width="100%" id="bodyTable">
         <tr>
           <td align="center" valign="top">
-            <table border="0" cellpadding="20" cellspacing="0" width="600" id="emailContainer">
+            <table border="0" cellpadding="20" cellspacing="0" width="60%" id="emailContainer">
               <tr id="header" style="background-color:white;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;" >
                 <td align="center" valign="bottom">
                 <a href="https://www.mihape.com" style="color:#7A9ED4;text-decoration:none;" ><img id="logo-mihape" src="cid:logo@mihape.com" alt="Logo Mihape" style="width:250px;display:block;" ></a>
@@ -59,7 +45,7 @@ const sendConfirmationMail = ({ receiverEmail, redirectURL }, callback) => {
               <tr id="footer" style="background-color:#1D253E;color:white;height:fit-content;font-size:12px;" >
                 <td align="center" valign="bottom">
                   <p>
-                    Mihape Transfer masih dalam fase Alpha. Maka dari itu, jika kamu menemukan ketidaknyamanan dalam memakai layanan kami,
+                    Mihape Transfer masih dalam fase Alpha. Maka dari itu, jika kamu menemukan ketidaknyamanan saat menggunakan layanan kami,
                     silahkan hubungi <a href="mailto:support@mihape.com" style="color:#7A9ED4;text-decoration:none;" >Tim Support</a> kami.
                   </p>
                 </td>
@@ -167,8 +153,8 @@ const sendNewTransactionMail = function sendTransactionMail({
                     transaksi berjalan lancar.
                   </p>
                   <h5 class="center" style="font-size:18px;text-align:center; color: #b31315" >
-                    Jangan lupa cantumkan ID transaksi kamu (${transaction.id}) saat melakukan transfer.
-                    Pastikan juga kamu klik tombol <q>Saya Sudah Transfer</q> di <a href="https://www.mihape.com/overview/transactions/${transaction.id}" style="color:#7A9ED4;text-decoration:none;" >halaman
+                    Jangan lupa cantumkan ID transaksimu (${transaction.id}) saat melakukan transfer.
+                    Pastikan juga kamu klik tombol "Saya Sudah Transfer" di <a href="https://www.mihape.com/overview/transactions/${transaction.id}" style="color:#7A9ED4;text-decoration:none;" >halaman
                       detail transaksi</a> agar transaksi dapat segera kami proses.
                   </h5>
                   <p>Salam</p>
@@ -178,8 +164,8 @@ const sendNewTransactionMail = function sendTransactionMail({
               <tr id="footer" style="background-color:#1D253E;color:white;height:fit-content;font-size:12px;" >
                 <td align="center" valign="bottom">
                   <p>
-                    Mihape Transfer masih dalam fase Alpha. Maka dari itu, jika kamu menemukan ketidaknyamanan dalam
-                    memakai layanan kami,
+                    Mihape Transfer masih dalam fase Alpha. Maka dari itu, jika kamu menemukan ketidaknyamanan saat
+                    menggunakan layanan kami,
                     silahkan hubungi <a href="mailto:support@mihape.com" style="color:#7A9ED4;text-decoration:none;" >Tim
                       Support</a> kami.
                   </p>
@@ -244,7 +230,7 @@ const sendMoneyTransferedMail = ({ receiver, transaction, recipient }, callback)
                     </p>
                     <p>
                       Kamu akan menerima email pemberitahuan selanjutnya apabila transaksimu telah berhasil.
-                      Kamu juga bisa melihat status transaksimu di akun Mihape Transfer kamu.
+                      Status transaksi terbaru bisa dilihat di akun Mihape milikmu.
                     </p>
                     <p><a href="https://www.mihape.com/overview/transactions/${transaction.id}" style="color:#7A9ED4;text-decoration:none;">Lihat
                         status transaksi</a></p>
@@ -257,8 +243,8 @@ const sendMoneyTransferedMail = ({ receiver, transaction, recipient }, callback)
               <tr id="footer" style="background-color:#1D253E;color:white;height:fit-content;font-size:12px;">
                 <td align="center" valign="bottom">
                   <p>
-                    Mihape Transfer masih dalam fase Alpha. Maka dari itu, jika kamu menemukan ketidaknyamanan dalam
-                    memakai layanan kami,
+                    Mihape Transfer masih dalam fase Alpha. Maka dari itu, jika kamu menemukan ketidaknyamanan saat
+                    menggunakan layanan kami,
                     silahkan hubungi <a href="mailto:support@mihape.com" style="color:#7A9ED4;text-decoration:none;">Tim
                       Support</a> kami.
                   </p>
@@ -330,8 +316,8 @@ const sendResetPasswordMail = ({ receiverEmail, redirectURL }, callback) => {
               <tr id="footer" style="background-color:#1D253E;color:white;height:fit-content;font-size:12px;" >
                 <td align="center" valign="bottom">
                   <p>
-                    Mihape Transfer masih dalam fase Alpha. Maka dari itu, jika kamu menemukan ketidaknyamanan dalam
-                    memakai layanan kami,
+                    Mihape Transfer masih dalam fase Alpha. Maka dari itu, jika kamu menemukan ketidaknyamanan saat
+                    menggunakan layanan kami,
                     silahkan hubungi <a href="mailto:support@mihape.com" style="color:#7A9ED4;text-decoration:none;" >Tim
                       Support</a> kami.
                   </p>
@@ -407,8 +393,8 @@ const sendCancelationMail = function sendCancelationMail(
               <tr id="footer" style="background-color:#1D253E;color:white;height:fit-content;font-size:12px;" >
                 <td align="center" valign="bottom">
                   <p>
-                    Mihape Transfer masih dalam fase Alpha. Maka dari itu, jika kamu menemukan ketidaknyamanan dalam
-                    memakai layanan kami,
+                    Mihape Transfer masih dalam fase Alpha. Maka dari itu, jika kamu menemukan ketidaknyamanan saat
+                    menggunakan layanan kami,
                     silahkan hubungi <a href="mailto:support@mihape.com" style="color:#7A9ED4;text-decoration:none;" >Tim
                       Support</a> kami.
                   </p>
@@ -478,8 +464,8 @@ const sendExpiredTransactionMail = function sendExpiredTransactionMail({
               <tr id="footer" style="background-color:#1D253E;color:white;height:fit-content;font-size:12px;" >
                 <td align="center" valign="bottom">
                   <p>
-                    Mihape Transfer masih dalam fase Alpha. Maka dari itu, jika kamu menemukan ketidaknyamanan dalam
-                    memakai layanan kami,
+                    Mihape Transfer masih dalam fase Alpha. Maka dari itu, jika kamu menemukan ketidaknyamanan saat
+                    menggunakan layanan kami,
                     silahkan hubungi <a href="mailto:support@mihape.com" style="color:#7A9ED4;text-decoration:none;" >Tim
                       Support</a> kami.
                   </p>

@@ -1,13 +1,20 @@
-FROM node:dubnium
+FROM node:latest
 
 LABEL author="Muhammad Rizki Fikriansyah"
 
-WORKDIR /var/www/kintun
+# Create app directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-COPY . .
+# Install app dependencies
+COPY package.json /usr/src/app/
+RUN npm install
 
-RUN npm install && npm install nodemon -g
+RUN npm install pm2 -g
+
+# Bundle app source
+COPY . /usr/src/app
 
 EXPOSE 3000
 
-CMD ["nodemon", "index.js"]
+CMD [ "pm2-docker", "/usr/src/app/index.js" ]

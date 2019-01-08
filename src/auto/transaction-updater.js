@@ -1,4 +1,6 @@
 process.env.MONGODB_URI = 'mongodb://mihape-database:Rahasia10mihape@localhost:27017/transferRatesTest';
+process.env.MIHAPE_NOREPLY_EMAIL = 'no-reply@mihape.com';
+process.env.MIHAPE_NOREPLY_PASS = 'Rahasia10@mrizki';
 
 const mongoose = require('../db/mongoose');
 const Transaction = require('../model/transaction');

@@ -1,20 +1,5 @@
 version: '3'
 services:
-  backend:
-    build:
-      context: .
-    # restart: always
-    volumes:
-      - .:/var/www/kintun
-    depends_on:
-      - mongodb
-    environment:
-      - MONGODB_URI=mongodb://mongodb:27017/transferRatesTest
-    ports:
-      - "3000:3000"
-    networks:
-      - app-network
-  
   frontend:
     container_name: nginx
     # restart: always
@@ -37,7 +22,28 @@ services:
     # restart: always
     networks:
       - app-network
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mihape-database
+      MONGO_INITDB_ROOT_PASSWORD: Rahasia10mihape
 
+  backend:
+    build:
+      context: .
+    # restart: always
+    volumes:
+      - .:/var/www/mihape
+    depends_on:
+      - mongodb
+    environment:
+      - NODE_ENV=production
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:./node_modules/.bin
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+  
 networks:
   app-network:
     driver: bridge
