@@ -23,6 +23,7 @@ Rates.checkForUpdate();
 const corsWhitelist = [
   process.env.FRONTEND_URL_LOCAL,
   process.env.FRONTEND_URL_DOCKER,
+  process.env.FRONTEND_IP,
 ];
 const corsOptions = {
   origin: (origin, callback) => {
@@ -34,8 +35,12 @@ const corsOptions = {
   },
   optionsSuccessStatus: 200,
 };
-// app.use(cors(corsOptions));  // Frontend Dev
-app.use(cors()); // API Dev
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(cors(corsOptions)); // Frontend Dev
+} else {
+  app.use(cors()); // API Dev
+}
 
 // Logger
 app.use(requestLogger);

@@ -9,7 +9,7 @@ const feePercentage = 0.6;
 const profitPercentage = 0.008;
 const IDRForeignTransactionFee = 25000;
 // Wait time before updating exchange rates
-const refreshTime = 6 * 60 * 60 * 1000;
+const refreshTime = 60 * 60 * 1000; // 1 hour
 // Waiting time before reset the CheckForUpdate in ms
 const timeout = 5000; // 5s
 let tryout = 0;
@@ -103,6 +103,7 @@ ratesSchema.statics.checkForUpdate = async function checkForUpdate() {
   const Rates = this;
 
   const today = new Date();
+  // eslint-disable-next-line no-console
   console.log(today);
   return Rates.find({
     createdAt: {
@@ -195,6 +196,7 @@ ratesSchema.statics.calculateFee = function calculateFee(
 };
 
 ratesSchema.statics.getTotalRates = async function getTotalRates(
+  // eslint-disable-next-line no-unused-vars
   amount = 1, base = CurrencyType.EUR, combineWithFee = false,
 ) {
   const Rates = this;
