@@ -31,7 +31,7 @@
     "RESET_PASSWORD_URL": "https://www.mihape.com/password/reset",
     "FRONTEND_URL_DOCKER": "http://frontend",
     "FRONTEND_URL_LOCAL": "https://www.mihape.com",
-    "FRONTEND_IP": "http://13.250.14.73",
+    "FRONTEND_IP": "https://13.250.14.73",
     "MONGODB_URI": "mongodb://mihape-data-transfer:Rahasia10mihape@mihape-alpha-shard-00-00-uwofe.mongodb.net:27017,mihape-alpha-shard-00-01-uwofe.mongodb.net:27017,mihape-alpha-shard-00-02-uwofe.mongodb.net:27017/test?ssl=true&replicaSet=Mihape-Alpha-shard-0&authSource=admin&retryWrites=true",
     "RECAPTCHA_V2_SECRET_KEY": "6LehMocUAAAAAD_tzU3_r_8VU5d5SjskhV7iqmDY"
   }

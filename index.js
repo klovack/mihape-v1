@@ -24,6 +24,10 @@ const corsWhitelist = [
   process.env.FRONTEND_URL_LOCAL,
   process.env.FRONTEND_URL_DOCKER,
   process.env.FRONTEND_IP,
+  'http://mihape.com',
+  'http://localhost',
+  'https://localhost',
+  'frontend',
 ];
 const corsOptions = {
   origin: (origin, callback) => {
