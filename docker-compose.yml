@@ -25,6 +25,8 @@ services:
     build:
       context: .
     restart: always
+    volumes:
+      - .:/usr/src/app
     environment:
       - NODE_ENV=production
       - PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:./node_modules/.bin
