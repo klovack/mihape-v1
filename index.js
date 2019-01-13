@@ -40,11 +40,12 @@ const corsOptions = {
   optionsSuccessStatus: 200,
 };
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(cors(corsOptions)); // Frontend Dev
-} else {
-  app.use(cors()); // API Dev
-}
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(cors(corsOptions)); // Frontend Dev
+// } else {
+//   app.use(cors()); // API Dev
+// }
+app.use(cors(corsOptions));
 
 // Logger
 app.use(requestLogger);
