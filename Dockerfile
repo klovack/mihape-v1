@@ -15,6 +15,11 @@ RUN npm install pm2 -g
 # Bundle app source
 COPY . /usr/src/app
 
+# Set the node env variable
+ARG node_env
+
+ENV NODE_ENV=production
+
 EXPOSE 3000
 
 CMD [ "pm2-docker", "/usr/src/app/index.js" ]

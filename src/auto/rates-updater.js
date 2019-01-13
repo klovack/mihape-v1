@@ -1,4 +1,4 @@
-process.env.MONGODB_URI = 'mongodb://mihape-database:Rahasia10mihape@localhost:27017/transferRatesTest';
+process.env.MONGODB_URI = 'mongodb://mihape-data-transfer:Rahasia10mihape@mihape-alpha-shard-00-00-uwofe.mongodb.net:27017,mihape-alpha-shard-00-01-uwofe.mongodb.net:27017,mihape-alpha-shard-00-02-uwofe.mongodb.net:27017/test?ssl=true&replicaSet=Mihape-Alpha-shard-0&authSource=admin&retryWrites=true';
 
 const mongoose = require('../db/mongoose');
 const Rates = require('../model/rates');

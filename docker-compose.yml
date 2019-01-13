@@ -1,49 +1,38 @@
 version: '3'
 services:
   frontend:
-    container_name: nginx
-    # restart: always
-    image: nginx
-    build:
-      context: ./frontend
-      dockerfile: .docker/nginx.dockerfile
+    container_name: mihape-frontend-nginx
+    restart: always
+    image: nginx:latest
+#    build:
+#      context: ./frontend
     volumes:
       - ./frontend/dist:/usr/share/nginx/html
+      - ./frontend/.docker/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./frontend/dh-param/dhparam-2048.pem:/etc/ssl/certs/dhparam-2048.pem
+      - /docker-volumes/etc/letsencrypt/live/mihape.com/fullchain.pem:/etc/letsencrypt/live/mihape.com/fullchain.pem
+      - /docker-volumes/etc/letsencrypt/live/mihape.com/privkey.pem:/etc/letsencrypt/live/mihape.com/privkey.pem
     ports:
       - "80:80"
       - "443:443"
     depends_on:
-      - mongodb
       - backend
-  
-  mongodb:
-    container_name: mongodb
-    image: "mongo:latest"
-    # restart: always
     networks:
-      - app-network
-    ports:
-      - "27017:27017"
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: mihape-database
-      MONGO_INITDB_ROOT_PASSWORD: Rahasia10mihape
-
+      - docker-network
+  
   backend:
+    container_name: mihape-backend
     build:
       context: .
-    # restart: always
-    volumes:
-      - .:/var/www/mihape
-    depends_on:
-      - mongodb
+    restart: always
     environment:
       - NODE_ENV=production
       - PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:./node_modules/.bin
     ports:
       - "3000:3000"
     networks:
-      - app-network
+      - docker-network
   
 networks:
-  app-network:
+  docker-network:
     driver: bridge
