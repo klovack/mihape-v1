@@ -25,14 +25,13 @@ const corsWhitelist = [
   process.env.FRONTEND_URL_DOCKER,
   process.env.FRONTEND_IP,
   'http://mihape.com',
-  'http://localhost',
-  'https://localhost',
+  'http://frontend:443',
   'frontend',
 ];
 const corsOptions = {
   origin: (origin, callback) => {
     console.log(origin);
-    if (corsWhitelist.indexOf(origin) !== -1 || !origin) {
+    if (corsWhitelist.indexOf(origin) !== -1) {
       callback(null, true);
     } else {
       callback(new Error('Not allowed by CORS'));
