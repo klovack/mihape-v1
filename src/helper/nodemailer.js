@@ -1,5 +1,7 @@
 const nodemailer = require('nodemailer');
 
+const env = process.env.NODE_ENV;
+
 const transporter = nodemailer.createTransport({
   host: 'smtp.zoho.com',
   port: 465,
@@ -58,7 +60,11 @@ const sendConfirmationMail = ({ receiverEmail, redirectURL }, callback) => {
     `,
   };
 
-  transporter.sendMail(mailOptions, callback);
+  if (env && env === 'production') {
+    transporter.sendMail(mailOptions, callback);
+  } else {
+    callback(null, { message: 'mail sent' });
+  }
 };
 
 const toCurrencyString = (amount, base) => amount.toLocaleString(undefined, {
@@ -182,7 +188,11 @@ const sendNewTransactionMail = function sendTransactionMail({
     `,
   };
 
-  transporter.sendMail(mailOptions, callback);
+  if (env && env === 'production') {
+    transporter.sendMail(mailOptions, callback);
+  } else {
+    callback(null, { message: 'mail sent' });
+  }
 };
 
 /**
@@ -261,7 +271,11 @@ const sendMoneyTransferedMail = ({ receiver, transaction, recipient }, callback)
     `,
   };
 
-  transporter.sendMail(mailOptions, callback);
+  if (env && env === 'production') {
+    transporter.sendMail(mailOptions, callback);
+  } else {
+    callback(null, { message: 'mail sent' });
+  }
 };
 
 /**
@@ -334,7 +348,11 @@ const sendResetPasswordMail = ({ receiverEmail, redirectURL }, callback) => {
     `,
   };
 
-  transporter.sendMail(mailOptions, callback);
+  if (env && env === 'production') {
+    transporter.sendMail(mailOptions, callback);
+  } else {
+    callback(null, { message: 'mail sent' });
+  }
 };
 
 const sendCancelationMail = function sendCancelationMail(
@@ -411,7 +429,11 @@ const sendCancelationMail = function sendCancelationMail(
     `,
   };
 
-  transporter.sendMail(mailOptions, callback);
+  if (env && env === 'production') {
+    transporter.sendMail(mailOptions, callback);
+  } else {
+    callback(null, { message: 'mail sent' });
+  }
 };
 
 const sendExpiredTransactionMail = function sendExpiredTransactionMail({
@@ -482,9 +504,11 @@ const sendExpiredTransactionMail = function sendExpiredTransactionMail({
     `,
   };
 
-  callback(null, 'success');
-
-  transporter.sendMail(mailOptions, callback);
+  if (env && env === 'production') {
+    transporter.sendMail(mailOptions, callback);
+  } else {
+    callback(null, { message: 'mail sent' });
+  }
 };
 
 module.exports = {
