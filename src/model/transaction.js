@@ -105,6 +105,10 @@ const transactionSchema = new mongoose.Schema({
     type: Boolean,
     required: true,
   },
+  transferId: {
+    type: String,
+    required: true,
+  },
 });
 
 transactionSchema.statics.findByQuery = function findByQuery(
@@ -191,7 +195,7 @@ transactionSchema.methods = {
       fromCurrency: this.fromCurrency,
       toCurrency: this.toCurrency,
       fee: this.fee,
-      id: this._id, // eslint-disable-line
+      id: this.transferId ? this.transferId : this._id, // eslint-disable-line
       combineWithFee: this.combineWithFee,
     };
     sendNewTransactionMail({ receiver, recipient, transaction }, callback);
@@ -217,7 +221,7 @@ transactionSchema.methods = {
     const receiverEmail = user.email;
     const receiverName = user.firstName;
     const recipientName = recipient.name;
-    const transactionId = this._id; // eslint-disable-line
+    const transactionId = this.transferId ? this.transferId : this._id; // eslint-disable-line
 
     sendCancelationMail({
       receiverName, receiverEmail, recipientName, transactionId,

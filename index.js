@@ -30,7 +30,6 @@ const corsWhitelist = [
 ];
 const corsOptions = {
   origin: (origin, callback) => {
-    console.log(origin);
     if (corsWhitelist.includes(origin)) {
       callback(null, true);
     } else {
@@ -40,12 +39,20 @@ const corsOptions = {
   optionsSuccessStatus: 200,
 };
 
+<<<<<<< HEAD
 // if (process.env.NODE_ENV === 'production') {
 //   app.use(cors(corsOptions)); // Frontend Dev
 // } else {
 //   app.use(cors()); // API Dev
 // }
 app.use(cors());
+=======
+//if (process.env.NODE_ENV === 'production') {
+//  app.use(cors(corsOptions)); // Frontend Dev
+//} else {
+app.use(cors()); // API Dev
+//}
+>>>>>>> a4fd9133d9661809a8316f072e195453672ec36e
 
 // Logger
 app.use(requestLogger);

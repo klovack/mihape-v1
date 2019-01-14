@@ -16,6 +16,7 @@ const objectify = require('../helper/objectify');
 const { getSearchQuery } = require('../helper/searchQuery');
 const { authJWT } = require('../middleware/passport');
 const processLogger = require('../logger/process.log');
+const { randomString } = require('../helper/randomizer');
 
 // Middlewares
 
@@ -128,6 +129,7 @@ router.post('/', checkForNewTransaction, validateAll, authJWT, (req, res) => {
                   ? result.fromCurrency.combineAmount + result.fee
                   : result.fromCurrency.originalAmount + result.fee,
               },
+              transferId: req.user.lastName + randomString(4),
             });
 
             processLogger.info({
