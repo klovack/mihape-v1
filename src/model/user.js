@@ -269,6 +269,7 @@ userSchema.methods = {
       userId: this._id,  // eslint-disable-line
       email: this.email,
       name: this.firstName,
+      lastName: this.lastName,
     };
   },
 

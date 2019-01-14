@@ -5,11 +5,11 @@ const stringify = require('../helper/stringify');
 const CurrencyType = require('./currencyType');
 const processLogger = require('../logger/process.log');
 
-const feePercentage = 0.6;
-const profitPercentage = 0.000;
+const feePercentage = 0.5;
+const profitPercentage = 0.0135;
 const IDRForeignTransactionFee = 25000;
 // Wait time before updating exchange rates
-const refreshTime = 2 * 60 * 60 * 1000; // 2 hour
+const refreshTime = 60 * 60 * 1000; // 1 hour
 // Waiting time before reset the CheckForUpdate in ms
 const timeout = 5000; // 5s
 let tryout = 0;
@@ -92,9 +92,12 @@ ratesSchema.statics.calculateRates = async function calculateRates() {
             .then(data => Promise.resolve(data))
             .catch(err => Promise.reject(err));
         }
+      // eslint-disable-next-line consistent-return
       }).catch((err) => {
         numCall -= 1;
-        return Promise.reject(err);
+        if (numCall <= 0) {
+          return Promise.reject(err);
+        }
       });
   });
 };
@@ -153,7 +156,7 @@ ratesSchema.statics.getUpdatedRates = async function getUpdatedRates() {
   const today = new Date();
   const result = await Rates.find({
     createdAt: {
-      $gte: new Date().setHours(today.getHours() - refreshTime),
+      $gte: new Date(today.getTime() - refreshTime),
       $lte: today,
     },
   });
