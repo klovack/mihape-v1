@@ -45,7 +45,7 @@ const corsOptions = {
 // } else {
 //   app.use(cors()); // API Dev
 // }
-app.use(cors(corsOptions));
+app.use(cors());
 
 // Logger
 app.use(requestLogger);
