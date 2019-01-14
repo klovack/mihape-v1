@@ -5,7 +5,7 @@ const stringify = require('../helper/stringify');
 const CurrencyType = require('./currencyType');
 const processLogger = require('../logger/process.log');
 
-const feePercentage = 0.5;
+const feePercentage = 0.6;
 const profitPercentage = 0.0135;
 const IDRForeignTransactionFee = 25000;
 // Wait time before updating exchange rates
