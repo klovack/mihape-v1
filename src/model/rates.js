@@ -6,10 +6,10 @@ const CurrencyType = require('./currencyType');
 const processLogger = require('../logger/process.log');
 
 const feePercentage = 0.6;
-const profitPercentage = 0.008;
+const profitPercentage = 0.000;
 const IDRForeignTransactionFee = 25000;
 // Wait time before updating exchange rates
-const refreshTime = 60 * 60 * 1000; // 1 hour
+const refreshTime = 2 * 60 * 60 * 1000; // 2 hour
 // Waiting time before reset the CheckForUpdate in ms
 const timeout = 5000; // 5s
 let tryout = 0;
@@ -153,7 +153,7 @@ ratesSchema.statics.getUpdatedRates = async function getUpdatedRates() {
   const today = new Date();
   const result = await Rates.find({
     createdAt: {
-      $gte: new Date().setHours(today.getHours() - 12),
+      $gte: new Date().setHours(today.getHours() - refreshTime),
       $lte: today,
     },
   });
