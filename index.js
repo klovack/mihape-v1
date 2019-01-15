@@ -25,26 +25,29 @@ const corsWhitelist = [
   process.env.FRONTEND_URL_DOCKER,
   process.env.FRONTEND_IP,
   'http://mihape.com',
+  'http://frontend',
   'http://frontend:443',
+  'https://frontend',
   'frontend',
 ];
 const corsOptions = {
-  origin: (origin, callback) => {
-    if (corsWhitelist.includes(origin)) {
-      callback(null, true);
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true)
     } else {
-      callback(new Error('Not allowed by CORS'));
+      callback(new Error('Not allowed by CORS'))
     }
   },
+  methods: ['GET', 'PUT', 'POST', 'DELETE'],
   optionsSuccessStatus: 200,
 };
 
-// if (process.env.NODE_ENV === 'production') {
-//   app.use(cors(corsOptions)); // Frontend Dev
-// } else {
-//   app.use(cors()); // API Dev
-// }
-app.use(cors());
+//if (process.env.NODE_ENV === 'production') {
+//  app.use(cors(corsOptions)); // Frontend Dev
+//} else {
+//  app.use(cors()); // API Dev
+//}
+//app.use(cors(corsOptions));
 
 // Logger
 app.use(requestLogger);
