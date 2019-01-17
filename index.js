@@ -1,7 +1,7 @@
 require('./src/config/config');
 
 const express = require('express');
-// const cors = require('cors');
+const cors = require('cors');
 
 const Rates = require('./src/model/rates');
 const ratesRoutes = require('./src/routes/ratesRoute');
@@ -42,12 +42,9 @@ Rates.checkForUpdate();
 //   optionsSuccessStatus: 200,
 // };
 
-// if (process.env.NODE_ENV === 'production') {
-//  app.use(cors(corsOptions)); // Frontend Dev
-// } else {
-//  app.use(cors()); // API Dev
-// }
-// app.use(cors(corsOptions));
+if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+  app.use(cors()); // Frontend Dev
+}
 
 // Logger
 app.use(requestLogger);
