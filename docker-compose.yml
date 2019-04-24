@@ -12,6 +12,7 @@ services:
       - ./frontend/dh-param/dhparam-2048.pem:/etc/ssl/certs/dhparam-2048.pem
       - /docker-volumes/etc/letsencrypt/live/mihape.com/fullchain.pem:/etc/letsencrypt/live/mihape.com/fullchain.pem
       - /docker-volumes/etc/letsencrypt/live/mihape.com/privkey.pem:/etc/letsencrypt/live/mihape.com/privkey.pem
+      - /docker-volumes/data/letsencrypt:/data/letsencrypt
     ports:
       - "80:80"
       - "443:443"
