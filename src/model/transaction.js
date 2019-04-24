@@ -4,6 +4,8 @@ const mongoose = require('../db/mongoose');
 const { transformToMongoQuery } = require('../helper/searchQuery');
 const { sendNewTransactionMail, sendMoneyTransferedMail, sendCancelationMail } = require('../helper/nodemailer');
 
+const getDeadlineDate = () => Date.now() + (1000 * 60 * 60 * 12);
+
 const transactionSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -12,28 +14,28 @@ const transactionSchema = new mongoose.Schema({
   description: String,
   createdAt: {
     type: Date,
-    default: new Date(Date.now()),
+    default: Date.now,
     required: true,
   },
   deadlineAt: {
     type: Date,
-    default: new Date().setTime(Date.now() + (1000 * 60 * 60 * 12)),
+    default: getDeadlineDate,
   },
   receivedAt: {
     type: Date,
-    min: new Date(Date.now()),
+    min: Date.now,
   },
   canceledAt: {
     type: Date,
-    min: new Date(Date.now()),
+    min: Date.now,
   },
   completedAt: {
     type: Date,
-    min: new Date(Date.now()),
+    min: Date.now,
   },
   failedAt: [{
     type: Date,
-    min: new Date(Date.now()),
+    min: Date.now,
   }],
   status: {
     type: String,
