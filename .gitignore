@@ -10,3 +10,4 @@ access.log
 error.log
 info.log
 access.md
+config.json

@@ -1,0 +1,38 @@
+{
+  "development": {
+    "ACCESS_KEY_API_FIXER": "",
+    "ACCESS_KEY_API_EXCHANGE_RATE": "",
+    "JWT_SECRET": "",
+    "EMAIL_SECRET": "",
+    "GOOGLE_OAUTH_EMAIL": "",
+    "GOOGLE_OAUTH_CLIENT_ID": "",
+    "GOOGLE_OAUTH_CLIENT_SECRET": "",
+    "GOOGLE_OAUTH_REFRESH_TOKEN": "",
+    "GOOGLE_OAUTH_ACCESS_TOKEN": "",
+    "GOOGLE_OAUTH_PASSWORD": "",
+    "MIHAPE_NOREPLY_EMAIL": "",
+    "MIHAPE_NOREPLY_PASS": "",
+    "CONFIRM_URL": "localhost:4200/email/received",
+    "RESET_PASSWORD_URL": "localhost:4200/password/reset",
+    "FRONTEND_URL_DOCKER": "http://localhost",
+    "FRONTEND_URL_LOCAL": "http://localhost:4200",
+    "MONGODB_USERNAME_LOCAL": "",
+    "MONGODB_PASSWORD_LOCAL": "",
+    "RECAPTCHA_V2_SECRET_KEY": ""
+  },
+  "production": {
+    "ACCESS_KEY_API_FIXER": "",
+    "ACCESS_KEY_API_EXCHANGE_RATE": "",
+    "JWT_SECRET": "",
+    "EMAIL_SECRET": "",
+    "MIHAPE_NOREPLY_EMAIL": "",
+    "MIHAPE_NOREPLY_PASS": "",
+    "CONFIRM_URL": "https://www.mihape.com/email/received",
+    "RESET_PASSWORD_URL": "https://www.mihape.com/password/reset",
+    "FRONTEND_URL_DOCKER": "https://frontend/",
+    "FRONTEND_URL_LOCAL": "https://www.mihape.com/",
+    "FRONTEND_IP": "",
+    "MONGODB_URI": "",
+    "RECAPTCHA_V2_SECRET_KEY": ""
+  }
+}
