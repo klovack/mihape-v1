@@ -1,6 +1,6 @@
 # Mihape Transfer
 
-An old project which can be seen on (Mihape Transfer Website)[http://transfer.mihape.com]
+An old project which can be seen on [Mihape Transfer Website](http://transfer.mihape.com)
 
 API Endpoint for web based application to transfer money from Indonesia to Germany
 
